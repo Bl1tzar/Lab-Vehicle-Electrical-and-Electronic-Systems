@@ -1,0 +1,52 @@
+DÚVIDAS:
+O #define _XTAL_FREQ 8000000 em device_config.h 
+
+-----------PARTE 1----------------
+//1. Feito
+
+//2. Feito
+
+//3. Feito
+
+//4. Feito
+	//a)
+		Verificado
+	//b)
+	
+		if(S1_PORT==0){
+			LED3_SetHigh(); //Se o pin RB4 estiver a '0' (que é quando o botão é pressionado) o LED D3 é acesso pelo pin RA5
+		}
+		else{
+			LED3_SetLow(); //Senão,se o pin RB4 estiver a '1', o LED fica apagado (a '0') 
+		}	
+	
+	//c)
+		Pinos I/O:
+			Ficheiro pin_manager.c -> funcão PIN_MANAGER_Initialize()
+			Nesta funcão, é possivel encontrar os registos LAT(escrita), TRIS(input ou output), ANSEL(digital ou analogico) e WPUB(resistencias pull-up internas do porto B)
+			
+			No MCC, podem ser contrados no tab "Pin Module"
+		
+		Oscilador:
+			Para configurar o valor do oscilador interno(neste caso está a 8MHZ) é necessário selecionar que tipo de oscilador é usado. Para isso é possivel usar a configuracão FOSC do registo CONFIG1H. 
+			Para configurar o valor do oscilador, usa-se a configuracão IRCF do registo OSCCON. 
+			No código, é possivel ver no ficheiro mcc.c o registo OSCCON = 0x62 e no ficheiro device_config.c a configuracão FOSC = INTIO2 do registo CONFIG1H, sendo que _XTAL_FREQ é definido em device_config.h por #define _XTAL_FREQ 8000000
+	//d)
+		Teria que alterar o define do _XTAL_FREQ (talvez o FOSC, depende do valor) e no microcontrolador no Proteus
+	//e)
+		8MHz
+	//f)
+		1 ciclo/periodo de relógio -> T= 1/8MHz = 12,5us = 12,5e-6s
+		No PIC, 1 ciclo de instrucões demora 4 ciclos de relógio (1 instrucão, 4 passos - Fetch, Decode, Execute, Writeback)
+		
+		>> 1 ciclo de instrucões = 4 x 12,5e-6s = 50us
+	//g)
+		Na pasta da aula
+
+//5. Feito
+-----------PARTE 2----------------
+//6.
+	
+
+
+-----------PARTE 3----------------
