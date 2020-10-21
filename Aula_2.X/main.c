@@ -9,6 +9,7 @@
 #include "lib_ili9341.h"
 #include <stdio.h>
 
+
 int codigo_digital;
 uint16_t percentagem;
 char string[100];
