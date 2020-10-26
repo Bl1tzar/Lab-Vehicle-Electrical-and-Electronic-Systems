@@ -10,10 +10,12 @@
 #include <stdio.h>
 
 
-int codigo_digital;
-uint16_t percentagem;
+uint16_t codigo_digital;
+float percentagem;
 char string[100];
-
+uint16_t ticks;
+uint16_t rpm;
+char string_rpm[100];
 /*
                           Interrupt Services Routines
 */
@@ -23,13 +25,15 @@ void acende_led(void){
     if (S1_PORT == 0){
         LED3_Toggle();
         codigo_digital = ADC_GetConversion(POT); //Obter codigo digital do conversor ADC
+        percentagem = codigo_digital*0.0244200244200244;
     }
 }
 
-void ADC_POT (void){
-    
-    percentagem = 40;
-    //percentagem = (4095/codigo_digital)*100 ;
+void pulso_encoder(void){
+    TMR0_StopTimer();
+    ticks=TMR0_ReadTimer();
+    TMR0_WriteTimer(0x00);
+    TMR0_StartTimer();
 }
 
 /*
@@ -37,23 +41,19 @@ void ADC_POT (void){
  */
 void main(void)
 {
-    // Initialize the device
-    SYSTEM_Initialize();
+    // Initialize the device 
+    SYSTEM_Initialize(); //Inclui Timer_0 Initialize 
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
-
+    
     IOCB4_SetInterruptHandler(acende_led);
-    
-    ADC_SetInterruptHandler(ADC_POT);
-    
+    INT0_SetInterruptHandler(pulso_encoder);
     SPI_Open(SPI_DEFAULT);
     
     lcd_init ();
-    
-    
-    
+
     lcd_draw_line(40,150,280,150,YELLOW);
     
     lcd_draw_string (45,155,"XC8 - Biblioteca - LCD - ILI9341",BLUE,BLACK);
@@ -75,10 +75,13 @@ void main(void)
 
     
     while (1)
-    {
-        //Confirmado
-        snprintf(string,sizeof(string),"percentagem = %d",percentagem);
-        lcd_draw_string (120,80,string,GREEN,BLACK);
+    {   
+        rpm=4687500/ticks;
+        snprintf(string_rpm,sizeof(string_rpm),"RPM= %d      ",rpm);
+        lcd_draw_string (10,80,string_rpm,GREEN,BLACK);
+
+        snprintf(string,sizeof(string),"percentagem = %.f  ",percentagem);
+        lcd_draw_string (150,80,string,GREEN,BLACK);
         // Add your application code
 //        if(S1_PORT==0){
 //            LED3_SetHigh();

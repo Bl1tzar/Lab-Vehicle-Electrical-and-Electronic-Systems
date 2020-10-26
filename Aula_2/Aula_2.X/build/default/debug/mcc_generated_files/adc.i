@@ -20514,27 +20514,31 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
-    POT = 0x0
+    POT = 0x0,
+    LED3 = 0x4,
+    IO_RE0 = 0x5,
+    IO_RE1 = 0x6,
+    S1 = 0x9
 } adc_channel_t;
-# 128 "mcc_generated_files/adc.h"
+# 132 "mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 157 "mcc_generated_files/adc.h"
+# 161 "mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 189 "mcc_generated_files/adc.h"
+# 193 "mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 222 "mcc_generated_files/adc.h"
+# 226 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 252 "mcc_generated_files/adc.h"
+# 256 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 280 "mcc_generated_files/adc.h"
+# 284 "mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
-# 296 "mcc_generated_files/adc.h"
+# 300 "mcc_generated_files/adc.h"
 void ADC_ISR(void);
-# 314 "mcc_generated_files/adc.h"
+# 318 "mcc_generated_files/adc.h"
  void ADC_SetInterruptHandler(void (* InterruptHandler)(void));
-# 332 "mcc_generated_files/adc.h"
+# 336 "mcc_generated_files/adc.h"
 extern void (*ADC_InterruptHandler)(void);
-# 350 "mcc_generated_files/adc.h"
+# 354 "mcc_generated_files/adc.h"
 void ADC_DefaultInterruptHandler(void);
 # 52 "mcc_generated_files/adc.c" 2
 
@@ -20554,7 +20558,7 @@ void ADC_Initialize(void)
 
 
 
-    ADCON0 = 0x01;
+    ADCON0 = 0x03;
 
 
     ADCON1 = 0x80;

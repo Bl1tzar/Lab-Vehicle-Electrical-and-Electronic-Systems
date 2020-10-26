@@ -89,7 +89,11 @@ typedef enum
     channel_Temp_diode =  0x1D,
     channel_Vdd_core =  0x1E,
     channel_1_024V_bandgap =  0x1F,
-    POT =  0x0
+    POT =  0x0,
+    LED3 =  0x4,
+    IO_RE0 =  0x5,
+    IO_RE1 =  0x6,
+    S1 =  0x9
 } adc_channel_t;
 
 /**

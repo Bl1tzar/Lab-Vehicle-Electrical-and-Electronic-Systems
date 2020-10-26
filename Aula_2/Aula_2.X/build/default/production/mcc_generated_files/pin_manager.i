@@ -20417,17 +20417,17 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 32 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
 # 54 "mcc_generated_files/pin_manager.h" 2
-# 175 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
 # 187 "mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 199 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 200 "mcc_generated_files/pin_manager.h"
+# 212 "mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 223 "mcc_generated_files/pin_manager.h"
+# 235 "mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 247 "mcc_generated_files/pin_manager.h"
+# 259 "mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 271 "mcc_generated_files/pin_manager.h"
+# 283 "mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 49 "mcc_generated_files/pin_manager.c" 2
 
@@ -20461,8 +20461,8 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    ANCON0 = 0x8E;
-    ANCON1 = 0x7D;
+    ANCON0 = 0x8F;
+    ANCON1 = 0x79;
 
 
 

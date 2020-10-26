@@ -63,8 +63,8 @@ void ADC_Initialize(void)
 {
     // set the ADC to the options selected in the User Interface
     
-    // GO_nDONE stop; ADON enabled; CHS AN0; 
-    ADCON0 = 0x01;
+    // GO_nDONE start; ADON enabled; CHS AN0; 
+    ADCON0 = 0x03;
     
     // TRIGSEL Timer1; VNCFG AVSS; VCFG AVDD; CHSN AVss; 
     ADCON1 = 0x80;

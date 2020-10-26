@@ -93,6 +93,18 @@
 #define LED3_SetAnalogMode()      do { ANCON0bits.ANSEL4 = 1; } while(0)
 #define LED3_SetDigitalMode()     do { ANCON0bits.ANSEL4 = 0; } while(0)
 
+// get/set RB0 procedures
+#define RB0_SetHigh()            do { LATBbits.LATB0 = 1; } while(0)
+#define RB0_SetLow()             do { LATBbits.LATB0 = 0; } while(0)
+#define RB0_Toggle()             do { LATBbits.LATB0 = ~LATBbits.LATB0; } while(0)
+#define RB0_GetValue()              PORTBbits.RB0
+#define RB0_SetDigitalInput()    do { TRISBbits.TRISB0 = 1; } while(0)
+#define RB0_SetDigitalOutput()   do { TRISBbits.TRISB0 = 0; } while(0)
+#define RB0_SetPullup()             do { WPUBbits.WPUB0 = 1; } while(0)
+#define RB0_ResetPullup()           do { WPUBbits.WPUB0 = 0; } while(0)
+#define RB0_SetAnalogMode()         do { ANCON1bits.ANSEL10 = 1; } while(0)
+#define RB0_SetDigitalMode()        do { ANCON1bits.ANSEL10 = 0; } while(0)
+
 // get/set S1 aliases
 #define S1_TRIS                 TRISBbits.TRISB4
 #define S1_LAT                  LATBbits.LATB4
@@ -134,33 +146,33 @@
 #define RC5_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
 #define RC5_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
 
-// get/set DC aliases
-#define DC_TRIS                 TRISEbits.TRISE0
-#define DC_LAT                  LATEbits.LATE0
-#define DC_PORT                 PORTEbits.RE0
-#define DC_ANS                  ANCON0bits.ANSEL5
-#define DC_SetHigh()            do { LATEbits.LATE0 = 1; } while(0)
-#define DC_SetLow()             do { LATEbits.LATE0 = 0; } while(0)
-#define DC_Toggle()             do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0)
-#define DC_GetValue()           PORTEbits.RE0
-#define DC_SetDigitalInput()    do { TRISEbits.TRISE0 = 1; } while(0)
-#define DC_SetDigitalOutput()   do { TRISEbits.TRISE0 = 0; } while(0)
-#define DC_SetAnalogMode()      do { ANCON0bits.ANSEL5 = 1; } while(0)
-#define DC_SetDigitalMode()     do { ANCON0bits.ANSEL5 = 0; } while(0)
+// get/set IO_RE0 aliases
+#define IO_RE0_TRIS                 TRISEbits.TRISE0
+#define IO_RE0_LAT                  LATEbits.LATE0
+#define IO_RE0_PORT                 PORTEbits.RE0
+#define IO_RE0_ANS                  ANCON0bits.ANSEL5
+#define IO_RE0_SetHigh()            do { LATEbits.LATE0 = 1; } while(0)
+#define IO_RE0_SetLow()             do { LATEbits.LATE0 = 0; } while(0)
+#define IO_RE0_Toggle()             do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0)
+#define IO_RE0_GetValue()           PORTEbits.RE0
+#define IO_RE0_SetDigitalInput()    do { TRISEbits.TRISE0 = 1; } while(0)
+#define IO_RE0_SetDigitalOutput()   do { TRISEbits.TRISE0 = 0; } while(0)
+#define IO_RE0_SetAnalogMode()      do { ANCON0bits.ANSEL5 = 1; } while(0)
+#define IO_RE0_SetDigitalMode()     do { ANCON0bits.ANSEL5 = 0; } while(0)
 
-// get/set CS aliases
-#define CS_TRIS                 TRISEbits.TRISE1
-#define CS_LAT                  LATEbits.LATE1
-#define CS_PORT                 PORTEbits.RE1
-#define CS_ANS                  ANCON0bits.ANSEL6
-#define CS_SetHigh()            do { LATEbits.LATE1 = 1; } while(0)
-#define CS_SetLow()             do { LATEbits.LATE1 = 0; } while(0)
-#define CS_Toggle()             do { LATEbits.LATE1 = ~LATEbits.LATE1; } while(0)
-#define CS_GetValue()           PORTEbits.RE1
-#define CS_SetDigitalInput()    do { TRISEbits.TRISE1 = 1; } while(0)
-#define CS_SetDigitalOutput()   do { TRISEbits.TRISE1 = 0; } while(0)
-#define CS_SetAnalogMode()      do { ANCON0bits.ANSEL6 = 1; } while(0)
-#define CS_SetDigitalMode()     do { ANCON0bits.ANSEL6 = 0; } while(0)
+// get/set IO_RE1 aliases
+#define IO_RE1_TRIS                 TRISEbits.TRISE1
+#define IO_RE1_LAT                  LATEbits.LATE1
+#define IO_RE1_PORT                 PORTEbits.RE1
+#define IO_RE1_ANS                  ANCON0bits.ANSEL6
+#define IO_RE1_SetHigh()            do { LATEbits.LATE1 = 1; } while(0)
+#define IO_RE1_SetLow()             do { LATEbits.LATE1 = 0; } while(0)
+#define IO_RE1_Toggle()             do { LATEbits.LATE1 = ~LATEbits.LATE1; } while(0)
+#define IO_RE1_GetValue()           PORTEbits.RE1
+#define IO_RE1_SetDigitalInput()    do { TRISEbits.TRISE1 = 1; } while(0)
+#define IO_RE1_SetDigitalOutput()   do { TRISEbits.TRISE1 = 0; } while(0)
+#define IO_RE1_SetAnalogMode()      do { ANCON0bits.ANSEL6 = 1; } while(0)
+#define IO_RE1_SetDigitalMode()     do { ANCON0bits.ANSEL6 = 0; } while(0)
 
 /**
    @Param

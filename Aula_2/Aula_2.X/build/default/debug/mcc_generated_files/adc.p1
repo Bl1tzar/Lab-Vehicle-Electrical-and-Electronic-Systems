@@ -1,5 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F12409 `(v ~T0 @X0 0 tf ]
+[v F12413 `(v ~T0 @X0 0 tf ]
 "34938 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 34938: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
@@ -30,17 +30,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31630
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31630: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
 [v _PIE1bits `VS1200 ~T0 @X0 0 e@3997 ]
-[v F12402 `(v ~T0 @X0 0 tf ]
-"314 mcc_generated_files/adc.h
-[; ;mcc_generated_files/adc.h: 314:  void ADC_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _ADC_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12402 ]
-"350
-[; ;mcc_generated_files/adc.h: 350: void ADC_DefaultInterruptHandler(void);
+[v F12406 `(v ~T0 @X0 0 tf ]
+"318 mcc_generated_files/adc.h
+[; ;mcc_generated_files/adc.h: 318:  void ADC_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _ADC_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12406 ]
+"354
+[; ;mcc_generated_files/adc.h: 354: void ADC_DefaultInterruptHandler(void);
 [v _ADC_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
 "88 mcc_generated_files/adc.c
 [; ;mcc_generated_files/adc.c: 88: void ADC_StartConversion(adc_channel_t channel)
-[c E12385 28 29 30 31 0 .. ]
-[n E12385 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT  ]
+[c E12385 28 29 30 31 0 4 5 6 9 .. ]
+[n E12385 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT LED3 IO_RE0 IO_RE1 S1  ]
 "34944 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 34944:     struct {
 [s S1362 :1 `uc 1 :1 `uc 1 ]
@@ -99,9 +99,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31707
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31707: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
 [v _PIR1bits `VS1203 ~T0 @X0 0 e@3998 ]
-[v F12420 `(v ~T0 @X0 0 tf ]
-[v F12422 `(v ~T0 @X0 0 tf ]
 [v F12424 `(v ~T0 @X0 0 tf ]
+[v F12426 `(v ~T0 @X0 0 tf ]
+[v F12428 `(v ~T0 @X0 0 tf ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1496,7 +1496,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 0FFFh ;# ">
 "56 mcc_generated_files/adc.c
 [; ;mcc_generated_files/adc.c: 56: void (*ADC_InterruptHandler)(void);
-[v _ADC_InterruptHandler `*F12409 ~T0 @X0 1 e ]
+[v _ADC_InterruptHandler `*F12413 ~T0 @X0 1 e ]
 "62
 [; ;mcc_generated_files/adc.c: 62: void ADC_Initialize(void)
 [v _ADC_Initialize `(v ~T0 @X0 1 ef ]
@@ -1506,8 +1506,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _ADC_Initialize ]
 [f ]
 "67
-[; ;mcc_generated_files/adc.c: 67:     ADCON0 = 0x01;
-[e = _ADCON0 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/adc.c: 67:     ADCON0 = 0x03;
+[e = _ADCON0 -> -> 3 `i `uc ]
 "70
 [; ;mcc_generated_files/adc.c: 70:     ADCON1 = 0x80;
 [e = _ADCON1 -> -> 128 `i `uc ]
@@ -1661,7 +1661,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
 "144
 [; ;mcc_generated_files/adc.c: 144:  if(ADC_InterruptHandler)
-[e $ ! != _ADC_InterruptHandler -> -> 0 `i `*F12420 1552  ]
+[e $ ! != _ADC_InterruptHandler -> -> 0 `i `*F12424 1552  ]
 "145
 [; ;mcc_generated_files/adc.c: 145:     {
 {
@@ -1678,10 +1678,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "150
 [; ;mcc_generated_files/adc.c: 150: void ADC_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _ADC_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F12422 ]
+[v _ADC_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F12426 ]
 {
 [e :U _ADC_SetInterruptHandler ]
-[v _InterruptHandler `*F12424 ~T0 @X0 1 r1 ]
+[v _InterruptHandler `*F12428 ~T0 @X0 1 r1 ]
 [f ]
 "151
 [; ;mcc_generated_files/adc.c: 151:     ADC_InterruptHandler = InterruptHandler;
