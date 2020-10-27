@@ -20428,17 +20428,17 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 187 "./mcc_generated_files/pin_manager.h"
+# 198 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 199 "./mcc_generated_files/pin_manager.h"
+# 210 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 212 "./mcc_generated_files/pin_manager.h"
+# 223 "./mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 235 "./mcc_generated_files/pin_manager.h"
+# 246 "./mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 259 "./mcc_generated_files/pin_manager.h"
+# 270 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 283 "./mcc_generated_files/pin_manager.h"
+# 294 "./mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -20765,6 +20765,48 @@ uint8_t TMR1_CheckGateValueStatus(void);
 _Bool TMR1_HasOverflowOccured(void);
 # 58 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/tmr2.h" 1
+# 104 "./mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 133 "./mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 165 "./mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 200 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 239 "./mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 291 "./mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 309 "./mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 327 "./mcc_generated_files/tmr2.h"
+ void TMR2_CallBack(void);
+# 344 "./mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 362 "./mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 380 "./mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
+# 59 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr0.h" 1
+# 100 "./mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+# 129 "./mcc_generated_files/tmr0.h"
+void TMR0_StartTimer(void);
+# 161 "./mcc_generated_files/tmr0.h"
+void TMR0_StopTimer(void);
+# 197 "./mcc_generated_files/tmr0.h"
+uint16_t TMR0_ReadTimer(void);
+# 236 "./mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint16_t timerVal);
+# 272 "./mcc_generated_files/tmr0.h"
+void TMR0_Reload(void);
+# 310 "./mcc_generated_files/tmr0.h"
+_Bool TMR0_HasOverflowOccured(void);
+# 60 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/adc.h" 1
 # 72 "./mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
@@ -20801,27 +20843,10 @@ void ADC_ISR(void);
 extern void (*ADC_InterruptHandler)(void);
 # 354 "./mcc_generated_files/adc.h"
 void ADC_DefaultInterruptHandler(void);
-# 59 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr0.h" 1
-# 100 "./mcc_generated_files/tmr0.h"
-void TMR0_Initialize(void);
-# 129 "./mcc_generated_files/tmr0.h"
-void TMR0_StartTimer(void);
-# 161 "./mcc_generated_files/tmr0.h"
-void TMR0_StopTimer(void);
-# 197 "./mcc_generated_files/tmr0.h"
-uint16_t TMR0_ReadTimer(void);
-# 236 "./mcc_generated_files/tmr0.h"
-void TMR0_WriteTimer(uint16_t timerVal);
-# 272 "./mcc_generated_files/tmr0.h"
-void TMR0_Reload(void);
-# 310 "./mcc_generated_files/tmr0.h"
-_Bool TMR0_HasOverflowOccured(void);
-# 60 "./mcc_generated_files/mcc.h" 2
-# 75 "./mcc_generated_files/mcc.h"
+# 61 "./mcc_generated_files/mcc.h" 2
+# 76 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 88 "./mcc_generated_files/mcc.h"
+# 89 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 8 "main.c" 2
 
@@ -21006,10 +21031,13 @@ void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color,
 
 uint16_t codigo_digital;
 float percentagem;
+int pot_comparacao=80;
 char string[100];
 uint16_t ticks;
 uint16_t rpm;
 char string_rpm[100];
+uint16_t teste;
+char steste[100];
 
 
 
@@ -21019,7 +21047,6 @@ void acende_led(void){
     if (PORTBbits.RB4 == 0){
         do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0);
         codigo_digital = ADC_GetConversion(POT);
-        percentagem = codigo_digital*0.0244200244200244;
     }
 }
 
@@ -21030,6 +21057,15 @@ void pulso_encoder(void){
     TMR0_StartTimer();
 }
 
+void led_inter(void){
+
+
+
+
+
+
+    teste = 42;
+}
 
 
 
@@ -21042,8 +21078,9 @@ void main(void)
 
 
 
-    IOCB4_SetInterruptHandler(acende_led);
-    INT0_SetInterruptHandler(pulso_encoder);
+
+
+    TMR2_SetInterruptHandler(led_inter);
     SPI_Open(SPI_DEFAULT);
 
     lcd_init ();
@@ -21057,15 +21094,20 @@ void main(void)
 
 
     (INTCONbits.GIE = 1);
-# 77 "main.c"
+# 89 "main.c"
     while (1)
     {
+        percentagem = codigo_digital*0.0244200244200244;
         rpm=4687500/ticks;
+
         snprintf(string_rpm,sizeof(string_rpm),"RPM= %d      ",rpm);
-        lcd_draw_string (10,80,string_rpm,0x0400,0x0000);
+        lcd_draw_string (40,10,string_rpm,0x0400,0x0000);
 
         snprintf(string,sizeof(string),"percentagem = %.f  ",percentagem);
-        lcd_draw_string (150,80,string,0x0400,0x0000);
+        lcd_draw_string (150,10,string,0x0400,0x0000);
+
+        snprintf(steste,sizeof(steste),"TESTE %d",teste);
+        lcd_draw_string (40,50,steste,0x0400,0x0000);
 
 
 

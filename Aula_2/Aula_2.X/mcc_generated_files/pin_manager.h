@@ -93,6 +93,17 @@
 #define LED3_SetAnalogMode()      do { ANCON0bits.ANSEL4 = 1; } while(0)
 #define LED3_SetDigitalMode()     do { ANCON0bits.ANSEL4 = 0; } while(0)
 
+// get/set LED4 aliases
+#define LED4_TRIS                 TRISAbits.TRISA6
+#define LED4_LAT                  LATAbits.LATA6
+#define LED4_PORT                 PORTAbits.RA6
+#define LED4_SetHigh()            do { LATAbits.LATA6 = 1; } while(0)
+#define LED4_SetLow()             do { LATAbits.LATA6 = 0; } while(0)
+#define LED4_Toggle()             do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0)
+#define LED4_GetValue()           PORTAbits.RA6
+#define LED4_SetDigitalInput()    do { TRISAbits.TRISA6 = 1; } while(0)
+#define LED4_SetDigitalOutput()   do { TRISAbits.TRISA6 = 0; } while(0)
+
 // get/set RB0 procedures
 #define RB0_SetHigh()            do { LATBbits.LATB0 = 1; } while(0)
 #define RB0_SetLow()             do { LATBbits.LATB0 = 0; } while(0)

@@ -20417,17 +20417,17 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 32 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
 # 54 "mcc_generated_files/pin_manager.h" 2
-# 187 "mcc_generated_files/pin_manager.h"
+# 198 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 199 "mcc_generated_files/pin_manager.h"
+# 210 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 212 "mcc_generated_files/pin_manager.h"
+# 223 "mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 235 "mcc_generated_files/pin_manager.h"
+# 246 "mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 259 "mcc_generated_files/pin_manager.h"
+# 270 "mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 283 "mcc_generated_files/pin_manager.h"
+# 294 "mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 49 "mcc_generated_files/pin_manager.c" 2
 
@@ -20453,7 +20453,7 @@ void PIN_MANAGER_Initialize(void)
 
 
     TRISE = 0x04;
-    TRISA = 0xCF;
+    TRISA = 0x8F;
     TRISB = 0xFF;
     TRISC = 0xD7;
     TRISD = 0xFF;

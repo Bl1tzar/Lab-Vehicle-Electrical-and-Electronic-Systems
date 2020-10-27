@@ -12,10 +12,13 @@
 
 uint16_t codigo_digital;
 float percentagem;
+int pot_comparacao=80;
 char string[100];
 uint16_t ticks;
 uint16_t rpm;
 char string_rpm[100];
+uint16_t teste;
+char steste[100];
 /*
                           Interrupt Services Routines
 */
@@ -25,7 +28,6 @@ void acende_led(void){
     if (S1_PORT == 0){
         LED3_Toggle();
         codigo_digital = ADC_GetConversion(POT); //Obter codigo digital do conversor ADC
-        percentagem = codigo_digital*0.0244200244200244;
     }
 }
 
@@ -36,6 +38,15 @@ void pulso_encoder(void){
     TMR0_StartTimer();
 }
 
+void led_inter(void){
+//    if (percentagem>=pot_comparacao){
+//        LED4_Toggle();
+//    }
+//    else{
+//        LED4_SetLow();
+//    }
+    teste = 42;
+}
 /*
                          Main application
  */
@@ -50,6 +61,7 @@ void main(void)
     
     IOCB4_SetInterruptHandler(acende_led);
     INT0_SetInterruptHandler(pulso_encoder);
+    TMR2_SetInterruptHandler(led_inter);
     SPI_Open(SPI_DEFAULT);
     
     lcd_init ();
@@ -76,12 +88,17 @@ void main(void)
     
     while (1)
     {   
+        percentagem = codigo_digital*0.0244200244200244;
         rpm=4687500/ticks;
+        
         snprintf(string_rpm,sizeof(string_rpm),"RPM= %d      ",rpm);
-        lcd_draw_string (10,80,string_rpm,GREEN,BLACK);
+        lcd_draw_string (40,10,string_rpm,GREEN,BLACK);
 
         snprintf(string,sizeof(string),"percentagem = %.f  ",percentagem);
-        lcd_draw_string (150,80,string,GREEN,BLACK);
+        lcd_draw_string (150,10,string,GREEN,BLACK);
+        
+        snprintf(steste,sizeof(steste),"TESTE %d",teste);
+        lcd_draw_string (40,50,steste,GREEN,BLACK);
         // Add your application code
 //        if(S1_PORT==0){
 //            LED3_SetHigh();
