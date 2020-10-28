@@ -70,11 +70,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 26887: extern volatile IOCBbits_t IOCBbits __attribute__((address(0xF5A)));
 [v _IOCBbits `VS1010 ~T0 @X0 0 e@3930 ]
 [v F12358 `(v ~T0 @X0 0 tf ]
-"231 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 231: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
+"257 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 257: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCB4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12358 ]
-"279
-[; ;mcc_generated_files/pin_manager.h: 279: void IOCB4_DefaultInterruptHandler(void);
+"305
+[; ;mcc_generated_files/pin_manager.h: 305: void IOCB4_DefaultInterruptHandler(void);
 [v _IOCB4_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
 "37210 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37210:     struct {
@@ -95,8 +95,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37236
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37236: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS1507 ~T0 @X0 0 e@4082 ]
-"208 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 208: void IOCB4_ISR(void);
+"234 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 234: void IOCB4_ISR(void);
 [v _IOCB4_ISR `(v ~T0 @X0 0 ef ]
 [v F12370 `(v ~T0 @X0 0 tf ]
 [v F12372 `(v ~T0 @X0 0 tf ]
@@ -1538,8 +1538,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 80:     ANCON0 = 0x87;
 [e = _ANCON0 -> -> 135 `i `uc ]
 "81
-[; ;mcc_generated_files/pin_manager.c: 81:     ANCON1 = 0x7D;
-[e = _ANCON1 -> -> 125 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 81:     ANCON1 = 0x79;
+[e = _ANCON1 -> -> 121 `i `uc ]
 "86
 [; ;mcc_generated_files/pin_manager.c: 86:     WPUB = 0x00;
 [e = _WPUB -> -> 0 `i `uc ]

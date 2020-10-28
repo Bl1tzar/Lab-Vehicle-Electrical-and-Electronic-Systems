@@ -20542,10 +20542,10 @@ void TMR0_Initialize(void)
     T0CONbits.T08BIT = 0;
 
 
-    TMR0H = 0x48;
+    TMR0H = 0x0B;
 
 
-    TMR0L = 0xE4;
+    TMR0L = 0xDB;
 
 
 
@@ -20555,7 +20555,7 @@ void TMR0_Initialize(void)
     INTCONbits.TMR0IF = 0;
 
 
-    T0CON = 0x96;
+    T0CON = 0x97;
 }
 
 void TMR0_StartTimer(void)

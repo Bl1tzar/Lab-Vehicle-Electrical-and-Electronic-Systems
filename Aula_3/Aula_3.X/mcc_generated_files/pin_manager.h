@@ -115,6 +115,18 @@
 #define LED5_SetDigitalInput()    do { TRISAbits.TRISA7 = 1; } while(0)
 #define LED5_SetDigitalOutput()   do { TRISAbits.TRISA7 = 0; } while(0)
 
+// get/set RB0 procedures
+#define RB0_SetHigh()            do { LATBbits.LATB0 = 1; } while(0)
+#define RB0_SetLow()             do { LATBbits.LATB0 = 0; } while(0)
+#define RB0_Toggle()             do { LATBbits.LATB0 = ~LATBbits.LATB0; } while(0)
+#define RB0_GetValue()              PORTBbits.RB0
+#define RB0_SetDigitalInput()    do { TRISBbits.TRISB0 = 1; } while(0)
+#define RB0_SetDigitalOutput()   do { TRISBbits.TRISB0 = 0; } while(0)
+#define RB0_SetPullup()             do { WPUBbits.WPUB0 = 1; } while(0)
+#define RB0_ResetPullup()           do { WPUBbits.WPUB0 = 0; } while(0)
+#define RB0_SetAnalogMode()         do { ANCON1bits.ANSEL10 = 1; } while(0)
+#define RB0_SetDigitalMode()        do { ANCON1bits.ANSEL10 = 0; } while(0)
+
 // get/set S1 aliases
 #define S1_TRIS                 TRISBbits.TRISB4
 #define S1_LAT                  LATBbits.LATB4

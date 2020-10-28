@@ -12,7 +12,6 @@
 
 uint16_t codigo_digital;
 float percentagem;
-int pot_comparacao=80;
 char string[100];
 uint16_t ticks;
 uint16_t rpm;
@@ -27,7 +26,10 @@ char steste[100];
 void acende_led(void){
     if (S1_PORT == 0){
         LED3_Toggle();
-        codigo_digital = ADC_GetConversion(POT); //Obter codigo digital do conversor ADC
+        
+        if (percentagem<80){
+            LED4_SetLow();
+        }
     }
 }
 
@@ -88,8 +90,13 @@ void main(void)
     
     while (1)
     {   
+        codigo_digital = ADC_GetConversion(POT); //Obter codigo digital do conversor ADC
         percentagem = codigo_digital*0.0244200244200244;
         rpm=4687500/ticks;
+        
+        if(percentagem >= 80){
+            LED4_SetHigh();
+        }
         
         snprintf(string_rpm,sizeof(string_rpm),"RPM= %d      ",rpm);
         lcd_draw_string (40,10,string_rpm,GREEN,BLACK);

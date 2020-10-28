@@ -29,12 +29,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30519
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30519: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
 [v _LATAbits `VS1160 ~T0 @X0 0 e@3977 ]
+"357 ./lib_ili9341.h
+[; ;./lib_ili9341.h: 357: void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color, uint16_t bg_color);
+[v _lcd_draw_string `(v ~T0 @X0 0 ef5`us`us`*Cuc`us`us ]
 [p mainexit ]
-"73 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
+"74 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 74: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"30 main.c
-[; ;main.c: 30:     SPI_Open(SPI_DEFAULT);
+"44 main.c
+[; ;main.c: 44:     SPI_Open(SPI_DEFAULT);
 [c E12726 0 .. ]
 [n E12726 . SPI_DEFAULT  ]
 "64 ./mcc_generated_files/spi.h
@@ -44,9 +47,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./lib_ili9341.h: 248: void lcd_init (void);
 [v _lcd_init `(v ~T0 @X0 0 ef ]
 [v F12358 `(v ~T0 @X0 0 tf ]
-"231 ./mcc_generated_files/pin_manager.h
-[; ;./mcc_generated_files/pin_manager.h: 231: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
+"257 ./mcc_generated_files/pin_manager.h
+[; ;./mcc_generated_files/pin_manager.h: 257: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCB4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12358 ]
+[v F12761 `(v ~T0 @X0 0 tf ]
+"319 ./mcc_generated_files/ext_int.h
+[; ;./mcc_generated_files/ext_int.h: 319: void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _INT0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12761 ]
 "37210 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37210:     struct {
 [s S1508 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -66,9 +73,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37236
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37236: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS1507 ~T0 @X0 0 e@4082 ]
-"357 ./lib_ili9341.h
-[; ;./lib_ili9341.h: 357: void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color, uint16_t bg_color);
-[v _lcd_draw_string `(v ~T0 @X0 0 ef5`us`us`*Cuc`us`us ]
+"67 main.c
+[; ;main.c: 67:             code_digit=ADC_GetConversion(POT);
+[c E12768 28 29 30 31 0 4 5 6 9 .. ]
+[n E12768 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT LED3 IO_RE0 IO_RE1 S1  ]
+"256 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 256: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12768 ]
+"114 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
+[v _snprintf `(i ~T0 @X0 0 e2v`*uc`ui`*Cuc ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -3235,77 +3248,169 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "11 main.c
-[; ;main.c: 11: _Bool mode = 0;
-[v _mode `a ~T0 @X0 1 e ]
-[i _mode
--> -> 0 `i `a
+[; ;main.c: 11: int BUT_COMUT=0;
+[v _BUT_COMUT `i ~T0 @X0 1 e ]
+[i _BUT_COMUT
+-> 0 `i
 ]
-"16
-[; ;main.c: 16: void IOCB4_InterruptCall(void){
+"12
+[; ;main.c: 12: int code_digit;
+[v _code_digit `i ~T0 @X0 1 e ]
+"13
+[; ;main.c: 13: int POT_VAL;
+[v _POT_VAL `i ~T0 @X0 1 e ]
+"14
+[; ;main.c: 14: char sPOT[100];
+[v _sPOT `uc ~T0 @X0 -> 100 `i e ]
+"19
+[; ;main.c: 19: void IOCB4_InterruptCall(void){
 [v _IOCB4_InterruptCall `(v ~T0 @X0 1 ef ]
 {
 [e :U _IOCB4_InterruptCall ]
 [f ]
-"18
-[; ;main.c: 18:     if(!PORTBbits.RB4){
+"21
+[; ;main.c: 21:     if(!PORTBbits.RB4){
 [e $ ! ! != -> . . _PORTBbits 0 4 `i -> 0 `i 1545  ]
 {
-"19
-[; ;main.c: 19:         do { LATAbits.LATA5 = 1; } while(0);
+"22
+[; ;main.c: 22:         do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
 [e :U 1548 ]
 {
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 6 -> ~ -> . . _LATAbits 0 6 `i `uc ]
 }
 [e :U 1547 ]
-"20
-[; ;main.c: 20:     }
+"23
+[; ;main.c: 23:     }
 }
 [e :U 1545 ]
-"21
-[; ;main.c: 21: }
+"24
+[; ;main.c: 24: }
 [e :UE 1544 ]
 }
-[v $root$_main `(v ~T0 @X0 0 e ]
 "26
-[; ;main.c: 26: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
+[; ;main.c: 26: void S3_toggle (void){
+[v _S3_toggle `(v ~T0 @X0 1 ef ]
+{
+[e :U _S3_toggle ]
+[f ]
 "27
-[; ;main.c: 27: {
+[; ;main.c: 27:     if(!BUT_COMUT){
+[e $ ! ! != _BUT_COMUT -> 0 `i 1550  ]
+{
+"28
+[; ;main.c: 28:         BUT_COMUT=1;
+[e = _BUT_COMUT -> 1 `i ]
+"29
+[; ;main.c: 29:     }
+}
+[e $U 1551  ]
+"30
+[; ;main.c: 30:     else{
+[e :U 1550 ]
+{
+"31
+[; ;main.c: 31:         BUT_COMUT=0;
+[e = _BUT_COMUT -> 0 `i ]
+"32
+[; ;main.c: 32:         do { LATAbits.LATA5 = 0; } while(0);
+[e :U 1554 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 1553 ]
+"33
+[; ;main.c: 33:         lcd_draw_string(100,100,"---------",0xFFFF,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us :s 1C -> -> 65535 `ui `us -> -> 0 `i `us ]
+"34
+[; ;main.c: 34:     }
+}
+[e :U 1551 ]
+"35
+[; ;main.c: 35: }
+[e :UE 1549 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"40
+[; ;main.c: 40: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"41
+[; ;main.c: 41: {
 {
 [e :U _main ]
 [f ]
-"29
-[; ;main.c: 29:     SYSTEM_Initialize();
+"43
+[; ;main.c: 43:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"30
-[; ;main.c: 30:     SPI_Open(SPI_DEFAULT);
+"44
+[; ;main.c: 44:     SPI_Open(SPI_DEFAULT);
 [e ( _SPI_Open (1 . `E12726 0 ]
-"31
-[; ;main.c: 31:     lcd_init();
+"45
+[; ;main.c: 45:     lcd_init();
 [e ( _lcd_init ..  ]
-"34
-[; ;main.c: 34:     IOCB4_SetInterruptHandler(IOCB4_InterruptCall);
+"47
+[; ;main.c: 47:     IOCB4_SetInterruptHandler(IOCB4_InterruptCall);
 [e ( _IOCB4_SetInterruptHandler (1 &U _IOCB4_InterruptCall ]
-"37
-[; ;main.c: 37:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 "48
-[; ;main.c: 48:     lcd_draw_string(120,200,"HELLO WORLD",0xFFFF,0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 120 `i `us -> -> 200 `i `us :s 1C -> -> 65535 `ui `us -> -> 0 `i `us ]
+[; ;main.c: 48:     INT0_SetInterruptHandler(S3_toggle);
+[e ( _INT0_SetInterruptHandler (1 &U _S3_toggle ]
 "50
-[; ;main.c: 50:     while (1)
-[e :U 1551 ]
-"51
-[; ;main.c: 51:     {
+[; ;main.c: 50:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"61
+[; ;main.c: 61:     lcd_draw_string(100,120,"HELLO WORLD",0xFFFF,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 120 `i `us :s 2C -> -> 65535 `ui `us -> -> 0 `i `us ]
+"63
+[; ;main.c: 63:     while (1)
+[e :U 1557 ]
+"64
+[; ;main.c: 64:     {
 {
-"54
-[; ;main.c: 54:     }
+"66
+[; ;main.c: 66:         if(BUT_COMUT){
+[e $ ! != _BUT_COMUT -> 0 `i 1559  ]
+{
+"67
+[; ;main.c: 67:             code_digit=ADC_GetConversion(POT);
+[e = _code_digit -> ( _ADC_GetConversion (1 . `E12768 4 `i ]
+"68
+[; ;main.c: 68:             POT_VAL=code_digit*0.0244200244200244;
+[e = _POT_VAL -> * -> _code_digit `d .0.0244200244200244 `i ]
+"69
+[; ;main.c: 69:             snprintf(sPOT,sizeof(sPOT),"POT %d%%",POT_VAL);
+[e ( _snprintf (2 , (. , , &U _sPOT -> # _sPOT `ui :s 3C _POT_VAL ]
+"70
+[; ;main.c: 70:             lcd_draw_string(100,100,sPOT,0xFFFF,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us -> &U _sPOT `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
+"71
+[; ;main.c: 71:             if (POT_VAL>=95){
+[e $ ! >= _POT_VAL -> 95 `i 1560  ]
+{
+"72
+[; ;main.c: 72:                 do { LATAbits.LATA5 = 1; } while(0);
+[e :U 1563 ]
+{
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
 }
-[e :U 1550 ]
-[e $U 1551  ]
-[e :U 1552 ]
-"55
-[; ;main.c: 55: }
-[e :UE 1549 ]
+[e :U 1562 ]
+"73
+[; ;main.c: 73:             }
 }
-[a 1C 72 69 76 76 79 32 87 79 82 76 68 0 ]
+[e :U 1560 ]
+"74
+[; ;main.c: 74:         }
+}
+[e :U 1559 ]
+"75
+[; ;main.c: 75:     }
+}
+[e :U 1556 ]
+[e $U 1557  ]
+[e :U 1558 ]
+"76
+[; ;main.c: 76: }
+[e :UE 1555 ]
+}
+[p f _snprintf 9437312 ]
+[a 2C 72 69 76 76 79 32 87 79 82 76 68 0 ]
+[a 1C 45 45 45 45 45 45 45 45 45 0 ]
+[a 3C 80 79 84 32 37 100 37 37 0 ]

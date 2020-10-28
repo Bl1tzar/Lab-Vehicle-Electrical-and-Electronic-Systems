@@ -21031,7 +21031,6 @@ void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color,
 
 uint16_t codigo_digital;
 float percentagem;
-int pot_comparacao=80;
 char string[100];
 uint16_t ticks;
 uint16_t rpm;
@@ -21046,7 +21045,10 @@ char steste[100];
 void acende_led(void){
     if (PORTBbits.RB4 == 0){
         do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0);
-        codigo_digital = ADC_GetConversion(POT);
+
+        if (percentagem<80){
+            do { LATAbits.LATA6 = 0; } while(0);
+        }
     }
 }
 
@@ -21078,8 +21080,8 @@ void main(void)
 
 
 
-
-
+    IOCB4_SetInterruptHandler(acende_led);
+    INT0_SetInterruptHandler(pulso_encoder);
     TMR2_SetInterruptHandler(led_inter);
     SPI_Open(SPI_DEFAULT);
 
@@ -21094,11 +21096,16 @@ void main(void)
 
 
     (INTCONbits.GIE = 1);
-# 89 "main.c"
+# 91 "main.c"
     while (1)
     {
+        codigo_digital = ADC_GetConversion(POT);
         percentagem = codigo_digital*0.0244200244200244;
         rpm=4687500/ticks;
+
+        if(percentagem >= 80){
+            do { LATAbits.LATA6 = 1; } while(0);
+        }
 
         snprintf(string_rpm,sizeof(string_rpm),"RPM= %d      ",rpm);
         lcd_draw_string (40,10,string_rpm,0x0400,0x0000);

@@ -1449,11 +1449,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/tmr0.c: 71:     T0CONbits.T08BIT = 0;
 [e = . . _T0CONbits 0 4 -> -> 0 `i `uc ]
 "74
-[; ;mcc_generated_files/tmr0.c: 74:     TMR0H = 0x48;
-[e = _TMR0H -> -> 72 `i `uc ]
+[; ;mcc_generated_files/tmr0.c: 74:     TMR0H = 0x0B;
+[e = _TMR0H -> -> 11 `i `uc ]
 "77
-[; ;mcc_generated_files/tmr0.c: 77:     TMR0L = 0xE4;
-[e = _TMR0L -> -> 228 `i `uc ]
+[; ;mcc_generated_files/tmr0.c: 77:     TMR0L = 0xDB;
+[e = _TMR0L -> -> 219 `i `uc ]
 "81
 [; ;mcc_generated_files/tmr0.c: 81:     timer0ReloadVal = (uint16_t)((TMR0H << 8) | TMR0L);
 [e = _timer0ReloadVal -> | << -> _TMR0H `i -> 8 `i -> _TMR0L `i `us ]
@@ -1461,8 +1461,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/tmr0.c: 84:     INTCONbits.TMR0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
 "87
-[; ;mcc_generated_files/tmr0.c: 87:     T0CON = 0x96;
-[e = _T0CON -> -> 150 `i `uc ]
+[; ;mcc_generated_files/tmr0.c: 87:     T0CON = 0x97;
+[e = _T0CON -> -> 151 `i `uc ]
 "88
 [; ;mcc_generated_files/tmr0.c: 88: }
 [e :UE 1542 ]

@@ -20428,17 +20428,17 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 183 "./mcc_generated_files/pin_manager.h"
+# 209 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 195 "./mcc_generated_files/pin_manager.h"
+# 221 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 208 "./mcc_generated_files/pin_manager.h"
+# 234 "./mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 231 "./mcc_generated_files/pin_manager.h"
+# 257 "./mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 255 "./mcc_generated_files/pin_manager.h"
+# 281 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 279 "./mcc_generated_files/pin_manager.h"
+# 305 "./mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -20750,6 +20750,21 @@ uint8_t TMR1_CheckGateValueStatus(void);
 _Bool TMR1_HasOverflowOccured(void);
 # 57 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/ext_int.h" 1
+# 250 "./mcc_generated_files/ext_int.h"
+void EXT_INT_Initialize(void);
+# 272 "./mcc_generated_files/ext_int.h"
+void INT0_ISR(void);
+# 296 "./mcc_generated_files/ext_int.h"
+void INT0_CallBack(void);
+# 319 "./mcc_generated_files/ext_int.h"
+void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 343 "./mcc_generated_files/ext_int.h"
+extern void (*INT0_InterruptHandler)(void);
+# 367 "./mcc_generated_files/ext_int.h"
+void INT0_DefaultInterruptHandler(void);
+# 58 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/adc.h" 1
 # 72 "./mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
@@ -20760,27 +20775,28 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
+    POT = 0x0,
     LED3 = 0x4,
     IO_RE0 = 0x5,
     IO_RE1 = 0x6,
     S1 = 0x9
 } adc_channel_t;
-# 131 "./mcc_generated_files/adc.h"
+# 132 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 160 "./mcc_generated_files/adc.h"
+# 161 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 192 "./mcc_generated_files/adc.h"
+# 193 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 225 "./mcc_generated_files/adc.h"
+# 226 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 255 "./mcc_generated_files/adc.h"
+# 256 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 283 "./mcc_generated_files/adc.h"
+# 284 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
-# 58 "./mcc_generated_files/mcc.h" 2
-# 73 "./mcc_generated_files/mcc.h"
+# 59 "./mcc_generated_files/mcc.h" 2
+# 74 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 86 "./mcc_generated_files/mcc.h"
+# 87 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 8 "main.c" 2
 
@@ -20961,7 +20977,10 @@ void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color,
 # 9 "main.c" 2
 
 
-_Bool mode = 0;
+int BUT_COMUT=0;
+int code_digit;
+int POT_VAL;
+char sPOT[100];
 
 
 
@@ -20969,7 +20988,18 @@ _Bool mode = 0;
 void IOCB4_InterruptCall(void){
 
     if(!PORTBbits.RB4){
-        do { LATAbits.LATA5 = 1; } while(0);
+        do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
+    }
+}
+
+void S3_toggle (void){
+    if(!BUT_COMUT){
+        BUT_COMUT=1;
+    }
+    else{
+        BUT_COMUT=0;
+        do { LATAbits.LATA5 = 0; } while(0);
+        lcd_draw_string(100,100,"---------",0xFFFF,0x0000);
     }
 }
 
@@ -20983,17 +21013,24 @@ void main(void)
     SPI_Open(SPI_DEFAULT);
     lcd_init();
 
-
     IOCB4_SetInterruptHandler(IOCB4_InterruptCall);
-
+    INT0_SetInterruptHandler(S3_toggle);
 
     (INTCONbits.GIE = 1);
-# 48 "main.c"
-    lcd_draw_string(120,200,"HELLO WORLD",0xFFFF,0x0000);
+# 61 "main.c"
+    lcd_draw_string(100,120,"HELLO WORLD",0xFFFF,0x0000);
 
     while (1)
     {
 
-
+        if(BUT_COMUT){
+            code_digit=ADC_GetConversion(POT);
+            POT_VAL=code_digit*0.0244200244200244;
+            snprintf(sPOT,sizeof(sPOT),"POT %d%%",POT_VAL);
+            lcd_draw_string(100,100,sPOT,0xFFFF,0x0000);
+            if (POT_VAL>=95){
+                do { LATAbits.LATA5 = 1; } while(0);
+            }
+        }
     }
 }

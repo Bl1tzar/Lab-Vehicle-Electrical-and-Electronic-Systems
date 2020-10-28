@@ -29,13 +29,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30519
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30519: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
 [v _LATAbits `VS1160 ~T0 @X0 0 e@3977 ]
-"30 main.c
-[; ;main.c: 30:         codigo_digital = ADC_GetConversion(POT);
-[c E12793 28 29 30 31 0 4 5 6 9 .. ]
-[n E12793 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT LED3 IO_RE0 IO_RE1 S1  ]
-"256 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 256: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12793 ]
 "161 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 161: void TMR0_StopTimer(void);
 [v _TMR0_StopTimer `(v ~T0 @X0 0 ef ]
@@ -52,12 +45,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "76 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 76: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+[v F12358 `(v ~T0 @X0 0 tf ]
+"246 ./mcc_generated_files/pin_manager.h
+[; ;./mcc_generated_files/pin_manager.h: 246: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _IOCB4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12358 ]
+[v F12751 `(v ~T0 @X0 0 tf ]
+"319 ./mcc_generated_files/ext_int.h
+[; ;./mcc_generated_files/ext_int.h: 319: void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _INT0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12751 ]
 [v F12778 `(v ~T0 @X0 0 tf ]
 "344 ./mcc_generated_files/tmr2.h
 [; ;./mcc_generated_files/tmr2.h: 344:  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _TMR2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12778 ]
-"65 main.c
-[; ;main.c: 65:     SPI_Open(SPI_DEFAULT);
+"67 main.c
+[; ;main.c: 67:     SPI_Open(SPI_DEFAULT);
 [c E12726 0 .. ]
 [n E12726 . SPI_DEFAULT  ]
 "64 ./mcc_generated_files/spi.h
@@ -91,6 +92,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37236
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37236: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS1507 ~T0 @X0 0 e@4082 ]
+"93 main.c
+[; ;main.c: 93:         codigo_digital = ADC_GetConversion(POT);
+[c E12793 28 29 30 31 0 4 5 6 9 .. ]
+[n E12793 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT LED3 IO_RE0 IO_RE1 S1  ]
+"256 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 256: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12793 ]
 "114 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
 [v _snprintf `(i ~T0 @X0 0 e2v`*uc`ui`*Cuc ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
@@ -3265,164 +3273,194 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 14: float percentagem;
 [v _percentagem `f ~T0 @X0 1 e ]
 "15
-[; ;main.c: 15: int pot_comparacao=80;
-[v _pot_comparacao `i ~T0 @X0 1 e ]
-[i _pot_comparacao
--> 80 `i
-]
-"16
-[; ;main.c: 16: char string[100];
+[; ;main.c: 15: char string[100];
 [v _string `uc ~T0 @X0 -> 100 `i e ]
-"17
-[; ;main.c: 17: uint16_t ticks;
+"16
+[; ;main.c: 16: uint16_t ticks;
 [v _ticks `us ~T0 @X0 1 e ]
-"18
-[; ;main.c: 18: uint16_t rpm;
+"17
+[; ;main.c: 17: uint16_t rpm;
 [v _rpm `us ~T0 @X0 1 e ]
-"19
-[; ;main.c: 19: char string_rpm[100];
+"18
+[; ;main.c: 18: char string_rpm[100];
 [v _string_rpm `uc ~T0 @X0 -> 100 `i e ]
-"20
-[; ;main.c: 20: uint16_t teste;
+"19
+[; ;main.c: 19: uint16_t teste;
 [v _teste `us ~T0 @X0 1 e ]
-"21
-[; ;main.c: 21: char steste[100];
+"20
+[; ;main.c: 20: char steste[100];
 [v _steste `uc ~T0 @X0 -> 100 `i e ]
-"27
-[; ;main.c: 27: void acende_led(void){
+"26
+[; ;main.c: 26: void acende_led(void){
 [v _acende_led `(v ~T0 @X0 1 ef ]
 {
 [e :U _acende_led ]
 [f ]
-"28
-[; ;main.c: 28:     if (PORTBbits.RB4 == 0){
+"27
+[; ;main.c: 27:     if (PORTBbits.RB4 == 0){
 [e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 1545  ]
 {
-"29
-[; ;main.c: 29:         do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0);
+"28
+[; ;main.c: 28:         do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0);
 [e :U 1548 ]
 {
 [e = . . _LATAbits 0 5 -> ~ -> . . _LATAbits 0 5 `i `uc ]
 }
 [e :U 1547 ]
 "30
-[; ;main.c: 30:         codigo_digital = ADC_GetConversion(POT);
-[e = _codigo_digital ( _ADC_GetConversion (1 . `E12793 4 ]
+[; ;main.c: 30:         if (percentagem<80){
+[e $ ! < _percentagem -> -> 80 `i `f 1549  ]
+{
 "31
-[; ;main.c: 31:     }
+[; ;main.c: 31:             do { LATAbits.LATA6 = 0; } while(0);
+[e :U 1552 ]
+{
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 1551 ]
+"32
+[; ;main.c: 32:         }
+}
+[e :U 1549 ]
+"33
+[; ;main.c: 33:     }
 }
 [e :U 1545 ]
-"32
-[; ;main.c: 32: }
+"34
+[; ;main.c: 34: }
 [e :UE 1544 ]
 }
-"34
-[; ;main.c: 34: void pulso_encoder(void){
+"36
+[; ;main.c: 36: void pulso_encoder(void){
 [v _pulso_encoder `(v ~T0 @X0 1 ef ]
 {
 [e :U _pulso_encoder ]
 [f ]
-"35
-[; ;main.c: 35:     TMR0_StopTimer();
-[e ( _TMR0_StopTimer ..  ]
-"36
-[; ;main.c: 36:     ticks=TMR0_ReadTimer();
-[e = _ticks ( _TMR0_ReadTimer ..  ]
 "37
-[; ;main.c: 37:     TMR0_WriteTimer(0x00);
-[e ( _TMR0_WriteTimer (1 -> -> 0 `i `us ]
+[; ;main.c: 37:     TMR0_StopTimer();
+[e ( _TMR0_StopTimer ..  ]
 "38
-[; ;main.c: 38:     TMR0_StartTimer();
-[e ( _TMR0_StartTimer ..  ]
+[; ;main.c: 38:     ticks=TMR0_ReadTimer();
+[e = _ticks ( _TMR0_ReadTimer ..  ]
 "39
-[; ;main.c: 39: }
-[e :UE 1549 ]
-}
+[; ;main.c: 39:     TMR0_WriteTimer(0x00);
+[e ( _TMR0_WriteTimer (1 -> -> 0 `i `us ]
+"40
+[; ;main.c: 40:     TMR0_StartTimer();
+[e ( _TMR0_StartTimer ..  ]
 "41
-[; ;main.c: 41: void led_inter(void){
+[; ;main.c: 41: }
+[e :UE 1553 ]
+}
+"43
+[; ;main.c: 43: void led_inter(void){
 [v _led_inter `(v ~T0 @X0 1 ef ]
 {
 [e :U _led_inter ]
 [f ]
-"48
-[; ;main.c: 48:     teste = 42;
+"50
+[; ;main.c: 50:     teste = 42;
 [e = _teste -> -> 42 `i `us ]
-"49
-[; ;main.c: 49: }
-[e :UE 1550 ]
+"51
+[; ;main.c: 51: }
+[e :UE 1554 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"53
-[; ;main.c: 53: void main(void)
+"55
+[; ;main.c: 55: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"54
-[; ;main.c: 54: {
+"56
+[; ;main.c: 56: {
 {
 [e :U _main ]
 [f ]
-"56
-[; ;main.c: 56:     SYSTEM_Initialize();
+"58
+[; ;main.c: 58:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
 "64
-[; ;main.c: 64:     TMR2_SetInterruptHandler(led_inter);
-[e ( _TMR2_SetInterruptHandler (1 &U _led_inter ]
+[; ;main.c: 64:     IOCB4_SetInterruptHandler(acende_led);
+[e ( _IOCB4_SetInterruptHandler (1 &U _acende_led ]
 "65
-[; ;main.c: 65:     SPI_Open(SPI_DEFAULT);
-[e ( _SPI_Open (1 . `E12726 0 ]
+[; ;main.c: 65:     INT0_SetInterruptHandler(pulso_encoder);
+[e ( _INT0_SetInterruptHandler (1 &U _pulso_encoder ]
+"66
+[; ;main.c: 66:     TMR2_SetInterruptHandler(led_inter);
+[e ( _TMR2_SetInterruptHandler (1 &U _led_inter ]
 "67
-[; ;main.c: 67:     lcd_init ();
-[e ( _lcd_init ..  ]
+[; ;main.c: 67:     SPI_Open(SPI_DEFAULT);
+[e ( _SPI_Open (1 . `E12726 0 ]
 "69
-[; ;main.c: 69:     lcd_draw_line(40,150,280,150,0xFFE0);
-[e ( _lcd_draw_line (4 , , , , -> -> 40 `i `us -> -> 150 `i `us -> -> 280 `i `us -> -> 150 `i `us -> -> 65504 `ui `us ]
+[; ;main.c: 69:     lcd_init ();
+[e ( _lcd_init ..  ]
 "71
-[; ;main.c: 71:     lcd_draw_string (45,155,"XC8 - Biblioteca - LCD - ILI9341",0x001F,0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 45 `i `us -> -> 155 `i `us :s 1C -> -> 31 `i `us -> -> 0 `i `us ]
+[; ;main.c: 71:     lcd_draw_line(40,150,280,150,0xFFE0);
+[e ( _lcd_draw_line (4 , , , , -> -> 40 `i `us -> -> 150 `i `us -> -> 280 `i `us -> -> 150 `i `us -> -> 65504 `ui `us ]
 "73
-[; ;main.c: 73:     lcd_draw_string (120,120,"PIC - SEEV",0x0400,0x0000);
+[; ;main.c: 73:     lcd_draw_string (45,155,"XC8 - Biblioteca - LCD - ILI9341",0x001F,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 45 `i `us -> -> 155 `i `us :s 1C -> -> 31 `i `us -> -> 0 `i `us ]
+"75
+[; ;main.c: 75:     lcd_draw_string (120,120,"PIC - SEEV",0x0400,0x0000);
 [e ( _lcd_draw_string (4 , , , , -> -> 120 `i `us -> -> 120 `i `us :s 2C -> -> 1024 `i `us -> -> 0 `i `us ]
-"77
-[; ;main.c: 77:     (INTCONbits.GIE = 1);
+"79
+[; ;main.c: 79:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"89
-[; ;main.c: 89:     while (1)
-[e :U 1553 ]
-"90
-[; ;main.c: 90:     {
-{
 "91
-[; ;main.c: 91:         percentagem = codigo_digital*0.0244200244200244;
-[e = _percentagem -> * -> -> _codigo_digital `ui `d .0.0244200244200244 `f ]
+[; ;main.c: 91:     while (1)
+[e :U 1557 ]
 "92
-[; ;main.c: 92:         rpm=4687500/ticks;
-[e = _rpm -> / -> 4687500 `l -> _ticks `l `us ]
+[; ;main.c: 92:     {
+{
+"93
+[; ;main.c: 93:         codigo_digital = ADC_GetConversion(POT);
+[e = _codigo_digital ( _ADC_GetConversion (1 . `E12793 4 ]
 "94
-[; ;main.c: 94:         snprintf(string_rpm,sizeof(string_rpm),"RPM= %d      ",rpm);
-[e ( _snprintf (2 , (. , , &U _string_rpm -> # _string_rpm `ui :s 3C -> _rpm `ui ]
+[; ;main.c: 94:         percentagem = codigo_digital*0.0244200244200244;
+[e = _percentagem -> * -> -> _codigo_digital `ui `d .0.0244200244200244 `f ]
 "95
-[; ;main.c: 95:         lcd_draw_string (40,10,string_rpm,0x0400,0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 40 `i `us -> -> 10 `i `us -> &U _string_rpm `*Cuc -> -> 1024 `i `us -> -> 0 `i `us ]
+[; ;main.c: 95:         rpm=4687500/ticks;
+[e = _rpm -> / -> 4687500 `l -> _ticks `l `us ]
 "97
-[; ;main.c: 97:         snprintf(string,sizeof(string),"percentagem = %.f  ",percentagem);
-[e ( _snprintf (2 , (. , , &U _string -> # _string `ui :s 4C -> _percentagem `d ]
+[; ;main.c: 97:         if(percentagem >= 80){
+[e $ ! >= _percentagem -> -> 80 `i `f 1559  ]
+{
 "98
-[; ;main.c: 98:         lcd_draw_string (150,10,string,0x0400,0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 150 `i `us -> -> 10 `i `us -> &U _string `*Cuc -> -> 1024 `i `us -> -> 0 `i `us ]
-"100
-[; ;main.c: 100:         snprintf(steste,sizeof(steste),"TESTE %d",teste);
-[e ( _snprintf (2 , (. , , &U _steste -> # _steste `ui :s 5C -> _teste `ui ]
-"101
-[; ;main.c: 101:         lcd_draw_string (40,50,steste,0x0400,0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 40 `i `us -> -> 50 `i `us -> &U _steste `*Cuc -> -> 1024 `i `us -> -> 0 `i `us ]
-"109
-[; ;main.c: 109:     }
+[; ;main.c: 98:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 1562 ]
+{
+[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 1552 ]
-[e $U 1553  ]
-[e :U 1554 ]
-"110
-[; ;main.c: 110: }
-[e :UE 1551 ]
+[e :U 1561 ]
+"99
+[; ;main.c: 99:         }
+}
+[e :U 1559 ]
+"101
+[; ;main.c: 101:         snprintf(string_rpm,sizeof(string_rpm),"RPM= %d      ",rpm);
+[e ( _snprintf (2 , (. , , &U _string_rpm -> # _string_rpm `ui :s 3C -> _rpm `ui ]
+"102
+[; ;main.c: 102:         lcd_draw_string (40,10,string_rpm,0x0400,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 40 `i `us -> -> 10 `i `us -> &U _string_rpm `*Cuc -> -> 1024 `i `us -> -> 0 `i `us ]
+"104
+[; ;main.c: 104:         snprintf(string,sizeof(string),"percentagem = %.f  ",percentagem);
+[e ( _snprintf (2 , (. , , &U _string -> # _string `ui :s 4C -> _percentagem `d ]
+"105
+[; ;main.c: 105:         lcd_draw_string (150,10,string,0x0400,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 150 `i `us -> -> 10 `i `us -> &U _string `*Cuc -> -> 1024 `i `us -> -> 0 `i `us ]
+"107
+[; ;main.c: 107:         snprintf(steste,sizeof(steste),"TESTE %d",teste);
+[e ( _snprintf (2 , (. , , &U _steste -> # _steste `ui :s 5C -> _teste `ui ]
+"108
+[; ;main.c: 108:         lcd_draw_string (40,50,steste,0x0400,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 40 `i `us -> -> 50 `i `us -> &U _steste `*Cuc -> -> 1024 `i `us -> -> 0 `i `us ]
+"116
+[; ;main.c: 116:     }
+}
+[e :U 1556 ]
+[e $U 1557  ]
+[e :U 1558 ]
+"117
+[; ;main.c: 117: }
+[e :UE 1555 ]
 }
 [p f _snprintf 8396928 ]
 [a 5C 84 69 83 84 69 32 37 100 0 ]

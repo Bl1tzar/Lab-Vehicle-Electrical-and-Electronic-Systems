@@ -1,5 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F12404 `(v ~T0 @X0 0 tf ]
+[v F12401 `(v ~T0 @X0 0 tf ]
 "34938 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 34938: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
@@ -17,8 +17,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 "83 mcc_generated_files/adc.c
 [; ;mcc_generated_files/adc.c: 83: void ADC_StartConversion(adc_channel_t channel)
-[c E12385 28 29 30 31 4 5 6 9 .. ]
-[n E12385 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap LED3 IO_RE0 IO_RE1 S1  ]
+[c E12385 28 29 30 31 0 .. ]
+[n E12385 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT  ]
 "34944 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 34944:     struct {
 [s S1362 :1 `uc 1 :1 `uc 1 ]
@@ -1456,7 +1456,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 0FFFh ;# ">
 "56 mcc_generated_files/adc.c
 [; ;mcc_generated_files/adc.c: 56: void (*ADC_InterruptHandler)(void);
-[v _ADC_InterruptHandler `*F12404 ~T0 @X0 1 e ]
+[v _ADC_InterruptHandler `*F12401 ~T0 @X0 1 e ]
 "62
 [; ;mcc_generated_files/adc.c: 62: void ADC_Initialize(void)
 [v _ADC_Initialize `(v ~T0 @X0 1 ef ]

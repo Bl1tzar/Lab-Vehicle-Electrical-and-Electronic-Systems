@@ -20514,22 +20514,19 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
-    LED3 = 0x4,
-    IO_RE0 = 0x5,
-    IO_RE1 = 0x6,
-    S1 = 0x9
+    POT = 0x0
 } adc_channel_t;
-# 131 "mcc_generated_files/adc.h"
+# 128 "mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 160 "mcc_generated_files/adc.h"
+# 157 "mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 192 "mcc_generated_files/adc.h"
+# 189 "mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 225 "mcc_generated_files/adc.h"
+# 222 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 255 "mcc_generated_files/adc.h"
+# 252 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 283 "mcc_generated_files/adc.h"
+# 280 "mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 52 "mcc_generated_files/adc.c" 2
 

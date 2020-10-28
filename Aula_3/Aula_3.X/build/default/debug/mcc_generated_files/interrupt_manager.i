@@ -20427,17 +20427,17 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 183 "mcc_generated_files/pin_manager.h"
+# 209 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 195 "mcc_generated_files/pin_manager.h"
+# 221 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 208 "mcc_generated_files/pin_manager.h"
+# 234 "mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 231 "mcc_generated_files/pin_manager.h"
+# 257 "mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 255 "mcc_generated_files/pin_manager.h"
+# 281 "mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 279 "mcc_generated_files/pin_manager.h"
+# 305 "mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -20745,6 +20745,21 @@ uint8_t TMR1_CheckGateValueStatus(void);
 _Bool TMR1_HasOverflowOccured(void);
 # 57 "mcc_generated_files/mcc.h" 2
 
+# 1 "mcc_generated_files/ext_int.h" 1
+# 250 "mcc_generated_files/ext_int.h"
+void EXT_INT_Initialize(void);
+# 272 "mcc_generated_files/ext_int.h"
+void INT0_ISR(void);
+# 296 "mcc_generated_files/ext_int.h"
+void INT0_CallBack(void);
+# 319 "mcc_generated_files/ext_int.h"
+void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 343 "mcc_generated_files/ext_int.h"
+extern void (*INT0_InterruptHandler)(void);
+# 367 "mcc_generated_files/ext_int.h"
+void INT0_DefaultInterruptHandler(void);
+# 58 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/adc.h" 1
 # 72 "mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
@@ -20755,27 +20770,24 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
-    LED3 = 0x4,
-    IO_RE0 = 0x5,
-    IO_RE1 = 0x6,
-    S1 = 0x9
+    POT = 0x0
 } adc_channel_t;
-# 131 "mcc_generated_files/adc.h"
+# 128 "mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 160 "mcc_generated_files/adc.h"
+# 157 "mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 192 "mcc_generated_files/adc.h"
+# 189 "mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 225 "mcc_generated_files/adc.h"
+# 222 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 255 "mcc_generated_files/adc.h"
+# 252 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 283 "mcc_generated_files/adc.h"
+# 280 "mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
-# 58 "mcc_generated_files/mcc.h" 2
-# 73 "mcc_generated_files/mcc.h"
+# 59 "mcc_generated_files/mcc.h" 2
+# 74 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 86 "mcc_generated_files/mcc.h"
+# 87 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 50 "mcc_generated_files/interrupt_manager.c" 2
 
@@ -20789,7 +20801,11 @@ void INTERRUPT_Initialize (void)
 void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
 {
 
-    if(INTCONbits.RBIE == 1 && INTCONbits.RBIF == 1)
+    if(INTCONbits.INT0IE == 1 && INTCONbits.INT0IF == 1)
+    {
+        INT0_ISR();
+    }
+    else if(INTCONbits.RBIE == 1 && INTCONbits.RBIF == 1)
     {
         PIN_MANAGER_IOC();
     }

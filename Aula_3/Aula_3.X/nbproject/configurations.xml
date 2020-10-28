@@ -14,6 +14,7 @@
         <itemPath>mcc_generated_files/spi.h</itemPath>
         <itemPath>mcc_generated_files/adc.h</itemPath>
         <itemPath>mcc_generated_files/tmr1.h</itemPath>
+        <itemPath>mcc_generated_files/ext_int.h</itemPath>
       </logicalFolder>
       <itemPath>lib_ili9341.h</itemPath>
     </logicalFolder>
@@ -34,6 +35,7 @@
         <itemPath>mcc_generated_files/spi.c</itemPath>
         <itemPath>mcc_generated_files/adc.c</itemPath>
         <itemPath>mcc_generated_files/tmr1.c</itemPath>
+        <itemPath>mcc_generated_files/ext_int.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>lib_ili9341.c</itemPath>
