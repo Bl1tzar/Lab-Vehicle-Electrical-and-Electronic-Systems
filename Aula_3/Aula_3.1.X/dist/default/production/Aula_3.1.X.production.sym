@@ -452,9 +452,9 @@ config 300000 30000D CONFIG 300000 0
 idloc 200000 200007 IDLOC 200000 0
 cstackCOMRAM 1 3D COMRAM 1 1
 %locals
-dist/default/production\Aula_3.X.production.o
+dist/default/production\Aula_3.1.X.production.o
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
-C:\Users\Blitzar\AppData\Local\Temp\sc5s.s
+C:\Users\Blitzar\AppData\Local\Temp\s8to.s
 9550 A2E 0 CODE 0
 9552 A2E 0 CODE 0
 9555 A2E 0 CODE 0
@@ -736,7 +736,7 @@ mcc_generated_files/spi.c
 80 6C4 0 CODE 0
 81 6F8 0 CODE 0
 85 6FA 0 CODE 0
-C:\Users\Blitzar\AppData\Local\Temp\sc5s.s
+C:\Users\Blitzar\AppData\Local\Temp\s8to.s
 13290 8 0 CODE 0
 mcc_generated_files/interrupt_manager.c
 58 8 0 CODE 0
