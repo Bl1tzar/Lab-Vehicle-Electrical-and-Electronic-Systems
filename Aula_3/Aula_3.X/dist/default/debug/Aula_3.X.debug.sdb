@@ -1,0 +1,727 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K80 ]
+[d frameptr 4065 ]
+"72 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/spi.c
+[e E353 . `uc
+SPI_DEFAULT 0
+]
+"83 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/adc.c
+[e E12385 . `uc
+channel_CTMU 28
+channel_Temp_diode 29
+channel_Vdd_core 30
+channel_1_024V_bandgap 31
+LED3 4
+IO_RE0 5
+IO_RE1 6
+S1 9
+]
+"30 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\main.c
+[e E12726 . `uc
+SPI_DEFAULT 0
+]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"16 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\lib_ili9341.c
+[v _msDelay msDelay `(v  1 e 1 0 ]
+"34
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"134
+[v _lcd_send lcd_send `(v  1 e 1 0 ]
+"144
+[v _lcd_set_cursor lcd_set_cursor `(uc  1 e 1 0 ]
+"155
+[v _lcd_set_cursor_x lcd_set_cursor_x `(uc  1 e 1 0 ]
+"170
+[v _lcd_set_cursor_y lcd_set_cursor_y `(uc  1 e 1 0 ]
+"185
+[v _lcd_draw_pixel lcd_draw_pixel `(uc  1 e 1 0 ]
+"193
+[v _lcd_fill lcd_fill `(v  1 e 1 0 ]
+"212
+[v _lcd_draw_line lcd_draw_line `(v  1 e 1 0 ]
+"255
+[v _lcd_draw_pixel_at lcd_draw_pixel_at `(v  1 e 1 0 ]
+"355
+[v _lcd_draw_char lcd_draw_char `(v  1 e 1 0 ]
+"380
+[v _lcd_draw_string lcd_draw_string `(v  1 e 1 0 ]
+"16 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\main.c
+[v _IOCB4_InterruptCall IOCB4_InterruptCall `(v  1 e 1 0 ]
+"26
+[v _main main `(v  1 e 1 0 ]
+"62 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"52 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"57 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"107
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"121
+[v _IOCB4_ISR IOCB4_ISR `(v  1 e 1 0 ]
+"135
+[v _IOCB4_SetInterruptHandler IOCB4_SetInterruptHandler `(v  1 e 1 0 ]
+"142
+[v _IOCB4_DefaultInterruptHandler IOCB4_DefaultInterruptHandler `(v  1 e 1 0 ]
+"62 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/spi.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+"72
+[v _SPI_Open SPI_Open `(a  1 e 1 0 ]
+"92
+[v _SPI_ExchangeByte SPI_ExchangeByte `(uc  1 e 1 0 ]
+"63 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"113
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"139 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X/lib_ili9341.h
+[v _font font `C[1766]us  1 e 3532 0 ]
+[s S260 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IOCB4 1 0 :1:4 
+`uc 1 IOCB5 1 0 :1:5 
+`uc 1 IOCB6 1 0 :1:6 
+`uc 1 IOCB7 1 0 :1:7 
+]
+"26887 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
+[u S266 . 1 `S260 1 . 1 0 ]
+[v _IOCBbits IOCBbits `VES266  1 e 1 @3930 ]
+"26912
+[v _WPUB WPUB `VEuc  1 e 1 @3931 ]
+"26974
+[v _ANCON1 ANCON1 `VEuc  1 e 1 @3932 ]
+"27074
+[v _ANCON0 ANCON0 `VEuc  1 e 1 @3933 ]
+[s S736 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"30095
+[s S745 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S748 . 1 `S736 1 . 1 0 `S745 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES748  1 e 1 @3969 ]
+"30492
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S764 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"30519
+[s S773 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S782 . 1 `S764 1 . 1 0 `S773 1 . 1 0 ]
+[v _LATAbits LATAbits `VES782  1 e 1 @3977 ]
+"30594
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"30706
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"30818
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"30930
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S1029 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"30947
+[s S1033 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S1037 . 1 `S1029 1 . 1 0 `S1033 1 . 1 0 ]
+[v _LATEbits LATEbits `VES1037  1 e 1 @3981 ]
+"31088
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"31145
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"31207
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S352 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"31224
+[u S361 . 1 `S352 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES361  1 e 1 @3988 ]
+"31269
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"31331
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"31407
+[v _REFOCON REFOCON `VEuc  1 e 1 @3994 ]
+"31472
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S403 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR1GIF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"31707
+[s S412 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S416 . 1 `S403 1 . 1 0 `S412 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES416  1 e 1 @3998 ]
+"32593
+[v _T1GCON T1GCON `VEuc  1 e 1 @4010 ]
+[s S653 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_T1DONE 1 0 :1:3 
+]
+"32627
+[s S656 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nT1DONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+[s S664 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[s S669 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+[s S672 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 nT1DONE 1 0 :1:3 
+]
+[u S675 . 1 `S653 1 . 1 0 `S656 1 . 1 0 `S664 1 . 1 0 `S669 1 . 1 0 `S672 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES675  1 e 1 @4010 ]
+"34763
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"34834
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"34938
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S496 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"34983
+[s S499 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"34983
+[s S503 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"34983
+[s S511 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+"34983
+[s S514 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+"34983
+[s S517 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+"34983
+[s S520 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+"34983
+[s S523 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+"34983
+[u S526 . 1 `S496 1 . 1 0 `S499 1 . 1 0 `S503 1 . 1 0 `S511 1 . 1 0 `S514 1 . 1 0 `S517 1 . 1 0 `S520 1 . 1 0 `S523 1 . 1 0 ]
+"34983
+"34983
+[v _ADCON0bits ADCON0bits `VES526  1 e 1 @4034 ]
+"35070
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"35090
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"35110
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+"35205
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S373 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"35225
+[s S379 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+"35225
+[u S384 . 1 `S373 1 . 1 0 `S379 1 . 1 0 ]
+"35225
+"35225
+[v _SSPCON1bits SSPCON1bits `VES384  1 e 1 @4038 ]
+"35275
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S888 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"35352
+[s S891 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+"35352
+[s S894 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"35352
+[s S903 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+"35352
+[s S908 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+"35352
+[s S913 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+"35352
+[s S916 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+"35352
+[s S919 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+"35352
+[s S924 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+"35352
+[s S929 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+"35352
+[s S935 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+"35352
+[s S941 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+"35352
+[u S946 . 1 `S888 1 . 1 0 `S891 1 . 1 0 `S894 1 . 1 0 `S903 1 . 1 0 `S908 1 . 1 0 `S913 1 . 1 0 `S916 1 . 1 0 `S919 1 . 1 0 `S924 1 . 1 0 `S929 1 . 1 0 `S935 1 . 1 0 `S941 1 . 1 0 ]
+"35352
+"35352
+[v _SSPSTATbits SSPSTATbits `VES946  1 e 1 @4039 ]
+"35507
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"35577
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"35814
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S605 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"35846
+[s S608 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"35846
+[s S615 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"35846
+[s S621 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 T1RD16 1 0 :1:7 
+]
+"35846
+[u S626 . 1 `S605 1 . 1 0 `S608 1 . 1 0 `S615 1 . 1 0 `S621 1 . 1 0 ]
+"35846
+"35846
+[v _T1CONbits T1CONbits `VES626  1 e 1 @4045 ]
+"35923
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"35943
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S54 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"36011
+[s S56 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+"36011
+[s S59 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+"36011
+[s S62 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+"36011
+[s S65 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+"36011
+[s S68 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_CM 1 0 :1:5 
+]
+"36011
+[s S71 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 nCM 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+"36011
+[s S80 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 CM 1 0 :1:5 
+]
+"36011
+[u S87 . 1 `S54 1 . 1 0 `S56 1 . 1 0 `S59 1 . 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S68 1 . 1 0 `S71 1 . 1 0 `S80 1 . 1 0 ]
+"36011
+"36011
+[v _RCONbits RCONbits `VES87  1 e 1 @4048 ]
+"36176
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+"36248
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S219 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"37134
+[s S222 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 INT3IP 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 INTEDG3 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"37134
+[s S231 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT3P 1 0 :1:1 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+"37134
+[u S237 . 1 `S219 1 . 1 0 `S222 1 . 1 0 `S231 1 . 1 0 ]
+"37134
+"37134
+[v _INTCON2bits INTCON2bits `VES237  1 e 1 @4081 ]
+[s S130 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"37236
+[s S139 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"37236
+[s S148 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"37236
+[u S152 . 1 `S130 1 . 1 0 `S139 1 . 1 0 `S148 1 . 1 0 ]
+"37236
+"37236
+[v _INTCONbits INTCONbits `VES152  1 e 1 @4082 ]
+"54 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/pin_manager.c
+[v _IOCB4_InterruptHandler IOCB4_InterruptHandler `*.37(v  1 e 2 0 ]
+[s S344 . 4 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 `uc 1 operation 1 3 ]
+"58 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/spi.c
+[v _spi_configuration spi_configuration `C[1]S344  1 s 4 spi_configuration ]
+"57 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"26 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"56
+} 0
+"34 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\lib_ili9341.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"132
+} 0
+"16
+[v _msDelay msDelay `(v  1 e 1 0 ]
+{
+[v msDelay@ms ms `uc  1 a 1 wreg ]
+"18
+[v msDelay@k k `uc  1 a 1 5 ]
+"16
+[v msDelay@ms ms `uc  1 a 1 wreg ]
+"20
+[v msDelay@ms ms `uc  1 a 1 4 ]
+"24
+} 0
+"193
+[v _lcd_fill lcd_fill `(v  1 e 1 0 ]
+{
+"195
+[v lcd_fill@width width `us  1 a 2 16 ]
+[v lcd_fill@height height `us  1 a 2 14 ]
+"193
+[v lcd_fill@bg_color bg_color `us  1 p 2 12 ]
+"210
+} 0
+"380
+[v _lcd_draw_string lcd_draw_string `(v  1 e 1 0 ]
+{
+"382
+[v lcd_draw_string@lIndex lIndex `us  1 a 2 50 ]
+[v lcd_draw_string@k k `us  1 a 2 48 ]
+"380
+[v lcd_draw_string@x x `us  1 p 2 34 ]
+[v lcd_draw_string@y y `us  1 p 2 36 ]
+[v lcd_draw_string@pS pS `*.32Cuc  1 p 2 38 ]
+[v lcd_draw_string@fg_color fg_color `us  1 p 2 40 ]
+[v lcd_draw_string@bg_color bg_color `us  1 p 2 42 ]
+"398
+} 0
+"355
+[v _lcd_draw_char lcd_draw_char `(v  1 e 1 0 ]
+{
+"357
+[v lcd_draw_char@i i `uc  1 a 1 33 ]
+[v lcd_draw_char@k k `uc  1 a 1 32 ]
+[v lcd_draw_char@j j `uc  1 a 1 31 ]
+"355
+[v lcd_draw_char@x x `us  1 p 2 12 ]
+[v lcd_draw_char@y y `us  1 p 2 14 ]
+[v lcd_draw_char@fIndex fIndex `us  1 p 2 16 ]
+[v lcd_draw_char@fg_color fg_color `us  1 p 2 18 ]
+[v lcd_draw_char@bg_color bg_color `us  1 p 2 20 ]
+"378
+} 0
+"144
+[v _lcd_set_cursor lcd_set_cursor `(uc  1 e 1 0 ]
+{
+[v lcd_set_cursor@x x `us  1 p 2 8 ]
+[v lcd_set_cursor@y y `us  1 p 2 10 ]
+"152
+} 0
+"170
+[v _lcd_set_cursor_y lcd_set_cursor_y `(uc  1 e 1 0 ]
+{
+[v lcd_set_cursor_y@y y `us  1 p 2 6 ]
+"183
+} 0
+"155
+[v _lcd_set_cursor_x lcd_set_cursor_x `(uc  1 e 1 0 ]
+{
+[v lcd_set_cursor_x@x x `us  1 p 2 6 ]
+"168
+} 0
+"185
+[v _lcd_draw_pixel lcd_draw_pixel `(uc  1 e 1 0 ]
+{
+[v lcd_draw_pixel@color color `us  1 p 2 6 ]
+"191
+} 0
+"134
+[v _lcd_send lcd_send `(v  1 e 1 0 ]
+{
+[v lcd_send@dc dc `a  1 a 1 wreg ]
+[v lcd_send@dc dc `a  1 a 1 wreg ]
+[v lcd_send@value value `uc  1 p 1 4 ]
+"136
+[v lcd_send@dc dc `a  1 a 1 5 ]
+"142
+} 0
+"92 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/spi.c
+[v _SPI_ExchangeByte SPI_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI_ExchangeByte@data data `uc  1 a 1 wreg ]
+"94
+[v SPI_ExchangeByte@data data `uc  1 a 1 3 ]
+"98
+} 0
+"50 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"63 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"62 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/spi.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"57 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"105
+} 0
+"135
+[v _IOCB4_SetInterruptHandler IOCB4_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCB4_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 3 ]
+"137
+} 0
+"61 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"52 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"62 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"81
+} 0
+"72 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/spi.c
+[v _SPI_Open SPI_Open `(a  1 e 1 0 ]
+{
+[v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E353  1 a 1 wreg ]
+[v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E353  1 a 1 wreg ]
+"74
+[v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E353  1 a 1 4 ]
+"85
+} 0
+"58 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"69
+} 0
+"107 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"116
+} 0
+"121
+[v _IOCB4_ISR IOCB4_ISR `(v  1 e 1 0 ]
+{
+"130
+} 0
+"142
+[v _IOCB4_DefaultInterruptHandler IOCB4_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"145
+} 0
+"16 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.X\main.c
+[v _IOCB4_InterruptCall IOCB4_InterruptCall `(v  1 e 1 0 ]
+{
+"21
+} 0
