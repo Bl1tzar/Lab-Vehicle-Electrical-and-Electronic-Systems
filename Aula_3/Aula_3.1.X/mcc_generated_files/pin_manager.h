@@ -65,6 +65,20 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set TEMP aliases
+#define TEMP_TRIS                 TRISAbits.TRISA1
+#define TEMP_LAT                  LATAbits.LATA1
+#define TEMP_PORT                 PORTAbits.RA1
+#define TEMP_ANS                  ANCON0bits.ANSEL1
+#define TEMP_SetHigh()            do { LATAbits.LATA1 = 1; } while(0)
+#define TEMP_SetLow()             do { LATAbits.LATA1 = 0; } while(0)
+#define TEMP_Toggle()             do { LATAbits.LATA1 = ~LATAbits.LATA1; } while(0)
+#define TEMP_GetValue()           PORTAbits.RA1
+#define TEMP_SetDigitalInput()    do { TRISAbits.TRISA1 = 1; } while(0)
+#define TEMP_SetDigitalOutput()   do { TRISAbits.TRISA1 = 0; } while(0)
+#define TEMP_SetAnalogMode()      do { ANCON0bits.ANSEL1 = 1; } while(0)
+#define TEMP_SetDigitalMode()     do { ANCON0bits.ANSEL1 = 0; } while(0)
+
 // get/set LED3 aliases
 #define LED3_TRIS                 TRISAbits.TRISA5
 #define LED3_LAT                  LATAbits.LATA5

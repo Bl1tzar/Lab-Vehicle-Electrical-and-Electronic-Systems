@@ -1,12 +1,12 @@
 <config configVersion="1.1" device="PIC18F46K80" coreVersion="5.0.1">
    <usedClasses class="java.util.HashMap">
       <entry>
-         <string>System Module</string>
-         <string>class com.microchip.mcc.mcu8.systemManager.SystemManager</string>
-      </entry>
-      <entry>
          <string>ADC</string>
          <string>class com.microchip.mcc.mcu8.modules.adc_12b_diff.ADC</string>
+      </entry>
+      <entry>
+         <string>System Module</string>
+         <string>class com.microchip.mcc.mcu8.systemManager.SystemManager</string>
       </entry>
       <entry>
          <string>INTERNAL OSCILLATOR</string>
@@ -43,7 +43,7 @@
    <tokenMap class="java.util.HashMap">
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CUST_NAME_AN1"/>
-         <value>channel_AN1</value>
+         <value>TEMP</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CUST_NAME_AN0"/>
@@ -1091,7 +1091,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CHSN_AN0"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR1" registerAlias="TGCON" settingAlias="TGTM" alias="enabled"/>
@@ -1131,7 +1131,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CHSN_AN1"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCTUNE" settingAlias="INTSRC" alias="INTOSC"/>
@@ -1587,7 +1587,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA0"/>
-         <value>POT</value>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="LATD"/>
@@ -1739,7 +1739,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA1"/>
-         <value/>
+         <value>TEMP</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG1H" settingAlias="FOSC" alias="EC3IO"/>
@@ -4479,11 +4479,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RA0"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RA1"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RA2"/>
@@ -4648,16 +4648,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>9f01bdb775fea8637a0837cc3896426ec0deab7acb66ad90b5cc9408f96af71b</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.h</file>
          <hash>2ec29f1c390ac95f3b75d924e7b12cee6d68a4195dde10670fc286970eabcf45</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>06f7a2b2d9bfce1c9202ac042523c703f4c21a66fdc8a273ec54feb5f3339935</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>9f01bdb775fea8637a0837cc3896426ec0deab7acb66ad90b5cc9408f96af71b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\spi.c</file>
@@ -4681,7 +4681,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>2f1d838eb07d38957e048e5f85818c159ed0caf3063326d3d2abe13080c3b2bd</hash>
+         <hash>a0685c2364194daaa2cc74171d45a4a8ca294f9d8bc701c6cc29aaa580a67e0e</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr1.c</file>
@@ -4689,7 +4689,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\adc.h</file>
-         <hash>5e0ccdd5a3a15bbe625f047ac297905352f18db1841079d9d337dfef6fd67b50</hash>
+         <hash>78653b6d39237ae00f1bd9091dd9d4f8deb2d9ea667e75845b98cb93f8efd08f</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
@@ -4700,12 +4700,12 @@
          <hash>4bd37179d040d877736a1c4d53ea76670d6a9677e0e0f85852568ab1c0b40383</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>996aec1f165dfa9cb37cbd05489ea9b1b3d0f5799e77495dbe3706f30f9a47ed</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.c</file>
          <hash>006b9fc4dda0cdcc40fecc2a8a259cd1039cfe87397c2e869a2ca362903fbd7c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>996aec1f165dfa9cb37cbd05489ea9b1b3d0f5799e77495dbe3706f30f9a47ed</hash>
       </entry>
    </generatedFileHashHistoryMap>
    <mc3libFileHashHistoryMap class="java.util.HashMap"/>
