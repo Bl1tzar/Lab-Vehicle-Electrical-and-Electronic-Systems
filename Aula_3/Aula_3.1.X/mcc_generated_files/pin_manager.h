@@ -65,6 +65,20 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set POT aliases
+#define POT_TRIS                 TRISAbits.TRISA0
+#define POT_LAT                  LATAbits.LATA0
+#define POT_PORT                 PORTAbits.RA0
+#define POT_ANS                  ANCON0bits.ANSEL0
+#define POT_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
+#define POT_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
+#define POT_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
+#define POT_GetValue()           PORTAbits.RA0
+#define POT_SetDigitalInput()    do { TRISAbits.TRISA0 = 1; } while(0)
+#define POT_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
+#define POT_SetAnalogMode()      do { ANCON0bits.ANSEL0 = 1; } while(0)
+#define POT_SetDigitalMode()     do { ANCON0bits.ANSEL0 = 0; } while(0)
+
 // get/set TEMP aliases
 #define TEMP_TRIS                 TRISAbits.TRISA1
 #define TEMP_LAT                  LATAbits.LATA1

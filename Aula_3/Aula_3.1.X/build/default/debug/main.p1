@@ -44,8 +44,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./lib_ili9341.h: 248: void lcd_init (void);
 [v _lcd_init `(v ~T0 @X0 0 ef ]
 [v F12358 `(v ~T0 @X0 0 tf ]
-"245 ./mcc_generated_files/pin_manager.h
-[; ;./mcc_generated_files/pin_manager.h: 245: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
+"259 ./mcc_generated_files/pin_manager.h
+[; ;./mcc_generated_files/pin_manager.h: 259: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCB4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12358 ]
 "37210 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37210:     struct {
@@ -71,10 +71,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _lcd_draw_string `(v ~T0 @X0 0 ef5`us`us`*Cuc`us`us ]
 "62 main.c
 [; ;main.c: 62:             codigo_digit=ADC_GetConversion(TEMP);
-[c E12758 28 29 30 31 1 .. ]
-[n E12758 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap TEMP  ]
-"252 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 252: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[c E12758 28 29 30 31 0 1 4 5 6 9 .. ]
+[n E12758 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT TEMP LED3 IO_RE0 IO_RE1 S1  ]
+"257 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 257: adc_result_t ADC_GetConversion(adc_channel_t channel);
 [v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12758 ]
 "114 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
 [v _snprintf `(i ~T0 @X0 0 e2v`*uc`ui`*Cuc ]
@@ -3251,12 +3251,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 0 `i
 ]
 "11
-[; ;main.c: 11: float tensao_in, temp;
+[; ;main.c: 11: float tensao_in, temp, pot_val;
 [v _tensao_in `f ~T0 @X0 1 e ]
 [v _temp `f ~T0 @X0 1 e ]
+[v _pot_val `f ~T0 @X0 1 e ]
 "12
-[; ;main.c: 12: char string_temp[100];
+[; ;main.c: 12: char string_temp[100], string_pot[100];
 [v _string_temp `uc ~T0 @X0 -> 100 `i e ]
+[v _string_pot `uc ~T0 @X0 -> 100 `i e ]
 "18
 [; ;main.c: 18: void IOCB4_InterruptCall(void){
 [v _IOCB4_InterruptCall `(v ~T0 @X0 1 ef ]
@@ -3343,7 +3345,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "62
 [; ;main.c: 62:             codigo_digit=ADC_GetConversion(TEMP);
-[e = _codigo_digit -> ( _ADC_GetConversion (1 . `E12758 4 `i ]
+[e = _codigo_digit -> ( _ADC_GetConversion (1 . `E12758 5 `i ]
 "63
 [; ;main.c: 63:             tensao_in=codigo_digit*0.000805664063;
 [e = _tensao_in -> * -> _codigo_digit `d .0.000805664063 `f ]
@@ -3351,25 +3353,76 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 64:             temp=tensao_in*33.3333333;
 [e = _temp -> * -> _tensao_in `d .33.3333333 `f ]
 "65
-[; ;main.c: 65:         }
+[; ;main.c: 65:             snprintf(string_temp,sizeof(string_temp),"Temp=%.f C      ",temp);
+[e ( _snprintf (2 , (. , , &U _string_temp -> # _string_temp `ui :s 2C -> _temp `d ]
+"66
+[; ;main.c: 66:             lcd_draw_string(100,100,string_temp,0xFFFF,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us -> &U _string_temp `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
+"67
+[; ;main.c: 67:                 if (temp >= 90){
+[e $ ! >= _temp -> -> 90 `i `f 1556  ]
+{
+"68
+[; ;main.c: 68:                 do { LATAbits.LATA5 = 1; } while(0);
+[e :U 1559 ]
+{
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 1558 ]
+"69
+[; ;main.c: 69:             }
+}
+[e $U 1560  ]
+"70
+[; ;main.c: 70:                 else{
+[e :U 1556 ]
+{
+"71
+[; ;main.c: 71:                 do { LATAbits.LATA5 = 0; } while(0);
+[e :U 1563 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 1562 ]
+"72
+[; ;main.c: 72:             }
+}
+[e :U 1560 ]
+"73
+[; ;main.c: 73:         }
 }
 [e :U 1555 ]
-"66
-[; ;main.c: 66:         snprintf(string_temp,sizeof(string_temp),"Temp=%.f C      ",temp);
-[e ( _snprintf (2 , (. , , &U _string_temp -> # _string_temp `ui :s 2C -> _temp `d ]
-"67
-[; ;main.c: 67:         lcd_draw_string(100,100,string_temp,0xFFFF,0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us -> &U _string_temp `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
-"68
-[; ;main.c: 68:     }
+"74
+[; ;main.c: 74:         if (!botao){
+[e $ ! ! != _botao -> 0 `i 1564  ]
+{
+"75
+[; ;main.c: 75:             codigo_digit=ADC_GetConversion(POT);
+[e = _codigo_digit -> ( _ADC_GetConversion (1 . `E12758 4 `i ]
+"76
+[; ;main.c: 76:             pot_val=codigo_digit*0.0244200244200244;
+[e = _pot_val -> * -> _codigo_digit `d .0.0244200244200244 `f ]
+"77
+[; ;main.c: 77:             snprintf(string_pot,sizeof(string_pot),"Pot=%.f%%      ",pot_val);
+[e ( _snprintf (2 , (. , , &U _string_pot -> # _string_pot `ui :s 3C -> _pot_val `d ]
+"78
+[; ;main.c: 78:             lcd_draw_string(100,100,string_pot,0xFFFF,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us -> &U _string_pot `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
+"79
+[; ;main.c: 79:         }
+}
+[e :U 1564 ]
+"80
+[; ;main.c: 80:     }
 }
 [e :U 1552 ]
 [e $U 1553  ]
 [e :U 1554 ]
-"69
-[; ;main.c: 69: }
+"81
+[; ;main.c: 81: }
 [e :UE 1551 ]
 }
-[p f _snprintf 8396800 ]
+[p f _snprintf 9445376 ]
 [a 1C 72 69 76 76 79 32 87 79 82 76 68 0 ]
 [a 2C 84 101 109 112 61 37 46 102 32 67 32 32 32 32 32 32 0 ]
+[a 3C 80 111 116 61 37 46 102 37 37 32 32 32 32 32 32 0 ]

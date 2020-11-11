@@ -363,8 +363,7 @@ void lcd_draw_char (uint16_t x, uint16_t y, uint16_t fIndex, uint16_t fg_color, 
         for(k=0; k<FONT_HEIGHT; k++) 
         {
             for(i=0; i<8; i++)
-            {
-                if( font[ (fIndex + ((font[fIndex]) << 1)) - (j<<1) - k ] & (0x80 >> i) )
+            {                if( font[ (fIndex + ((font[fIndex]) << 1)) - (j<<1) - k ] & (0x80 >> i) )
                 {
                     lcd_draw_pixel(fg_color);
                 }

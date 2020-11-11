@@ -20417,17 +20417,17 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 32 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
 # 54 "mcc_generated_files/pin_manager.h" 2
-# 197 "mcc_generated_files/pin_manager.h"
+# 211 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 209 "mcc_generated_files/pin_manager.h"
+# 223 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 222 "mcc_generated_files/pin_manager.h"
+# 236 "mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 245 "mcc_generated_files/pin_manager.h"
+# 259 "mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 269 "mcc_generated_files/pin_manager.h"
+# 283 "mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 293 "mcc_generated_files/pin_manager.h"
+# 307 "mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 49 "mcc_generated_files/pin_manager.c" 2
 

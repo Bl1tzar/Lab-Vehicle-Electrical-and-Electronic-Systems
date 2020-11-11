@@ -70,11 +70,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 26887: extern volatile IOCBbits_t IOCBbits __attribute__((address(0xF5A)));
 [v _IOCBbits `VS1010 ~T0 @X0 0 e@3930 ]
 [v F12358 `(v ~T0 @X0 0 tf ]
-"245 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 245: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
+"259 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 259: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCB4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12358 ]
-"293
-[; ;mcc_generated_files/pin_manager.h: 293: void IOCB4_DefaultInterruptHandler(void);
+"307
+[; ;mcc_generated_files/pin_manager.h: 307: void IOCB4_DefaultInterruptHandler(void);
 [v _IOCB4_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
 "37210 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37210:     struct {
@@ -95,8 +95,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37236
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37236: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS1507 ~T0 @X0 0 e@4082 ]
-"222 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 222: void IOCB4_ISR(void);
+"236 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 236: void IOCB4_ISR(void);
 [v _IOCB4_ISR `(v ~T0 @X0 0 ef ]
 [v F12370 `(v ~T0 @X0 0 tf ]
 [v F12372 `(v ~T0 @X0 0 tf ]

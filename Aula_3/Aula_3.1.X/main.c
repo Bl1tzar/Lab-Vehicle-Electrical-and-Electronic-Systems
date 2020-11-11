@@ -8,8 +8,8 @@
 #include "mcc_generated_files/mcc.h"
 #include "lib_ili9341.h"
 int codigo_digit, botao=0;
-float tensao_in, temp;
-char string_temp[100];
+float tensao_in, temp, pot_val;
+char string_temp[100], string_pot[100];
 
 
 /*
@@ -62,11 +62,24 @@ void main(void)
             codigo_digit=ADC_GetConversion(TEMP);
             tensao_in=codigo_digit*0.000805664063; //tensao=codigo_digital*(Vref/2^10) 
             temp=tensao_in*33.3333333;
+            snprintf(string_temp,sizeof(string_temp),"Temp=%.f C      ",temp);
+            lcd_draw_string(100,100,string_temp,WHITE,BLACK);
+                if (temp >= 90){
+                LED3_SetHigh();
+            }
+                else{
+                LED3_SetLow();
+            }
         }
-        snprintf(string_temp,sizeof(string_temp),"Temp=%.f C      ",temp);
-        lcd_draw_string(100,100,string_temp,WHITE,BLACK);
+        if (!botao){
+            codigo_digit=ADC_GetConversion(POT);
+            pot_val=codigo_digit*0.0244200244200244;
+            snprintf(string_pot,sizeof(string_pot),"Pot=%.f%%      ",pot_val);
+            lcd_draw_string(100,100,string_pot,WHITE,BLACK);
+        }
     }
 }
+   
 /*
  End of File
 */

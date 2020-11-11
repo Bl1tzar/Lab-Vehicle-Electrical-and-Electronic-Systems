@@ -4399,129 +4399,127 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 1610  ]
 [e :U 1609 ]
 "366
-[; ;lib_ili9341.c: 366:             {
+[; ;lib_ili9341.c: 366:             { if( font[ (fIndex + ((font[fIndex]) << 1)) - (j<<1) - k ] & (0x80 >> i) )
 {
-"367
-[; ;lib_ili9341.c: 367:                 if( font[ (fIndex + ((font[fIndex]) << 1)) - (j<<1) - k ] & (0x80 >> i) )
 [e $ ! != & -> *U + &U _font * -> - - + -> _fIndex `ui << -> *U + &U _font * -> _fIndex `ux -> -> # *U &U _font `ui `ux `ui -> 1 `i -> << -> _j `i -> 1 `i `ui -> _k `ui `ux -> -> # *U &U _font `ui `ux `ui -> >> -> 128 `i -> _i `i `ui -> -> 0 `i `ui 1612  ]
-"368
-[; ;lib_ili9341.c: 368:                 {
+"367
+[; ;lib_ili9341.c: 367:                 {
 {
-"369
-[; ;lib_ili9341.c: 369:                     lcd_draw_pixel(fg_color);
+"368
+[; ;lib_ili9341.c: 368:                     lcd_draw_pixel(fg_color);
 [e ( _lcd_draw_pixel (1 _fg_color ]
-"370
-[; ;lib_ili9341.c: 370:                 }
+"369
+[; ;lib_ili9341.c: 369:                 }
 }
 [e $U 1613  ]
-"371
-[; ;lib_ili9341.c: 371:                 else
+"370
+[; ;lib_ili9341.c: 370:                 else
 [e :U 1612 ]
-"372
-[; ;lib_ili9341.c: 372:                 {
+"371
+[; ;lib_ili9341.c: 371:                 {
 {
-"373
-[; ;lib_ili9341.c: 373:                     lcd_draw_pixel(bg_color);
+"372
+[; ;lib_ili9341.c: 372:                     lcd_draw_pixel(bg_color);
 [e ( _lcd_draw_pixel (1 _bg_color ]
-"374
-[; ;lib_ili9341.c: 374:                 }
+"373
+[; ;lib_ili9341.c: 373:                 }
 }
 [e :U 1613 ]
-"375
-[; ;lib_ili9341.c: 375:             }
+"374
+[; ;lib_ili9341.c: 374:             }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 8 `i 1609  ]
 [e :U 1610 ]
 }
-"376
-[; ;lib_ili9341.c: 376:         }
+"375
+[; ;lib_ili9341.c: 375:         }
 }
 [e ++ _k -> -> 1 `i `uc ]
 [e $ < -> _k `i -> 2 `i 1606  ]
 [e :U 1607 ]
 }
-"377
-[; ;lib_ili9341.c: 377:     }
+"376
+[; ;lib_ili9341.c: 376:     }
 }
 [e ++ _j -> -> 1 `i `uc ]
 [e :U 1605 ]
 [e $ < -> _j `ui -> *U + &U _font * -> _fIndex `ux -> -> # *U &U _font `ui `ux `ui 1602  ]
 [e :U 1603 ]
 }
-"378
-[; ;lib_ili9341.c: 378: }
+"377
+[; ;lib_ili9341.c: 377: }
 [e :UE 1601 ]
 }
-"380
-[; ;lib_ili9341.c: 380: void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color, uint16_t bg_color)
+"379
+[; ;lib_ili9341.c: 379: void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color, uint16_t bg_color)
 [v _lcd_draw_string `(v ~T0 @X0 1 ef5`us`us`*Cuc`us`us ]
-"381
-[; ;lib_ili9341.c: 381: {
+"380
+[; ;lib_ili9341.c: 380: {
 {
 [e :U _lcd_draw_string ]
-"380
-[; ;lib_ili9341.c: 380: void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color, uint16_t bg_color)
+"379
+[; ;lib_ili9341.c: 379: void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color, uint16_t bg_color)
 [v _x `us ~T0 @X0 1 r1 ]
 [v _y `us ~T0 @X0 1 r2 ]
 [v _pS `*Cuc ~T0 @X0 1 r3 ]
 [v _fg_color `us ~T0 @X0 1 r4 ]
 [v _bg_color `us ~T0 @X0 1 r5 ]
-"381
-[; ;lib_ili9341.c: 381: {
+"380
+[; ;lib_ili9341.c: 380: {
 [f ]
-"382
-[; ;lib_ili9341.c: 382:     uint16_t lIndex, k;
+"381
+[; ;lib_ili9341.c: 381:     uint16_t lIndex, k;
 [v _lIndex `us ~T0 @X0 1 a ]
 [v _k `us ~T0 @X0 1 a ]
-"384
-[; ;lib_ili9341.c: 384:     while(*pS)
+"383
+[; ;lib_ili9341.c: 383:     while(*pS)
 [e $U 1615  ]
 [e :U 1616 ]
-"385
-[; ;lib_ili9341.c: 385:     {
+"384
+[; ;lib_ili9341.c: 384:     {
 {
-"386
-[; ;lib_ili9341.c: 386:         lIndex = 0;
+"385
+[; ;lib_ili9341.c: 385:         lIndex = 0;
 [e = _lIndex -> -> 0 `i `us ]
-"387
-[; ;lib_ili9341.c: 387:         for(k=0; k<(*pS - ' '); k++)
+"386
+[; ;lib_ili9341.c: 386:         for(k=0; k<(*pS - ' '); k++)
 {
 [e = _k -> -> 0 `i `us ]
 [e $U 1621  ]
 [e :U 1618 ]
-"388
-[; ;lib_ili9341.c: 388:         {
+"387
+[; ;lib_ili9341.c: 387:         {
 {
-"389
-[; ;lib_ili9341.c: 389:             lIndex += ((font[lIndex]) << 1) + 1;
+"388
+[; ;lib_ili9341.c: 388:             lIndex += ((font[lIndex]) << 1) + 1;
 [e =+ _lIndex -> + << -> *U + &U _font * -> _lIndex `ux -> -> # *U &U _font `ui `ux `ui -> 1 `i -> -> 1 `i `ui `us ]
-"390
-[; ;lib_ili9341.c: 390:         }
+"389
+[; ;lib_ili9341.c: 389:         }
 }
 [e ++ _k -> -> 1 `i `us ]
 [e :U 1621 ]
 [e $ < -> _k `ui - -> *U _pS `ui -> 32 `ui 1618  ]
 [e :U 1619 ]
 }
-"392
-[; ;lib_ili9341.c: 392:         lcd_draw_char(x, y, lIndex, fg_color, bg_color);
+"391
+[; ;lib_ili9341.c: 391:         lcd_draw_char(x, y, lIndex, fg_color, bg_color);
 [e ( _lcd_draw_char (4 , , , , _x _y _lIndex _fg_color _bg_color ]
-"394
-[; ;lib_ili9341.c: 394:         x += font[lIndex];
+"393
+[; ;lib_ili9341.c: 393:         x += font[lIndex];
 [e =+ _x -> *U + &U _font * -> _lIndex `ux -> -> # *U &U _font `ui `ux `us ]
-"396
-[; ;lib_ili9341.c: 396:         pS++;
+"395
+[; ;lib_ili9341.c: 395:         pS++;
 [e ++ _pS * -> -> 1 `i `x -> -> # *U _pS `i `x ]
-"397
-[; ;lib_ili9341.c: 397:     }
+"396
+[; ;lib_ili9341.c: 396:     }
 }
 [e :U 1615 ]
-"384
-[; ;lib_ili9341.c: 384:     while(*pS)
+"383
+[; ;lib_ili9341.c: 383:     while(*pS)
 [e $ != -> *U _pS `i -> 0 `i 1616  ]
 [e :U 1617 ]
-"398
-[; ;lib_ili9341.c: 398: }
+"397
+[; ;lib_ili9341.c: 397: }
 [e :UE 1614 ]
 }

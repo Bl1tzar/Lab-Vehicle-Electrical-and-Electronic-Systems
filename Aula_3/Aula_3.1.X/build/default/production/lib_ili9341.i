@@ -20684,17 +20684,17 @@ void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color,
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 183 "./mcc_generated_files/pin_manager.h"
+# 211 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 195 "./mcc_generated_files/pin_manager.h"
+# 223 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 208 "./mcc_generated_files/pin_manager.h"
+# 236 "./mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 231 "./mcc_generated_files/pin_manager.h"
+# 259 "./mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 255 "./mcc_generated_files/pin_manager.h"
+# 283 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 279 "./mcc_generated_files/pin_manager.h"
+# 307 "./mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -20930,22 +20930,24 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
+    POT = 0x0,
+    TEMP = 0x1,
     LED3 = 0x4,
     IO_RE0 = 0x5,
     IO_RE1 = 0x6,
     S1 = 0x9
 } adc_channel_t;
-# 131 "./mcc_generated_files/adc.h"
+# 133 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 160 "./mcc_generated_files/adc.h"
+# 162 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 192 "./mcc_generated_files/adc.h"
+# 194 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 225 "./mcc_generated_files/adc.h"
+# 227 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 255 "./mcc_generated_files/adc.h"
+# 257 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 283 "./mcc_generated_files/adc.h"
+# 285 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 58 "./mcc_generated_files/mcc.h" 2
 # 73 "./mcc_generated_files/mcc.h"
@@ -21308,8 +21310,7 @@ void lcd_draw_char (uint16_t x, uint16_t y, uint16_t fIndex, uint16_t fg_color, 
         for(k=0; k<2; k++)
         {
             for(i=0; i<8; i++)
-            {
-                if( font[ (fIndex + ((font[fIndex]) << 1)) - (j<<1) - k ] & (0x80 >> i) )
+            { if( font[ (fIndex + ((font[fIndex]) << 1)) - (j<<1) - k ] & (0x80 >> i) )
                 {
                     lcd_draw_pixel(fg_color);
                 }
