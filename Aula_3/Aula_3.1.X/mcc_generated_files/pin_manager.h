@@ -129,6 +129,23 @@
 #define LED5_SetDigitalInput()    do { TRISAbits.TRISA7 = 1; } while(0)
 #define LED5_SetDigitalOutput()   do { TRISAbits.TRISA7 = 0; } while(0)
 
+// get/set NTC aliases
+#define NTC_TRIS                 TRISBbits.TRISB1
+#define NTC_LAT                  LATBbits.LATB1
+#define NTC_PORT                 PORTBbits.RB1
+#define NTC_WPU                  WPUBbits.WPUB1
+#define NTC_ANS                  ANCON1bits.ANSEL8
+#define NTC_SetHigh()            do { LATBbits.LATB1 = 1; } while(0)
+#define NTC_SetLow()             do { LATBbits.LATB1 = 0; } while(0)
+#define NTC_Toggle()             do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0)
+#define NTC_GetValue()           PORTBbits.RB1
+#define NTC_SetDigitalInput()    do { TRISBbits.TRISB1 = 1; } while(0)
+#define NTC_SetDigitalOutput()   do { TRISBbits.TRISB1 = 0; } while(0)
+#define NTC_SetPullup()          do { WPUBbits.WPUB1 = 1; } while(0)
+#define NTC_ResetPullup()        do { WPUBbits.WPUB1 = 0; } while(0)
+#define NTC_SetAnalogMode()      do { ANCON1bits.ANSEL8 = 1; } while(0)
+#define NTC_SetDigitalMode()     do { ANCON1bits.ANSEL8 = 0; } while(0)
+
 // get/set S1 aliases
 #define S1_TRIS                 TRISBbits.TRISB4
 #define S1_LAT                  LATBbits.LATB4

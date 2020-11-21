@@ -1020,7 +1020,7 @@ text63 5D2C 5D33 CODE 5D2C 0
 %locals
 dist/default/production\Aula_3.1.X.production.o
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
-C:\Users\Asus\AppData\Local\Temp\sgro.s
+C:\Users\Blitzar\AppData\Local\Temp\sahk.s
 9879 5774 0 CODE 0
 9881 5774 0 CODE 0
 9884 5774 0 CODE 0
@@ -2435,7 +2435,7 @@ mcc_generated_files/adc.c
 121 5A4E 0 CODE 0
 126 5A5C 0 CODE 0
 127 5A6E 0 CODE 0
-C:\Users\Asus\AppData\Local\Temp\sgro.s
+C:\Users\Blitzar\AppData\Local\Temp\sahk.s
 30168 8 0 CODE 0
 mcc_generated_files/interrupt_manager.c
 58 8 0 CODE 0

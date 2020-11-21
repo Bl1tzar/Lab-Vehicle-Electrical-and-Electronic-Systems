@@ -97,7 +97,7 @@ idataBANK1 CODE 0 5D24 5D24 7 1
 dataBANK1 BANK1 1 1B4 1B4 7 1
 bssCOMRAM COMRAM 1 58 58 2 1
 mediumconst MEDIUMCONST 0 F1BC F1BC E44 1
-$C:\Users\Asus\AppData\Local\Temp\sgro.o
+$C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 3E 3E 4 1
 reset_vec CODE 0 0 0 4 1
@@ -155,108 +155,108 @@ MEDIUMCONST 5D34-F1BB 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Aula_3.1.X.production.o
-8 intcode CODE >30168:C:\Users\Asus\AppData\Local\Temp\sgro.s
-8 intcode CODE >58:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
-12 intcode CODE >61:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
-2E intcode CODE >63:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
-32 intcode CODE >69:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
-56BA text71 CODE >18:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-56BA text71 CODE >20:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-56C8 text71 CODE >21:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-56EE text71 CODE >22:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-5702 text71 CODE >23:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-570A text71 CODE >24:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-570E text71 CODE >26:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-5716 text71 CODE >29:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-5D32 text70 CODE >142:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5D32 text70 CODE >145:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5BE6 text69 CODE >121:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5BE6 text69 CODE >126:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5BFA text69 CODE >128:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5C12 text69 CODE >130:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5CB2 text68 CODE >107:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5CB2 text68 CODE >110:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5CC2 text68 CODE >112:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5CC6 text68 CODE >115:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5CC8 text68 CODE >116:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5A36 text66 CODE >108:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5A38 text66 CODE >111:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5A4A text66 CODE >114:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5A4C text66 CODE >118:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5A4E text66 CODE >121:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5A4E text66 CODE >123:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5A5C text66 CODE >126:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5A6E text66 CODE >127:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-535E text65 CODE >72:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5360 text65 CODE >74:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-536E text65 CODE >76:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5392 text65 CODE >77:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-53AE text65 CODE >78:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-53B2 text65 CODE >79:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-53D6 text65 CODE >80:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-540A text65 CODE >81:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-540C text65 CODE >85:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5CE0 text64 CODE >62:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5CE0 text64 CODE >67:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5CE4 text64 CODE >70:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5CE8 text64 CODE >73:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5CEC text64 CODE >76:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5CF0 text64 CODE >79:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5CF4 text64 CODE >81:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
-5D2C text63 CODE >52:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
-5D2C text63 CODE >55:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
-5D2E text63 CODE >56:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
-5D08 text62 CODE >61:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5D08 text62 CODE >64:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5D0C text62 CODE >66:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5D10 text62 CODE >68:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5D14 text62 CODE >70:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5D18 text62 CODE >71:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5D1A text61 CODE >135:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5D1A text61 CODE >136:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5D22 text61 CODE >137:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-58EE text60 CODE >57:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-58EE text60 CODE >62:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-58F2 text60 CODE >63:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-58F6 text60 CODE >64:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-58FA text60 CODE >65:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-58FE text60 CODE >66:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5902 text60 CODE >71:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5906 text60 CODE >72:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-590A text60 CODE >73:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-590C text60 CODE >74:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5910 text60 CODE >75:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5912 text60 CODE >80:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5918 text60 CODE >81:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-591C text60 CODE >86:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5920 text60 CODE >87:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5922 text60 CODE >95:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5924 text60 CODE >100:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5930 text60 CODE >103:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5932 text60 CODE >105:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
-5CF6 text59 CODE >62:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5CF6 text59 CODE >65:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5CFA text59 CODE >66:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5CFE text59 CODE >67:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5D02 text59 CODE >68:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5D04 text59 CODE >69:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5D06 text59 CODE >70:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5C14 text58 CODE >63:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C14 text58 CODE >68:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C18 text58 CODE >71:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C1C text58 CODE >74:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C20 text58 CODE >77:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C22 text58 CODE >80:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C3A text58 CODE >83:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C3E text58 CODE >84:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
-5C80 text57 CODE >50:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5C80 text57 CODE >53:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5C84 text57 CODE >54:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5C88 text57 CODE >55:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5C8C text57 CODE >56:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5C90 text57 CODE >57:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5C94 text57 CODE >58:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
-5C98 text57 CODE >59:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+8 intcode CODE >30168:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+8 intcode CODE >58:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
+12 intcode CODE >61:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
+2E intcode CODE >63:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
+32 intcode CODE >69:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
+56BA text71 CODE >18:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+56BA text71 CODE >20:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+56C8 text71 CODE >21:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+56EE text71 CODE >22:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+5702 text71 CODE >23:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+570A text71 CODE >24:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+570E text71 CODE >26:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+5716 text71 CODE >29:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+5D32 text70 CODE >142:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5D32 text70 CODE >145:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5BE6 text69 CODE >121:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5BE6 text69 CODE >126:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5BFA text69 CODE >128:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5C12 text69 CODE >130:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5CB2 text68 CODE >107:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5CB2 text68 CODE >110:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5CC2 text68 CODE >112:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5CC6 text68 CODE >115:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5CC8 text68 CODE >116:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5A36 text66 CODE >108:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5A38 text66 CODE >111:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5A4A text66 CODE >114:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5A4C text66 CODE >118:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5A4E text66 CODE >121:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5A4E text66 CODE >123:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5A5C text66 CODE >126:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5A6E text66 CODE >127:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+535E text65 CODE >72:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5360 text65 CODE >74:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+536E text65 CODE >76:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5392 text65 CODE >77:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+53AE text65 CODE >78:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+53B2 text65 CODE >79:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+53D6 text65 CODE >80:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+540A text65 CODE >81:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+540C text65 CODE >85:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5CE0 text64 CODE >62:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5CE0 text64 CODE >67:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5CE4 text64 CODE >70:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5CE8 text64 CODE >73:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5CEC text64 CODE >76:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5CF0 text64 CODE >79:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5CF4 text64 CODE >81:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/adc.c
+5D2C text63 CODE >52:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
+5D2C text63 CODE >55:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
+5D2E text63 CODE >56:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/interrupt_manager.c
+5D08 text62 CODE >61:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5D08 text62 CODE >64:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5D0C text62 CODE >66:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5D10 text62 CODE >68:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5D14 text62 CODE >70:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5D18 text62 CODE >71:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5D1A text61 CODE >135:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5D1A text61 CODE >136:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5D22 text61 CODE >137:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+58EE text60 CODE >57:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+58EE text60 CODE >62:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+58F2 text60 CODE >63:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+58F6 text60 CODE >64:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+58FA text60 CODE >65:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+58FE text60 CODE >66:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5902 text60 CODE >71:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5906 text60 CODE >72:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+590A text60 CODE >73:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+590C text60 CODE >74:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5910 text60 CODE >75:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5912 text60 CODE >80:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5918 text60 CODE >81:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+591C text60 CODE >86:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5920 text60 CODE >87:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5922 text60 CODE >95:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5924 text60 CODE >100:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5930 text60 CODE >103:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5932 text60 CODE >105:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/pin_manager.c
+5CF6 text59 CODE >62:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5CF6 text59 CODE >65:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5CFA text59 CODE >66:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5CFE text59 CODE >67:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5D02 text59 CODE >68:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5D04 text59 CODE >69:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5D06 text59 CODE >70:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5C14 text58 CODE >63:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C14 text58 CODE >68:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C18 text58 CODE >71:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C1C text58 CODE >74:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C20 text58 CODE >77:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C22 text58 CODE >80:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C3A text58 CODE >83:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C3E text58 CODE >84:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/tmr1.c
+5C80 text57 CODE >50:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5C80 text57 CODE >53:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5C84 text57 CODE >54:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5C88 text57 CODE >55:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5C8C text57 CODE >56:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5C90 text57 CODE >57:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5C94 text57 CODE >58:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
+5C98 text57 CODE >59:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/mcc.c
 3EF0 text56 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 3EF2 text56 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 3F10 text56 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
@@ -286,175 +286,175 @@ $dist/default/production\Aula_3.1.X.production.o
 4090 text56 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 4092 text56 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 40A2 text56 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-5C66 text55 CODE >92:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5C68 text55 CODE >94:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5C6C text55 CODE >95:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5C7A text55 CODE >96:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5C7C text55 CODE >97:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5C7E text55 CODE >98:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
-5C9A text54 CODE >134:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5C9C text54 CODE >136:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CA6 text54 CODE >138:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CA8 text54 CODE >140:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CAE text54 CODE >141:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CB0 text54 CODE >142:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CCA text53 CODE >185:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CCA text53 CODE >187:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CD4 text53 CODE >188:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5CDE text53 CODE >191:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5860 text52 CODE >155:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5860 text52 CODE >157:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5876 text52 CODE >159:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-587C text52 CODE >162:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5886 text52 CODE >163:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5890 text52 CODE >164:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-589A text52 CODE >165:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-58A4 text52 CODE >167:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-58A6 text52 CODE >168:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5818 text51 CODE >170:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5818 text51 CODE >172:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-582E text51 CODE >174:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5834 text51 CODE >177:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-583E text51 CODE >178:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5848 text51 CODE >179:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5852 text51 CODE >180:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-585C text51 CODE >182:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-585E text51 CODE >183:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5978 text50 CODE >144:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5978 text50 CODE >146:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-59B0 text50 CODE >148:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-59B6 text50 CODE >151:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-59B8 text50 CODE >152:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-454C text49 CODE >355:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-454C text49 CODE >359:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4554 text49 CODE >361:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4598 text49 CODE >363:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-459C text49 CODE >365:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-45A0 text49 CODE >366:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-464A text49 CODE >368:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4656 text49 CODE >369:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-465A text49 CODE >372:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4666 text49 CODE >374:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4678 text49 CODE >375:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-468A text49 CODE >376:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-46C4 text49 CODE >377:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-482A text48 CODE >379:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-482A text48 CODE >383:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-482E text48 CODE >385:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4836 text48 CODE >386:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4842 text48 CODE >388:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-487C text48 CODE >389:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-48CC text48 CODE >391:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-48F8 text48 CODE >393:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4924 text48 CODE >395:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-4928 text48 CODE >383:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-495A text48 CODE >397:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-54B8 text47 CODE >193:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-54B8 text47 CODE >195:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-54C8 text47 CODE >197:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-54F0 text47 CODE >206:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-54FC text47 CODE >204:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5516 text47 CODE >208:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-551E text47 CODE >202:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5538 text47 CODE >210:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5BB8 text46 CODE >16:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5BBA text46 CODE >20:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5BC2 text46 CODE >22:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5BD0 text46 CODE >23:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-5BE4 text46 CODE >24:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D5A text45 CODE >34:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D5A text45 CODE >37:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D64 text45 CODE >38:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D6A text45 CODE >40:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D74 text45 CODE >41:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D7E text45 CODE >42:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D88 text45 CODE >43:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D92 text45 CODE >44:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2D9C text45 CODE >45:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DA6 text45 CODE >46:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DB0 text45 CODE >47:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DBA text45 CODE >48:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DC4 text45 CODE >49:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DCE text45 CODE >50:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DD8 text45 CODE >51:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DE2 text45 CODE >52:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DEC text45 CODE >53:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2DF6 text45 CODE >54:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E00 text45 CODE >55:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E0A text45 CODE >56:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E14 text45 CODE >57:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E1E text45 CODE >58:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E28 text45 CODE >59:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E32 text45 CODE >60:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E3C text45 CODE >61:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E46 text45 CODE >62:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E50 text45 CODE >63:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E5A text45 CODE >64:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E64 text45 CODE >65:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E6E text45 CODE >66:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E78 text45 CODE >67:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E82 text45 CODE >68:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E8C text45 CODE >69:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2E96 text45 CODE >70:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EA0 text45 CODE >71:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EAA text45 CODE >72:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EB4 text45 CODE >73:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EBE text45 CODE >74:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EC8 text45 CODE >75:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2ED2 text45 CODE >76:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EDC text45 CODE >77:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EE6 text45 CODE >78:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EF0 text45 CODE >79:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2EFA text45 CODE >80:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F04 text45 CODE >81:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F0E text45 CODE >82:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F18 text45 CODE >83:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F22 text45 CODE >84:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F2C text45 CODE >85:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F36 text45 CODE >86:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F40 text45 CODE >87:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F4A text45 CODE >88:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F54 text45 CODE >89:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F5E text45 CODE >90:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F68 text45 CODE >91:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F72 text45 CODE >92:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F7C text45 CODE >93:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F86 text45 CODE >94:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F90 text45 CODE >95:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2F9A text45 CODE >96:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FA4 text45 CODE >97:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FAE text45 CODE >98:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FB8 text45 CODE >99:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FC2 text45 CODE >100:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FCC text45 CODE >101:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FD6 text45 CODE >102:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FE0 text45 CODE >103:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FEA text45 CODE >104:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FF4 text45 CODE >105:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-2FFE text45 CODE >106:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3008 text45 CODE >107:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3012 text45 CODE >108:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-301C text45 CODE >109:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3026 text45 CODE >110:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3030 text45 CODE >111:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-303A text45 CODE >112:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3044 text45 CODE >113:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-304E text45 CODE >114:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3058 text45 CODE >115:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3062 text45 CODE >116:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-306C text45 CODE >117:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3076 text45 CODE >118:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3080 text45 CODE >119:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-308A text45 CODE >120:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-3094 text45 CODE >121:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-309E text45 CODE >122:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-30A8 text45 CODE >123:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-30B2 text45 CODE >124:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-30BC text45 CODE >125:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-30C2 text45 CODE >126:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-30CC text45 CODE >127:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-30D2 text45 CODE >130:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
-30DE text45 CODE >132:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5C66 text55 CODE >92:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5C68 text55 CODE >94:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5C6C text55 CODE >95:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5C7A text55 CODE >96:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5C7C text55 CODE >97:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5C7E text55 CODE >98:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\mcc_generated_files/spi.c
+5C9A text54 CODE >134:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5C9C text54 CODE >136:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CA6 text54 CODE >138:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CA8 text54 CODE >140:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CAE text54 CODE >141:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CB0 text54 CODE >142:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CCA text53 CODE >185:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CCA text53 CODE >187:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CD4 text53 CODE >188:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5CDE text53 CODE >191:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5860 text52 CODE >155:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5860 text52 CODE >157:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5876 text52 CODE >159:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+587C text52 CODE >162:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5886 text52 CODE >163:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5890 text52 CODE >164:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+589A text52 CODE >165:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+58A4 text52 CODE >167:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+58A6 text52 CODE >168:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5818 text51 CODE >170:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5818 text51 CODE >172:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+582E text51 CODE >174:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5834 text51 CODE >177:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+583E text51 CODE >178:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5848 text51 CODE >179:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5852 text51 CODE >180:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+585C text51 CODE >182:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+585E text51 CODE >183:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5978 text50 CODE >144:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5978 text50 CODE >146:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+59B0 text50 CODE >148:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+59B6 text50 CODE >151:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+59B8 text50 CODE >152:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+454C text49 CODE >355:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+454C text49 CODE >359:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4554 text49 CODE >361:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4598 text49 CODE >363:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+459C text49 CODE >365:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+45A0 text49 CODE >366:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+464A text49 CODE >368:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4656 text49 CODE >369:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+465A text49 CODE >372:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4666 text49 CODE >374:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4678 text49 CODE >375:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+468A text49 CODE >376:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+46C4 text49 CODE >377:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+482A text48 CODE >379:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+482A text48 CODE >383:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+482E text48 CODE >385:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4836 text48 CODE >386:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4842 text48 CODE >388:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+487C text48 CODE >389:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+48CC text48 CODE >391:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+48F8 text48 CODE >393:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4924 text48 CODE >395:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+4928 text48 CODE >383:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+495A text48 CODE >397:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+54B8 text47 CODE >193:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+54B8 text47 CODE >195:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+54C8 text47 CODE >197:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+54F0 text47 CODE >206:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+54FC text47 CODE >204:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5516 text47 CODE >208:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+551E text47 CODE >202:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5538 text47 CODE >210:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5BB8 text46 CODE >16:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5BBA text46 CODE >20:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5BC2 text46 CODE >22:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5BD0 text46 CODE >23:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+5BE4 text46 CODE >24:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D5A text45 CODE >34:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D5A text45 CODE >37:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D64 text45 CODE >38:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D6A text45 CODE >40:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D74 text45 CODE >41:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D7E text45 CODE >42:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D88 text45 CODE >43:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D92 text45 CODE >44:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2D9C text45 CODE >45:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DA6 text45 CODE >46:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DB0 text45 CODE >47:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DBA text45 CODE >48:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DC4 text45 CODE >49:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DCE text45 CODE >50:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DD8 text45 CODE >51:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DE2 text45 CODE >52:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DEC text45 CODE >53:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2DF6 text45 CODE >54:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E00 text45 CODE >55:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E0A text45 CODE >56:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E14 text45 CODE >57:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E1E text45 CODE >58:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E28 text45 CODE >59:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E32 text45 CODE >60:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E3C text45 CODE >61:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E46 text45 CODE >62:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E50 text45 CODE >63:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E5A text45 CODE >64:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E64 text45 CODE >65:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E6E text45 CODE >66:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E78 text45 CODE >67:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E82 text45 CODE >68:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E8C text45 CODE >69:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2E96 text45 CODE >70:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EA0 text45 CODE >71:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EAA text45 CODE >72:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EB4 text45 CODE >73:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EBE text45 CODE >74:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EC8 text45 CODE >75:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2ED2 text45 CODE >76:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EDC text45 CODE >77:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EE6 text45 CODE >78:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EF0 text45 CODE >79:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2EFA text45 CODE >80:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F04 text45 CODE >81:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F0E text45 CODE >82:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F18 text45 CODE >83:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F22 text45 CODE >84:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F2C text45 CODE >85:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F36 text45 CODE >86:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F40 text45 CODE >87:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F4A text45 CODE >88:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F54 text45 CODE >89:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F5E text45 CODE >90:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F68 text45 CODE >91:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F72 text45 CODE >92:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F7C text45 CODE >93:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F86 text45 CODE >94:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F90 text45 CODE >95:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2F9A text45 CODE >96:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FA4 text45 CODE >97:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FAE text45 CODE >98:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FB8 text45 CODE >99:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FC2 text45 CODE >100:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FCC text45 CODE >101:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FD6 text45 CODE >102:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FE0 text45 CODE >103:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FEA text45 CODE >104:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FF4 text45 CODE >105:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+2FFE text45 CODE >106:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3008 text45 CODE >107:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3012 text45 CODE >108:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+301C text45 CODE >109:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3026 text45 CODE >110:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3030 text45 CODE >111:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+303A text45 CODE >112:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3044 text45 CODE >113:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+304E text45 CODE >114:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3058 text45 CODE >115:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3062 text45 CODE >116:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+306C text45 CODE >117:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3076 text45 CODE >118:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3080 text45 CODE >119:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+308A text45 CODE >120:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+3094 text45 CODE >121:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+309E text45 CODE >122:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+30A8 text45 CODE >123:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+30B2 text45 CODE >124:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+30BC text45 CODE >125:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+30C2 text45 CODE >126:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+30CC text45 CODE >127:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+30D2 text45 CODE >130:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
+30DE text45 CODE >132:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\lib_ili9341.c
 5C40 text44 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
 5C40 text44 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
 5C4C text44 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
@@ -1463,69 +1463,69 @@ FF0 text4 CODE >1182:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\
 5B86 text1 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\snprintf.c
 5B90 text1 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\snprintf.c
 5BB6 text1 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\snprintf.c
-36A2 text0 CODE >34:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36A2 text0 CODE >37:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36A6 text0 CODE >38:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36AC text0 CODE >39:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36B0 text0 CODE >42:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36BC text0 CODE >45:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36BE text0 CODE >56:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36E8 text0 CODE >61:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-36FC text0 CODE >62:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-370A text0 CODE >63:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-3756 text0 CODE >64:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-378A text0 CODE >65:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-37B8 text0 CODE >66:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-37E2 text0 CODE >67:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-3814 text0 CODE >68:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-381A text0 CODE >71:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-381C text0 CODE >74:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-3830 text0 CODE >75:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-383E text0 CODE >76:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-388A text0 CODE >77:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-38B8 text0 CODE >78:C:\Users\Asus\Desktop\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
-5774 cinit CODE >9879:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5774 cinit CODE >9881:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5774 cinit CODE >9884:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5774 cinit CODE >9954:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5776 cinit CODE >9955:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5778 cinit CODE >9956:C:\Users\Asus\AppData\Local\Temp\sgro.s
-577A cinit CODE >9957:C:\Users\Asus\AppData\Local\Temp\sgro.s
-577C cinit CODE >9958:C:\Users\Asus\AppData\Local\Temp\sgro.s
-577E cinit CODE >9959:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5780 cinit CODE >9960:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5784 cinit CODE >9961:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5788 cinit CODE >9962:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5788 cinit CODE >9963:C:\Users\Asus\AppData\Local\Temp\sgro.s
-578A cinit CODE >9964:C:\Users\Asus\AppData\Local\Temp\sgro.s
-578E cinit CODE >9965:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5790 cinit CODE >9966:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5792 cinit CODE >9967:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5794 cinit CODE >9971:C:\Users\Asus\AppData\Local\Temp\sgro.s
-5798 cinit CODE >9972:C:\Users\Asus\AppData\Local\Temp\sgro.s
-579A cinit CODE >9973:C:\Users\Asus\AppData\Local\Temp\sgro.s
-579A cinit CODE >9974:C:\Users\Asus\AppData\Local\Temp\sgro.s
-579C cinit CODE >9975:C:\Users\Asus\AppData\Local\Temp\sgro.s
-579E cinit CODE >9976:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57A0 cinit CODE >9979:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57A4 cinit CODE >9980:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57A6 cinit CODE >9981:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57A6 cinit CODE >9982:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57A8 cinit CODE >9983:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57AA cinit CODE >9984:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57AC cinit CODE >9987:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57B0 cinit CODE >9988:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57B2 cinit CODE >9989:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57B2 cinit CODE >9990:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57B4 cinit CODE >9991:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57B6 cinit CODE >9992:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57B8 cinit CODE >9995:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57BA cinit CODE >9996:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57BC cinit CODE >10002:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57BC cinit CODE >10004:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57BE cinit CODE >10005:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57C0 cinit CODE >10006:C:\Users\Asus\AppData\Local\Temp\sgro.s
-57C2 cinit CODE >10007:C:\Users\Asus\AppData\Local\Temp\sgro.s
+36A2 text0 CODE >34:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36A2 text0 CODE >37:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36A6 text0 CODE >38:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36AC text0 CODE >39:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36B0 text0 CODE >42:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36BC text0 CODE >45:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36BE text0 CODE >56:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36E8 text0 CODE >61:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+36FC text0 CODE >62:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+370A text0 CODE >63:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+3756 text0 CODE >64:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+378A text0 CODE >65:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+37B8 text0 CODE >66:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+37E2 text0 CODE >67:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+3814 text0 CODE >68:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+381A text0 CODE >71:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+381C text0 CODE >74:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+3830 text0 CODE >75:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+383E text0 CODE >76:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+388A text0 CODE >77:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+38B8 text0 CODE >78:C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_3\Aula_3.1.X\main.c
+5774 cinit CODE >9879:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5774 cinit CODE >9881:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5774 cinit CODE >9884:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5774 cinit CODE >9954:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5776 cinit CODE >9955:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5778 cinit CODE >9956:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+577A cinit CODE >9957:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+577C cinit CODE >9958:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+577E cinit CODE >9959:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5780 cinit CODE >9960:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5784 cinit CODE >9961:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5788 cinit CODE >9962:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5788 cinit CODE >9963:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+578A cinit CODE >9964:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+578E cinit CODE >9965:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5790 cinit CODE >9966:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5792 cinit CODE >9967:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5794 cinit CODE >9971:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+5798 cinit CODE >9972:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+579A cinit CODE >9973:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+579A cinit CODE >9974:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+579C cinit CODE >9975:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+579E cinit CODE >9976:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57A0 cinit CODE >9979:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57A4 cinit CODE >9980:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57A6 cinit CODE >9981:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57A6 cinit CODE >9982:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57A8 cinit CODE >9983:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57AA cinit CODE >9984:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57AC cinit CODE >9987:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57B0 cinit CODE >9988:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57B2 cinit CODE >9989:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57B2 cinit CODE >9990:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57B4 cinit CODE >9991:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57B6 cinit CODE >9992:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57B8 cinit CODE >9995:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57BA cinit CODE >9996:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57BC cinit CODE >10002:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57BC cinit CODE >10004:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57BE cinit CODE >10005:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57C0 cinit CODE >10006:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
+57C2 cinit CODE >10007:C:\Users\Blitzar\AppData\Local\Temp\sahk.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1556,7 +1556,7 @@ stoa@F1174 1B4 0 BANK1 1 dataBANK1 dist/default/production\Aula_3.1.X.production
 strncmp@_l 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 strncmp@_r 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Aula_3.1.X.production.o
-__mediumconst F1BC 0 MEDIUMCONST 0 mediumconst C:\Users\Asus\AppData\Local\Temp\sgro.o
+__mediumconst F1BC 0 MEDIUMCONST 0 mediumconst C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 _lcd_draw_char 454C 0 CODE 0 text49 dist/default/production\Aula_3.1.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Aula_3.1.X.production.o
 isalpha@c 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
@@ -1576,7 +1576,7 @@ _LATC F8B 0 ABS 0 - dist/default/production\Aula_3.1.X.production.o
 _LATD F8C 0 ABS 0 - dist/default/production\Aula_3.1.X.production.o
 _LATE F8D 0 ABS 0 - dist/default/production\Aula_3.1.X.production.o
 _WPUB F5B 0 ABS 0 - dist/default/production\Aula_3.1.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Asus\AppData\Local\Temp\sgro.o
+___sp 0 0 STACK 2 stack C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 _atoi 40A4 0 CODE 0 text41 dist/default/production\Aula_3.1.X.production.o
 _ctoa 5718 0 CODE 0 text35 dist/default/production\Aula_3.1.X.production.o
 _dbuf 164 0 BANK1 1 bssBANK1 dist/default/production\Aula_3.1.X.production.o
@@ -1596,7 +1596,7 @@ __end_of_ADC_GetConversion 5A70 0 CODE 0 text66 dist/default/production\Aula_3.1
 pad@i 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 pad@p 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 pad@w 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
-start 3E 0 CODE 0 init C:\Users\Asus\AppData\Local\Temp\sgro.o
+start 3E 0 CODE 0 init C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 ___aomod@counter 14 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 ___flmul@aexp 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 ___flmul@bexp 24 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
@@ -1664,11 +1664,11 @@ utoa@i 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.
 utoa@n 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 utoa@p 31 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 utoa@w 33 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\Asus\AppData\Local\Temp\sgro.o
-intlevel0 0 0 CODE 0 text C:\Users\Asus\AppData\Local\Temp\sgro.o
-intlevel1 0 0 CODE 0 text C:\Users\Asus\AppData\Local\Temp\sgro.o
-intlevel2 0 0 CODE 0 text C:\Users\Asus\AppData\Local\Temp\sgro.o
-intlevel3 0 0 CODE 0 text C:\Users\Asus\AppData\Local\Temp\sgro.o
+__accesstop 60 0 ABS 0 - C:\Users\Blitzar\AppData\Local\Temp\sahk.o
+intlevel0 0 0 CODE 0 text C:\Users\Blitzar\AppData\Local\Temp\sahk.o
+intlevel1 0 0 CODE 0 text C:\Users\Blitzar\AppData\Local\Temp\sahk.o
+intlevel2 0 0 CODE 0 text C:\Users\Blitzar\AppData\Local\Temp\sahk.o
+intlevel3 0 0 CODE 0 text C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 _lcd_set_cursor_x 5860 0 CODE 0 text52 dist/default/production\Aula_3.1.X.production.o
 _lcd_set_cursor_y 5818 0 CODE 0 text51 dist/default/production\Aula_3.1.X.production.o
 floorf@e 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
@@ -1717,8 +1717,8 @@ _ANCON1 F5C 0 ABS 0 - dist/default/production\Aula_3.1.X.production.o
 lcd_set_cursor_x@x 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 lcd_set_cursor_y@y 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 ___awdiv@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\Asus\AppData\Local\Temp\sgro.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\Asus\AppData\Local\Temp\sgro.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Blitzar\AppData\Local\Temp\sahk.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 ?_tolower A 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 ?_toupper A 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 __end_of_INTERRUPT_InterruptManager 3E 0 CODE 0 intcode dist/default/production\Aula_3.1.X.production.o
@@ -1879,7 +1879,7 @@ __Hbank14 0 0 ABS 0 bank14 dist/default/production\Aula_3.1.X.production.o
 __size_of___xxtofl 0 0 ABS 0 - dist/default/production\Aula_3.1.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Aula_3.1.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Aula_3.1.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Asus\AppData\Local\Temp\sgro.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 ___xxtofl@arg E 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 ___xxtofl@exp D 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 ___xxtofl@val 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
@@ -2224,8 +2224,8 @@ __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Aula_3.1.X.production.o
 _vsnprintf 4A82 0 CODE 0 text2 dist/default/production\Aula_3.1.X.production.o
 ___fldiv@new_exp 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 __size_of_vfprintf 0 0 ABS 0 - dist/default/production\Aula_3.1.X.production.o
-stackhi E40 0 ABS 0 - C:\Users\Asus\AppData\Local\Temp\sgro.o
-stacklo 264 0 ABS 0 - C:\Users\Asus\AppData\Local\Temp\sgro.o
+stackhi E40 0 ABS 0 - C:\Users\Blitzar\AppData\Local\Temp\sahk.o
+stacklo 264 0 ABS 0 - C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 stoa@cp 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 stoa@fp D 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula_3.1.X.production.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\Aula_3.1.X.production.o
@@ -2384,7 +2384,7 @@ __Ltext69 0 0 ABS 0 text69 dist/default/production\Aula_3.1.X.production.o
 __Ltext70 0 0 ABS 0 text70 dist/default/production\Aula_3.1.X.production.o
 __Ltext71 0 0 ABS 0 text71 dist/default/production\Aula_3.1.X.production.o
 __Ltext72 0 0 ABS 0 text72 dist/default/production\Aula_3.1.X.production.o
-__ramtop F00 0 RAM 0 ramtop C:\Users\Asus\AppData\Local\Temp\sgro.o
+__ramtop F00 0 RAM 0 ramtop C:\Users\Blitzar\AppData\Local\Temp\sahk.o
 _IOCB4_DefaultInterruptHandler 5D32 0 CODE 0 text70 dist/default/production\Aula_3.1.X.production.o
 _vfprintf 553A 0 CODE 0 text3 dist/default/production\Aula_3.1.X.production.o
 __Lpowerup 3E 0 CODE 0 powerup dist/default/production\Aula_3.1.X.production.o

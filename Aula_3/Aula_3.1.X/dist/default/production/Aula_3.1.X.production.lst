@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Wed Nov 11 12:03:31 2020
+                                                                                               Sat Nov 21 18:52:27 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	18F46K80
@@ -3308,11 +3308,11 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3289  0036E4  EC15  F024         	call	_lcd_draw_string	;wreg free
   3290  0036E8                     l9089:
   3291                           
-  3292                           ;main.c: 59:     {;main.c: 61:         if (botao){
+  3292                           ;main.c: 59:     {;main.c: 61:         if (botao==1){
   3293  0036E8  0100               	movlb	0	; () banked
-  3294  0036EA  51FA               	movf	_botao& (0+255),w,b
+  3294  0036EA  05FA               	decf	_botao& (0+255),w,b
   3295  0036EC  11FB               	iorwf	(_botao+1)& (0+255),w,b
-  3296  0036EE  B4D8               	btfsc	status,2,c
+  3296  0036EE  A4D8               	btfss	status,2,c
   3297  0036F0  EF7C  F01B         	goto	u12061
   3298  0036F4  EF7E  F01B         	goto	u12060
   3299  0036F8                     u12061:
@@ -3442,7 +3442,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3422  00381A  9A89               	bcf	137,5,c	;volatile
   3423  00381C                     l9103:
   3424                           
-  3425                           ;main.c: 74:         if (!botao){
+  3425                           ;main.c: 74:         if (botao==0){
   3426  00381C  0100               	movlb	0	; () banked
   3427  00381E  51FA               	movf	_botao& (0+255),w,b
   3428  003820  11FB               	iorwf	(_botao+1)& (0+255),w,b
@@ -19711,7 +19711,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Wed Nov 11 12:03:31 2020
+Symbol Table                                                                                   Sat Nov 21 18:52:27 2020
 
                            _SPI_Initialize 5CF6                               ___fldiv@aexp 001C  
                              ___fldiv@bexp 001B                               ___fldiv@sign 0014  

@@ -21004,7 +21004,7 @@ void main(void)
     while (1)
     {
 
-        if (botao){
+        if (botao==1){
             codigo_digit=ADC_GetConversion(TEMP);
             tensao_in=codigo_digit*0.000805664063;
             temp=tensao_in*33.3333333;
@@ -21017,7 +21017,7 @@ void main(void)
                 do { LATAbits.LATA5 = 0; } while(0);
             }
         }
-        if (!botao){
+        if (botao==0){
             codigo_digit=ADC_GetConversion(POT);
             pot_val=codigo_digit*0.0244200244200244;
             snprintf(string_pot,sizeof(string_pot),"Pot=%.f%%      ",pot_val);

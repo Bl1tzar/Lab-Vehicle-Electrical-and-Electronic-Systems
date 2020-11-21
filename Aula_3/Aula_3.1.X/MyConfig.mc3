@@ -187,7 +187,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CUST_NAME_AN8"/>
-         <value>channel_AN8</value>
+         <value>NTC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CUST_NAME_AN7"/>
@@ -1675,7 +1675,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RB1"/>
-         <value/>
+         <value>NTC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON2" settingAlias="ACQT" alias="20_Tad"/>
@@ -2971,7 +2971,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN8"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN7"/>
@@ -3235,7 +3235,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RB1"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RB2"/>
@@ -4648,16 +4648,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>9f01bdb775fea8637a0837cc3896426ec0deab7acb66ad90b5cc9408f96af71b</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.h</file>
          <hash>2ec29f1c390ac95f3b75d924e7b12cee6d68a4195dde10670fc286970eabcf45</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>06f7a2b2d9bfce1c9202ac042523c703f4c21a66fdc8a273ec54feb5f3339935</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>9f01bdb775fea8637a0837cc3896426ec0deab7acb66ad90b5cc9408f96af71b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\spi.c</file>
@@ -4681,7 +4681,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>c0aa49ec11cc37830a104509fc42e441c6c98b8de57ad0c4a9263988f84184bc</hash>
+         <hash>489df93ec4a7e16daee5960f91d85a1606e43d6548f8ef866a65b651b3fd5a3d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr1.c</file>
@@ -4689,7 +4689,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\adc.h</file>
-         <hash>93bf5b36a704eb1cfb0d0029466d74d8f5876dbcb685ddafcc3b010ce6a7970d</hash>
+         <hash>22072142e5704df1b0e5612a092dd83fbe0aa87ccae72b49da0571eacd77aeb7</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
@@ -4700,12 +4700,12 @@
          <hash>4bd37179d040d877736a1c4d53ea76670d6a9677e0e0f85852568ab1c0b40383</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>996aec1f165dfa9cb37cbd05489ea9b1b3d0f5799e77495dbe3706f30f9a47ed</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.c</file>
          <hash>006b9fc4dda0cdcc40fecc2a8a259cd1039cfe87397c2e869a2ca362903fbd7c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>996aec1f165dfa9cb37cbd05489ea9b1b3d0f5799e77495dbe3706f30f9a47ed</hash>
       </entry>
    </generatedFileHashHistoryMap>
    <mc3libFileHashHistoryMap class="java.util.HashMap"/>

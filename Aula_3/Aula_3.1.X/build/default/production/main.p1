@@ -3340,8 +3340,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 59:     {
 {
 "61
-[; ;main.c: 61:         if (botao){
-[e $ ! != _botao -> 0 `i 1555  ]
+[; ;main.c: 61:         if (botao==1){
+[e $ ! == _botao -> 1 `i 1555  ]
 {
 "62
 [; ;main.c: 62:             codigo_digit=ADC_GetConversion(TEMP);
@@ -3393,8 +3393,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 1555 ]
 "74
-[; ;main.c: 74:         if (!botao){
-[e $ ! ! != _botao -> 0 `i 1564  ]
+[; ;main.c: 74:         if (botao==0){
+[e $ ! == _botao -> 0 `i 1564  ]
 {
 "75
 [; ;main.c: 75:             codigo_digit=ADC_GetConversion(POT);

@@ -5,8 +5,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "63 mcc_generated_files/spi.h
 [; ;mcc_generated_files/spi.h: 63: void SPI_Initialize(void);
 [v _SPI_Initialize `(v ~T0 @X0 0 ef ]
-"211 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 211: void PIN_MANAGER_Initialize (void);
+"228 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 228: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
 "86 mcc_generated_files/mcc.h
 [; ;mcc_generated_files/mcc.h: 86: void OSCILLATOR_Initialize(void);
@@ -14,8 +14,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "100 mcc_generated_files/tmr1.h
 [; ;mcc_generated_files/tmr1.h: 100: void TMR1_Initialize(void);
 [v _TMR1_Initialize `(v ~T0 @X0 0 ef ]
-"133 mcc_generated_files/adc.h
-[; ;mcc_generated_files/adc.h: 133: void ADC_Initialize(void);
+"134 mcc_generated_files/adc.h
+[; ;mcc_generated_files/adc.h: 134: void ADC_Initialize(void);
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
 "36248 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 36248: extern volatile unsigned char OSCCON __attribute__((address(0xFD3)));

@@ -94,6 +94,7 @@ typedef enum
     LED3 =  0x4,
     IO_RE0 =  0x5,
     IO_RE1 =  0x6,
+    NTC =  0x8,
     S1 =  0x9
 } adc_channel_t;
 
