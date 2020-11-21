@@ -14,21 +14,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30095
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30095: extern volatile PORTBbits_t PORTBbits __attribute__((address(0xF81)));
 [v _PORTBbits `VS1140 ~T0 @X0 0 e@3969 ]
-"30498
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30498:     struct {
-[s S1161 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1161 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
-"30508
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30508:     struct {
-[s S1162 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1162 . LA0 LA1 LA2 LA3 . LA5 LA6 LA7 ]
-"30497
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30497: typedef union {
-[u S1160 `S1161 1 `S1162 1 ]
-[n S1160 . . . ]
-"30519
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30519: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
-[v _LATAbits `VS1160 ~T0 @X0 0 e@3977 ]
 [p mainexit ]
 "73 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
@@ -78,6 +63,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12758 ]
 "114 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
 [v _snprintf `(i ~T0 @X0 0 e2v`*uc`ui`*Cuc ]
+"30498 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30498:     struct {
+[s S1161 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1161 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
+"30508
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30508:     struct {
+[s S1162 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1162 . LA0 LA1 LA2 LA3 . LA5 LA6 LA7 ]
+"30497
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30497: typedef union {
+[u S1160 `S1161 1 `S1162 1 ]
+[n S1160 . . . ]
+"30519
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30519: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
+[v _LATAbits `VS1160 ~T0 @X0 0 e@3977 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -3258,10 +3258,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ntc_val `f ~T0 @X0 1 e ]
 [v _temp_ntc `f ~T0 @X0 1 e ]
 "12
-[; ;main.c: 12: char string_temp[100], string_pot[100], string_ntc[100];
+[; ;main.c: 12: char string_temp[100], string_pot[100], string_ntc[100], string_ntc_low[100], string_ntc_high[100];
 [v _string_temp `uc ~T0 @X0 -> 100 `i e ]
 [v _string_pot `uc ~T0 @X0 -> 100 `i e ]
 [v _string_ntc `uc ~T0 @X0 -> 100 `i e ]
+[v _string_ntc_low `uc ~T0 @X0 -> 100 `i e ]
+[v _string_ntc_high `uc ~T0 @X0 -> 100 `i e ]
 "18
 [; ;main.c: 18: void IOCB4_InterruptCall(void){
 [v _IOCB4_InterruptCall `(v ~T0 @X0 1 ef ]
@@ -3272,16 +3274,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 20:     if(!PORTBbits.RB4){
 [e $ ! ! != -> . . _PORTBbits 0 4 `i -> 0 `i 1545  ]
 {
-"21
-[; ;main.c: 21:         do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
-[e :U 1548 ]
-{
-[e = . . _LATAbits 0 6 -> ~ -> . . _LATAbits 0 6 `i `uc ]
-}
-[e :U 1547 ]
 "22
 [; ;main.c: 22:         if(botao!=3){
-[e $ ! != _botao -> 3 `i 1549  ]
+[e $ ! != _botao -> 3 `i 1546  ]
 {
 "23
 [; ;main.c: 23:             botao++;
@@ -3289,10 +3284,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24
 [; ;main.c: 24:         }
 }
-[e $U 1550  ]
+[e $U 1547  ]
 "25
 [; ;main.c: 25:         else{
-[e :U 1549 ]
+[e :U 1546 ]
 {
 "26
 [; ;main.c: 26:             botao=0;
@@ -3300,7 +3295,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "27
 [; ;main.c: 27:         }
 }
-[e :U 1550 ]
+[e :U 1547 ]
 "28
 [; ;main.c: 28:     }
 }
@@ -3338,13 +3333,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 120 `i `us :s 1C -> -> 65535 `ui `us -> -> 0 `i `us ]
 "58
 [; ;main.c: 58:     while (1)
-[e :U 1553 ]
+[e :U 1550 ]
 "59
 [; ;main.c: 59:     {
 {
 "61
 [; ;main.c: 61:         if (botao==1){
-[e $ ! == _botao -> 1 `i 1555  ]
+[e $ ! == _botao -> 1 `i 1552  ]
 {
 "62
 [; ;main.c: 62:             codigo_digit=ADC_GetConversion(TEMP);
@@ -3363,41 +3358,41 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us -> &U _string_temp `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
 "67
 [; ;main.c: 67:                 if (temp >= 90){
-[e $ ! >= _temp -> -> 90 `i `f 1556  ]
+[e $ ! >= _temp -> -> 90 `i `f 1553  ]
 {
 "68
 [; ;main.c: 68:                 do { LATAbits.LATA5 = 1; } while(0);
-[e :U 1559 ]
+[e :U 1556 ]
 {
 [e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
 }
-[e :U 1558 ]
+[e :U 1555 ]
 "69
 [; ;main.c: 69:             }
 }
-[e $U 1560  ]
+[e $U 1557  ]
 "70
 [; ;main.c: 70:                 else{
-[e :U 1556 ]
+[e :U 1553 ]
 {
 "71
 [; ;main.c: 71:                 do { LATAbits.LATA5 = 0; } while(0);
-[e :U 1563 ]
+[e :U 1560 ]
 {
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 }
-[e :U 1562 ]
+[e :U 1559 ]
 "72
 [; ;main.c: 72:             }
 }
-[e :U 1560 ]
+[e :U 1557 ]
 "73
 [; ;main.c: 73:         }
 }
-[e :U 1555 ]
+[e :U 1552 ]
 "74
 [; ;main.c: 74:         if (botao==0){
-[e $ ! == _botao -> 0 `i 1564  ]
+[e $ ! == _botao -> 0 `i 1561  ]
 {
 "75
 [; ;main.c: 75:             codigo_digit=ADC_GetConversion(POT);
@@ -3414,10 +3409,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "79
 [; ;main.c: 79:         }
 }
-[e :U 1564 ]
+[e :U 1561 ]
 "80
 [; ;main.c: 80:         if (botao==2){
-[e $ ! == _botao -> 2 `i 1565  ]
+[e $ ! == _botao -> 2 `i 1562  ]
 {
 "81
 [; ;main.c: 81:             codigo_digit=ADC_GetConversion(NTC);
@@ -3432,27 +3427,87 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 84:             temp_ntc=(-ntc_val+4425.5)/(85.3);
 [e = _temp_ntc -> / + -> -U _ntc_val `d .4425.5 .85.3 `f ]
 "85
-[; ;main.c: 85:             snprintf(string_ntc,sizeof(string_ntc),"NTC=%fºC            ",temp_ntc);
+[; ;main.c: 85:             snprintf(string_ntc,sizeof(string_ntc),"NTC=%.f C            ",temp_ntc);
 [e ( _snprintf (2 , (. , , &U _string_ntc -> # _string_ntc `ui :s 4C -> _temp_ntc `d ]
 "86
 [; ;main.c: 86:             lcd_draw_string(100,100,string_ntc,0xFFFF,0x0000);
 [e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us -> &U _string_ntc `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
 "87
-[; ;main.c: 87:         }
+[; ;main.c: 87:                 if (temp_ntc >= 35){
+[e $ ! >= _temp_ntc -> -> 35 `i `f 1563  ]
+{
+"88
+[; ;main.c: 88:                 do { LATAbits.LATA6 = 1; } while(0);
+[e :U 1566 ]
+{
+[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 1565 ]
-"88
-[; ;main.c: 88:     }
-}
-[e :U 1552 ]
-[e $U 1553  ]
-[e :U 1554 ]
 "89
-[; ;main.c: 89: }
-[e :UE 1551 ]
+[; ;main.c: 89:             }
+}
+[e $U 1567  ]
+"90
+[; ;main.c: 90:                 else{
+[e :U 1563 ]
+{
+"91
+[; ;main.c: 91:                 do { LATAbits.LATA6 = 0; } while(0);
+[e :U 1570 ]
+{
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 1569 ]
+"92
+[; ;main.c: 92:             }
+}
+[e :U 1567 ]
+"93
+[; ;main.c: 93:                 if (temp_ntc < 20){
+[e $ ! < _temp_ntc -> -> 20 `i `f 1571  ]
+{
+"94
+[; ;main.c: 94:                     snprintf(string_ntc_low,sizeof(string_ntc_low),"0FF           ");
+[e ( _snprintf (2 , , &U _string_ntc_low -> # _string_ntc_low `ui :s 5C ]
+"95
+[; ;main.c: 95:                     lcd_draw_string(100,80,string_ntc_low,0xFFFF,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 80 `i `us -> &U _string_ntc_low `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
+"96
+[; ;main.c: 96:             }
+}
+[e :U 1571 ]
+"97
+[; ;main.c: 97:                 if (temp_ntc > 30){
+[e $ ! > _temp_ntc -> -> 30 `i `f 1572  ]
+{
+"98
+[; ;main.c: 98:                     snprintf(string_ntc_high,sizeof(string_ntc_high),"1FF           ");
+[e ( _snprintf (2 , , &U _string_ntc_high -> # _string_ntc_high `ui :s 6C ]
+"99
+[; ;main.c: 99:                     lcd_draw_string(100,80,string_ntc_high,0xFFFF,0x0000);
+[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 80 `i `us -> &U _string_ntc_high `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
+"100
+[; ;main.c: 100:             }
+}
+[e :U 1572 ]
+"101
+[; ;main.c: 101:         }
+}
+[e :U 1562 ]
+"102
+[; ;main.c: 102:     }
+}
+[e :U 1549 ]
+[e $U 1550  ]
+[e :U 1551 ]
+"103
+[; ;main.c: 103: }
+[e :UE 1548 ]
 }
 [p f _snprintf 9445376 ]
 [a 1C 72 69 76 76 79 32 87 79 82 76 68 0 ]
 [a 2C 84 101 109 112 61 37 46 102 32 67 32 32 32 32 32 32 0 ]
 [a 3C 80 111 116 61 37 46 102 37 37 32 32 32 32 32 32 0 ]
-[a 4C 78 84 67 61 37 102 18446744073709551546 67 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 6C 49 70 70 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 5C 48 70 70 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 4C 78 84 67 61 37 46 102 32 67 32 32 32 32 32 32 32 32 32 32 32 32 0 ]

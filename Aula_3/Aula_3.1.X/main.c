@@ -9,7 +9,7 @@
 #include "lib_ili9341.h"
 int codigo_digit, botao=0;
 float tensao_in, temp, pot_val, ntc_val, temp_ntc;
-char string_temp[100], string_pot[100], string_ntc[100];
+char string_temp[100], string_pot[100], string_ntc[100], string_ntc_low[100], string_ntc_high[100];
 
 
 /*
@@ -18,7 +18,7 @@ char string_temp[100], string_pot[100], string_ntc[100];
 void IOCB4_InterruptCall(void){
     //Add code for S1_interruption
     if(!S1_PORT){
-        LED4_Toggle();
+//        LED4_Toggle();
         if(botao!=3){
             botao++;
         }
@@ -82,8 +82,22 @@ void main(void)
             tensao_in=codigo_digit*0.000805664063;
             ntc_val=((-1440*tensao_in)-12853.770491803)/(tensao_in-8.9262295081968); //Vo=(V+ - V-).G || V+ = 3,3 . (NTC/(NTC+R9))  -> NTC = ((-R9.Vo)-(R9.G.V-))/(Vo + G.(V- - 3,3))) 
             temp_ntc=(-ntc_val+4425.5)/(85.3);
-            snprintf(string_ntc,sizeof(string_ntc),"NTC=%fºC            ",temp_ntc);
+            snprintf(string_ntc,sizeof(string_ntc),"NTC=%.f C            ",temp_ntc);
             lcd_draw_string(100,100,string_ntc,WHITE,BLACK);
+                if (temp_ntc >= 35){
+                LED4_SetHigh();
+            }
+                else{
+                LED4_SetLow();
+            }
+                if (temp_ntc < 20){ 
+                    snprintf(string_ntc_low,sizeof(string_ntc_low),"0FF           ");
+                    lcd_draw_string(100,80,string_ntc_low,WHITE,BLACK);
+            }
+                if (temp_ntc > 30){
+                    snprintf(string_ntc_high,sizeof(string_ntc_high),"1FF           ");
+                    lcd_draw_string(100,80,string_ntc_high,WHITE,BLACK);
+            }
         }
     }
 }   

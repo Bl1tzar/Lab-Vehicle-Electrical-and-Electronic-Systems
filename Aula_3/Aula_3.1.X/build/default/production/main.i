@@ -20428,17 +20428,17 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 211 "./mcc_generated_files/pin_manager.h"
+# 228 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 223 "./mcc_generated_files/pin_manager.h"
+# 240 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 236 "./mcc_generated_files/pin_manager.h"
+# 253 "./mcc_generated_files/pin_manager.h"
 void IOCB4_ISR(void);
-# 259 "./mcc_generated_files/pin_manager.h"
+# 276 "./mcc_generated_files/pin_manager.h"
 void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 283 "./mcc_generated_files/pin_manager.h"
+# 300 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCB4_InterruptHandler)(void);
-# 307 "./mcc_generated_files/pin_manager.h"
+# 324 "./mcc_generated_files/pin_manager.h"
 void IOCB4_DefaultInterruptHandler(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -20765,19 +20765,20 @@ typedef enum
     LED3 = 0x4,
     IO_RE0 = 0x5,
     IO_RE1 = 0x6,
+    NTC = 0x8,
     S1 = 0x9
 } adc_channel_t;
-# 133 "./mcc_generated_files/adc.h"
+# 134 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 162 "./mcc_generated_files/adc.h"
+# 163 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 194 "./mcc_generated_files/adc.h"
+# 195 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 227 "./mcc_generated_files/adc.h"
+# 228 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 257 "./mcc_generated_files/adc.h"
+# 258 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 285 "./mcc_generated_files/adc.h"
+# 286 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 58 "./mcc_generated_files/mcc.h" 2
 # 73 "./mcc_generated_files/mcc.h"
@@ -20963,8 +20964,8 @@ void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color,
 # 9 "main.c" 2
 
 int codigo_digit, botao=0;
-float tensao_in, temp, pot_val;
-char string_temp[100], string_pot[100];
+float tensao_in, temp, pot_val, ntc_val, temp_ntc;
+char string_temp[100], string_pot[100], string_ntc[100];
 
 
 
@@ -20973,9 +20974,9 @@ char string_temp[100], string_pot[100];
 void IOCB4_InterruptCall(void){
 
     if(!PORTBbits.RB4){
-        do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
-        if(!botao){
-            botao=1;
+
+        if(botao!=3){
+            botao++;
         }
         else{
             botao=0;
@@ -21022,6 +21023,20 @@ void main(void)
             pot_val=codigo_digit*0.0244200244200244;
             snprintf(string_pot,sizeof(string_pot),"Pot=%.f%%      ",pot_val);
             lcd_draw_string(100,100,string_pot,0xFFFF,0x0000);
+        }
+        if (botao==2){
+            codigo_digit=ADC_GetConversion(NTC);
+            tensao_in=codigo_digit*0.000805664063;
+            ntc_val=((-1440*tensao_in)-12853.770491803)/(tensao_in-8.9262295081968);
+            temp_ntc=(-ntc_val+4425.5)/(85.3);
+            snprintf(string_ntc,sizeof(string_ntc),"NTC=%.f C            ",temp_ntc);
+            lcd_draw_string(100,100,string_ntc,0xFFFF,0x0000);
+                if (temp_ntc >= 35){
+                do { LATAbits.LATA6 = 1; } while(0);
+            }
+                else{
+                do { LATAbits.LATA6 = 0; } while(0);
+            }
         }
     }
 }
