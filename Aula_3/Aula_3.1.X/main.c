@@ -73,7 +73,7 @@ void main(void)
         }
         if (botao==0){
             codigo_digit=ADC_GetConversion(POT);
-            pot_val=codigo_digit*0.0244200244200244;
+            pot_val=codigo_digit*0.0244200244200244; //COMO OBTER O VALOR 0.02442...???
             snprintf(string_pot,sizeof(string_pot),"Pot=%.f%%      ",pot_val);
             lcd_draw_string(100,100,string_pot,WHITE,BLACK);
         }
