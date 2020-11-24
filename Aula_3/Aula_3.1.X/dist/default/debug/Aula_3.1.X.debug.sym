@@ -1029,7 +1029,7 @@ text63 6032 6039 CODE 6032 0
 %locals
 dist/default/debug\Aula_3.1.X.debug.o
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
-C:\Users\Asus\AppData\Local\Temp\s38o.s
+C:\Users\Asus\AppData\Local\Temp\s2pc.s
 9945 59DE 0 CODE 0
 9947 59DE 0 CODE 0
 9950 59DE 0 CODE 0
@@ -2465,7 +2465,7 @@ mcc_generated_files/adc.c
 121 5D1E 0 CODE 0
 126 5D2C 0 CODE 0
 127 5D3E 0 CODE 0
-C:\Users\Asus\AppData\Local\Temp\s38o.s
+C:\Users\Asus\AppData\Local\Temp\s2pc.s
 30771 8 0 CODE 0
 mcc_generated_files/interrupt_manager.c
 58 8 0 CODE 0

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Sat Nov 21 23:38:50 2020
+                                                                                               Tue Nov 24 22:42:56 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	18F46K80
@@ -3843,7 +3843,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3820  0024D4  6E2A               	movwf	lcd_draw_string@bg_color^0,c
   3821  0024D6  EC2B  F026         	call	_lcd_draw_string	;wreg free
   3822  0024DA                     
-  3823                           ;main.c: 87:                 if (temp_ntc >= 35){
+  3823                           ;main.c: 87:                 if (temp_ntc >= 30){
   3824  0024DA  C108  F02A         	movff	_temp_ntc,___flge@ff1
   3825  0024DE  C109  F02B         	movff	_temp_ntc+1,___flge@ff1+1
   3826  0024E2  C10A  F02C         	movff	_temp_ntc+2,___flge@ff1+2
@@ -3852,9 +3852,9 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3829  0024EC  6E2E               	movwf	___flge@ff2^0,c
   3830  0024EE  0E00               	movlw	0
   3831  0024F0  6E2F               	movwf	(___flge@ff2+1)^0,c
-  3832  0024F2  0E0C               	movlw	12
+  3832  0024F2  0EF0               	movlw	240
   3833  0024F4  6E30               	movwf	(___flge@ff2+2)^0,c
-  3834  0024F6  0E42               	movlw	66
+  3834  0024F6  0E41               	movlw	65
   3835  0024F8  6E31               	movwf	(___flge@ff2+3)^0,c
   3836  0024FA  ECDA  F027         	call	___flge	;wreg free
   3837  0024FE  A0D8               	btfss	status,0,c
@@ -20282,7 +20282,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Sat Nov 21 23:38:50 2020
+Symbol Table                                                                                   Tue Nov 24 22:42:56 2020
 
                            _SPI_Initialize 5FFC                               ___fldiv@aexp 005A  
                              ___fldiv@bexp 0059                               ___fldiv@sign 0052  

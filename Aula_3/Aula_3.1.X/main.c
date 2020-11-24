@@ -84,7 +84,7 @@ void main(void)
             temp_ntc=(-ntc_val+4425.5)/(85.3);
             snprintf(string_ntc,sizeof(string_ntc),"NTC=%.f C            ",temp_ntc);
             lcd_draw_string(100,100,string_ntc,WHITE,BLACK);
-                if (temp_ntc >= 35){
+                if (temp_ntc >= 30){
                 LED4_SetHigh();
             }
                 else{
