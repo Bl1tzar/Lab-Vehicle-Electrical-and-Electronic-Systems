@@ -62,9 +62,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 "272 mcc_generated_files/ext_int.h
 [; ;mcc_generated_files/ext_int.h: 272: void INT0_ISR(void);
 [v _INT0_ISR `(v ~T0 @X0 0 ef ]
-"207 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 207: void PIN_MANAGER_IOC(void);
+"243 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 243: void PIN_MANAGER_IOC(void);
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 0 ef ]
+"31614 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31614:     struct {
+[s S1201 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1201 . TMR1IE TMR2IE TMR1GIE SSPIE TX1IE RC1IE ADIE PSPIE ]
+"31624
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31624:     struct {
+[s S1202 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1202 . . TXIE RCIE ]
+"31613
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31613: typedef union {
+[u S1200 `S1201 1 `S1202 1 ]
+[n S1200 . . . ]
+"31630
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31630: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
+[v _PIE1bits `VS1200 ~T0 @X0 0 e@3997 ]
+"31691
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31691:     struct {
+[s S1204 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1204 . TMR1IF TMR2IF TMR1GIF SSPIF TX1IF RC1IF ADIF PSPIF ]
+"31701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31701:     struct {
+[s S1205 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1205 . . TXIF RCIF ]
+"31690
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31690: typedef union {
+[u S1203 `S1204 1 `S1205 1 ]
+[n S1203 . . . ]
+"31707
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31707: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS1203 ~T0 @X0 0 e@3998 ]
+"296 mcc_generated_files/adc.h
+[; ;mcc_generated_files/adc.h: 296: void ADC_ISR(void);
+[v _ADC_ISR `(v ~T0 @X0 0 ef ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1509,17 +1542,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 1549  ]
 "69
-[; ;mcc_generated_files/interrupt_manager.c: 69:     else
+[; ;mcc_generated_files/interrupt_manager.c: 69:     else if(INTCONbits.PEIE == 1)
 [e :U 1548 ]
+[e $ ! == -> . . _INTCONbits 1 6 `i -> 1 `i 1550  ]
 "70
 [; ;mcc_generated_files/interrupt_manager.c: 70:     {
 {
+"71
+[; ;mcc_generated_files/interrupt_manager.c: 71:         if(PIE1bits.ADIE == 1 && PIR1bits.ADIF == 1)
+[e $ ! && == -> . . _PIE1bits 0 6 `i -> 1 `i == -> . . _PIR1bits 0 6 `i -> 1 `i 1551  ]
 "72
-[; ;mcc_generated_files/interrupt_manager.c: 72:     }
+[; ;mcc_generated_files/interrupt_manager.c: 72:         {
+{
+"73
+[; ;mcc_generated_files/interrupt_manager.c: 73:             ADC_ISR();
+[e ( _ADC_ISR ..  ]
+"74
+[; ;mcc_generated_files/interrupt_manager.c: 74:         }
 }
+[e $U 1552  ]
+"75
+[; ;mcc_generated_files/interrupt_manager.c: 75:         else
+[e :U 1551 ]
+"76
+[; ;mcc_generated_files/interrupt_manager.c: 76:         {
+{
+"78
+[; ;mcc_generated_files/interrupt_manager.c: 78:         }
+}
+[e :U 1552 ]
+"79
+[; ;mcc_generated_files/interrupt_manager.c: 79:     }
+}
+[e $U 1553  ]
+"80
+[; ;mcc_generated_files/interrupt_manager.c: 80:     else
+[e :U 1550 ]
+"81
+[; ;mcc_generated_files/interrupt_manager.c: 81:     {
+{
+"83
+[; ;mcc_generated_files/interrupt_manager.c: 83:     }
+}
+[e :U 1553 ]
 [e :U 1549 ]
 [e :U 1547 ]
-"73
-[; ;mcc_generated_files/interrupt_manager.c: 73: }
+"84
+[; ;mcc_generated_files/interrupt_manager.c: 84: }
 [e :UE 1545 ]
 }

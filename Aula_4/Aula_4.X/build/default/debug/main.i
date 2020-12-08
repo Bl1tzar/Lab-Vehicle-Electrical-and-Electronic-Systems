@@ -21007,14 +21007,25 @@ void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color,
 
 
 
+
 _Bool mode = 0;
-int pot_val, codigo_digital, pwm;
+int pot_val, codigo_digital, pwm, menu=1, clean=0;
+char lcd_pot[100],lcd_const_A[100],lcd_const_B[100];
 
 
 
 
 void IOCB4_InterruptCall(void){
-
+    if(PORTBbits.RB4==0){
+        if (menu==3){
+            menu=1;
+            clean=1;
+        }
+        else{
+            clean=1;
+            menu++;
+        }
+    }
 }
 void INT0_InterruptCall(void){
 
@@ -21026,7 +21037,7 @@ void function_relay (void){
     codigo_digital=ADC_GetConversion(POT);
     pot_val=codigo_digital*0.02442002442;
     if(pot_val>42) do { LATEbits.LATE2 = 1; } while(0);
-    else do { LATEbits.LATE2 = 0; } while(0);
+    if (pot_val<30) do { LATEbits.LATE2 = 0; } while(0);
 }
 
 void function_pwm (void){
@@ -21050,11 +21061,57 @@ void main(void)
 
 
     (INTCONbits.GIE = 1);
-# 66 "main.c"
+# 77 "main.c"
     while (1)
     {
 
         function_relay();
         function_pwm();
+        switch(menu){
+
+             case 1:
+                 if(clean==1){
+                 lcd_fill_rect(80,70,300,150,0x0000);
+                 }
+                 clean=0;
+
+                sprintf(lcd_pot,"POT: %d%%",pot_val);
+                lcd_draw_string (130,120,lcd_pot,0x07FF,0x0000);
+
+                LATAbits.LATA5=0;
+                LATAbits.LATA6=0;
+
+                 break;
+
+             case 2:
+                 if(clean==1){
+                 lcd_fill_rect(80,70,300,150,0x0000);
+                 }
+                 clean=0;
+
+                sprintf(lcd_const_A,"CONSTANTE_A: %d",42);
+                lcd_draw_string (95,120,lcd_const_A,0x07FF,0x0000);
+
+                LATAbits.LATA5=1;
+                LATAbits.LATA6=0;
+
+                 break;
+
+             case 3:
+                 if(clean==1){
+                 lcd_fill_rect(80,70,300,150,0x0000);
+                 }
+                 clean=0;
+
+                sprintf(lcd_const_B,"CONSTANTE_B: %d",30);
+                lcd_draw_string (95,120,lcd_const_B,0x07FF,0x0000);
+
+                LATAbits.LATA5=0;
+                LATAbits.LATA6=1;
+                LATAbits.LATA7=1;
+
+                 menu=0;
+                 break;
+        }
     }
 }

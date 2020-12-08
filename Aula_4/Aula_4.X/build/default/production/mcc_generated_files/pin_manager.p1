@@ -70,11 +70,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 26887: extern volatile IOCBbits_t IOCBbits __attribute__((address(0xF5A)));
 [v _IOCBbits `VS1010 ~T0 @X0 0 e@3930 ]
 [v F12358 `(v ~T0 @X0 0 tf ]
-"243 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 243: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
+"279 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 279: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCB4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12358 ]
-"291
-[; ;mcc_generated_files/pin_manager.h: 291: void IOCB4_DefaultInterruptHandler(void);
+"327
+[; ;mcc_generated_files/pin_manager.h: 327: void IOCB4_DefaultInterruptHandler(void);
 [v _IOCB4_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
 "37210 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37210:     struct {
@@ -95,8 +95,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37236
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37236: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS1507 ~T0 @X0 0 e@4082 ]
-"220 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 220: void IOCB4_ISR(void);
+"256 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 256: void IOCB4_ISR(void);
 [v _IOCB4_ISR `(v ~T0 @X0 0 ef ]
 [v F12370 `(v ~T0 @X0 0 tf ]
 [v F12372 `(v ~T0 @X0 0 tf ]
@@ -1520,8 +1520,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 66:     LATC = 0x00;
 [e = _LATC -> -> 0 `i `uc ]
 "71
-[; ;mcc_generated_files/pin_manager.c: 71:     TRISE = 0x04;
-[e = _TRISE -> -> 4 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 71:     TRISE = 0x00;
+[e = _TRISE -> -> 0 `i `uc ]
 "72
 [; ;mcc_generated_files/pin_manager.c: 72:     TRISA = 0x0F;
 [e = _TRISA -> -> 15 `i `uc ]
@@ -1532,8 +1532,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 74:     TRISC = 0xD7;
 [e = _TRISC -> -> 215 `i `uc ]
 "75
-[; ;mcc_generated_files/pin_manager.c: 75:     TRISD = 0xFF;
-[e = _TRISD -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 75:     TRISD = 0xEF;
+[e = _TRISD -> -> 239 `i `uc ]
 "80
 [; ;mcc_generated_files/pin_manager.c: 80:     ANCON0 = 0x87;
 [e = _ANCON0 -> -> 135 `i `uc ]

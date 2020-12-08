@@ -15,7 +15,7 @@ channel_Vdd_core 30
 channel_1_024V_bandgap 31
 POT 0
 ]
-"29 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"40 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [e E12780 . `uc
 channel_CTMU 28
 channel_Temp_diode 29
@@ -23,10 +23,24 @@ channel_Vdd_core 30
 channel_1_024V_bandgap 31
 POT 0
 ]
-"47
+"58
 [e E12726 . `uc
 SPI_DEFAULT 0
 ]
+"1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"72 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"274
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1368
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\float.c
@@ -41,6 +55,14 @@ SPI_DEFAULT 0
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -49,6 +71,8 @@ SPI_DEFAULT 0
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul64.c
@@ -75,17 +99,21 @@ SPI_DEFAULT 0
 [v _lcd_draw_line lcd_draw_line `(v  1 e 1 0 ]
 "255
 [v _lcd_draw_pixel_at lcd_draw_pixel_at `(v  1 e 1 0 ]
+"263
+[v _lcd_fill_rect lcd_fill_rect `(v  1 e 1 0 ]
 "355
 [v _lcd_draw_char lcd_draw_char `(v  1 e 1 0 ]
-"19 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"380
+[v _lcd_draw_string lcd_draw_string `(v  1 e 1 0 ]
+"21 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [v _IOCB4_InterruptCall IOCB4_InterruptCall `(v  1 e 1 0 ]
-"22
+"33
 [v _INT0_InterruptCall INT0_InterruptCall `(v  1 e 1 0 ]
-"28
+"39
 [v _function_relay function_relay `(v  1 e 1 0 ]
-"35
+"46
 [v _function_pwm function_pwm `(v  1 e 1 0 ]
-"43
+"54
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -158,8 +186,44 @@ SPI_DEFAULT 0
 [v _ANCON1 ANCON1 `VEuc  1 e 1 @3932 ]
 "27074
 [v _ANCON0 ANCON0 `VEuc  1 e 1 @3933 ]
+[s S935 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"30095
+[s S944 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S947 . 1 `S935 1 . 1 0 `S944 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES947  1 e 1 @3969 ]
 "30492
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S1058 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"30519
+[s S1067 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S1076 . 1 `S1058 1 . 1 0 `S1067 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1076  1 e 1 @3977 ]
 "30594
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "30706
@@ -168,17 +232,17 @@ SPI_DEFAULT 0
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "30930
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-[s S942 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S970 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "30947
-[s S946 . 1 `uc 1 LE0 1 0 :1:0 
+[s S974 . 1 `uc 1 LE0 1 0 :1:0 
 `uc 1 LE1 1 0 :1:1 
 `uc 1 LE2 1 0 :1:2 
 ]
-[u S950 . 1 `S942 1 . 1 0 `S946 1 . 1 0 ]
-[v _LATEbits LATEbits `VES950  1 e 1 @3981 ]
+[u S978 . 1 `S970 1 . 1 0 `S974 1 . 1 0 ]
+[v _LATEbits LATEbits `VES978  1 e 1 @3981 ]
 "31088
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "31145
@@ -201,15 +265,15 @@ SPI_DEFAULT 0
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "31331
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-[s S1370 . 1 `uc 1 C1TSEL 1 0 :1:0 
+[s S1486 . 1 `uc 1 C1TSEL 1 0 :1:0 
 `uc 1 C2TSEL 1 0 :1:1 
 `uc 1 C3TSEL 1 0 :1:2 
 `uc 1 C4TSEL 1 0 :1:3 
 `uc 1 C5TSEL 1 0 :1:4 
 ]
 "31377
-[u S1376 . 1 `S1370 1 . 1 0 ]
-[v _CCPTMRSbits CCPTMRSbits `VES1376  1 e 1 @3993 ]
+[u S1492 . 1 `S1486 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES1492  1 e 1 @3993 ]
 "31407
 [v _REFOCON REFOCON `VEuc  1 e 1 @3994 ]
 "31472
@@ -360,15 +424,15 @@ SPI_DEFAULT 0
 [v _SSPCON1bits SSPCON1bits `VES488  1 e 1 @4038 ]
 "35275
 [v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
-[s S1031 . 1 `uc 1 . 1 0 :2:0 
+[s S1147 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_NOT_W 1 0 :1:2 
 ]
 "35352
-[s S1034 . 1 `uc 1 . 1 0 :5:0 
+[s S1150 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 D_NOT_A 1 0 :1:5 
 ]
 "35352
-[s S1037 . 1 `uc 1 BF 1 0 :1:0 
+[s S1153 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -378,74 +442,74 @@ SPI_DEFAULT 0
 `uc 1 SMP 1 0 :1:7 
 ]
 "35352
-[s S1046 . 1 `uc 1 . 1 0 :2:0 
+[s S1162 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
 "35352
-[s S1051 . 1 `uc 1 . 1 0 :2:0 
+[s S1167 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
 "35352
-[s S1056 . 1 `uc 1 . 1 0 :2:0 
+[s S1172 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_WRITE 1 0 :1:2 
 ]
 "35352
-[s S1059 . 1 `uc 1 . 1 0 :5:0 
+[s S1175 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_ADDRESS 1 0 :1:5 
 ]
 "35352
-[s S1062 . 1 `uc 1 . 1 0 :2:0 
+[s S1178 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
 "35352
-[s S1067 . 1 `uc 1 . 1 0 :2:0 
+[s S1183 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
 "35352
-[s S1072 . 1 `uc 1 . 1 0 :2:0 
+[s S1188 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DAT 1 0 :1:5 
 ]
 "35352
-[s S1078 . 1 `uc 1 . 1 0 :2:0 
+[s S1194 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW 1 0 :1:2 
 `uc 1 START 1 0 :1:3 
 `uc 1 STOP 1 0 :1:4 
 `uc 1 DA 1 0 :1:5 
 ]
 "35352
-[s S1084 . 1 `uc 1 . 1 0 :2:0 
+[s S1200 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 NOT_A 1 0 :1:5 
 ]
 "35352
-[u S1089 . 1 `S1031 1 . 1 0 `S1034 1 . 1 0 `S1037 1 . 1 0 `S1046 1 . 1 0 `S1051 1 . 1 0 `S1056 1 . 1 0 `S1059 1 . 1 0 `S1062 1 . 1 0 `S1067 1 . 1 0 `S1072 1 . 1 0 `S1078 1 . 1 0 `S1084 1 . 1 0 ]
+[u S1205 . 1 `S1147 1 . 1 0 `S1150 1 . 1 0 `S1153 1 . 1 0 `S1162 1 . 1 0 `S1167 1 . 1 0 `S1172 1 . 1 0 `S1175 1 . 1 0 `S1178 1 . 1 0 `S1183 1 . 1 0 `S1188 1 . 1 0 `S1194 1 . 1 0 `S1200 1 . 1 0 ]
 "35352
 "35352
-[v _SSPSTATbits SSPSTATbits `VES1089  1 e 1 @4039 ]
+[v _SSPSTATbits SSPSTATbits `VES1205  1 e 1 @4039 ]
 "35507
 [v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
 "35577
 [v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
 "35597
 [v _T2CON T2CON `VEuc  1 e 1 @4042 ]
-[s S1322 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S1438 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "35618
-[s S1326 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S1442 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -454,10 +518,10 @@ SPI_DEFAULT 0
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
 "35618
-[u S1334 . 1 `S1322 1 . 1 0 `S1326 1 . 1 0 ]
+[u S1450 . 1 `S1438 1 . 1 0 `S1442 1 . 1 0 ]
 "35618
 "35618
-[v _T2CONbits T2CONbits `VES1334  1 e 1 @4042 ]
+[v _T2CONbits T2CONbits `VES1450  1 e 1 @4042 ]
 "35668
 [v _PR2 PR2 `VEuc  1 e 1 @4043 ]
 "35794
@@ -600,12 +664,26 @@ SPI_DEFAULT 0
 "37236
 "37236
 [v _INTCONbits INTCONbits `VES164  1 e 1 @4082 ]
-"13 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"55 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"14 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [v _mode mode `a  1 e 1 0 ]
-"14
+"15
 [v _pot_val pot_val `i  1 e 2 0 ]
 [v _codigo_digital codigo_digital `i  1 e 2 0 ]
 [v _pwm pwm `i  1 e 2 0 ]
+[v _menu menu `i  1 e 2 0 ]
+[v _clean clean `i  1 e 2 0 ]
+"16
+[v _lcd_pot lcd_pot `[100]uc  1 e 100 0 ]
+[v _lcd_const_A lcd_const_A `[100]uc  1 e 100 0 ]
+[v _lcd_const_B lcd_const_B `[100]uc  1 e 100 0 ]
 "56 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\mcc_generated_files/adc.c
 [v _ADC_InterruptHandler ADC_InterruptHandler `*.37(v  1 e 2 0 ]
 "30 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\mcc_generated_files/ext_int.c
@@ -617,10 +695,141 @@ SPI_DEFAULT 0
 [v _spi_configuration spi_configuration `C[1]S448  1 s 4 spi_configuration ]
 "57 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
-"43 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"54 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
+"129
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S2017 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S2017  1 a 6 10 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 8 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 0 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 2 ]
+"23
+} 0
+"1368 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1371
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 87 ]
+[s S1509 _IO_FILE 0 ]
+"1368
+[v vfprintf@fp fp `*.39S1509  1 p 2 81 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 83 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 85 ]
+"1382
+} 0
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"674
+[v vfpfcnvrt@ll ll `o  1 a 8 73 ]
+[s S1509 _IO_FILE 0 ]
+"670
+[v vfpfcnvrt@fp fp `*.39S1509  1 p 2 65 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 67 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 69 ]
+"1365
+} 0
+"274
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"277
+[v dtoa@n n `o  1 a 8 55 ]
+"276
+[v dtoa@i i `i  1 a 2 63 ]
+[v dtoa@s s `i  1 a 2 53 ]
+[v dtoa@w w `i  1 a 2 51 ]
+[v dtoa@p p `i  1 a 2 49 ]
+[s S1509 _IO_FILE 0 ]
+"274
+[v dtoa@fp fp `*.39S1509  1 p 2 29 ]
+[v dtoa@d d `o  1 p 8 31 ]
+"315
+} 0
 "72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 27 ]
+[v pad@i i `i  1 a 2 25 ]
+[s S1509 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S1509  1 p 2 18 ]
+[v pad@buf buf `*.39uc  1 p 2 20 ]
+[v pad@p p `i  1 p 2 22 ]
+"95
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39Cuc  1 a 2 4 ]
+"5
+[v strlen@s s `*.39Cuc  1 p 2 2 ]
+"12
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 16 ]
+"10
+[v fputs@c c `uc  1 a 1 15 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 11 ]
+[s S2017 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S2017  1 p 2 13 ]
+"19
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[s S2017 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S2017  1 p 2 4 ]
+"21
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 20 ]
+"4
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 19 ]
+[v ___aomod@counter counter `uc  1 a 1 18 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 2 ]
+[v ___aomod@divisor divisor `o  1 p 8 10 ]
+"36
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 20 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 19 ]
+[v ___aodiv@counter counter `uc  1 a 1 18 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 2 ]
+[v ___aodiv@divisor divisor `o  1 p 8 10 ]
+"43
 } 0
 "34 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\lib_ili9341.c
 [v _lcd_init lcd_init `(v  1 e 1 0 ]
@@ -648,6 +857,48 @@ SPI_DEFAULT 0
 "193
 [v lcd_fill@bg_color bg_color `us  1 p 2 11 ]
 "210
+} 0
+"263
+[v _lcd_fill_rect lcd_fill_rect `(v  1 e 1 0 ]
+{
+"265
+[v lcd_fill_rect@y_start y_start `us  1 a 2 23 ]
+"263
+[v lcd_fill_rect@x0 x0 `us  1 p 2 11 ]
+[v lcd_fill_rect@y0 y0 `us  1 p 2 13 ]
+[v lcd_fill_rect@x1 x1 `us  1 p 2 15 ]
+[v lcd_fill_rect@y1 y1 `us  1 p 2 17 ]
+[v lcd_fill_rect@color color `us  1 p 2 19 ]
+"292
+} 0
+"380
+[v _lcd_draw_string lcd_draw_string `(v  1 e 1 0 ]
+{
+"382
+[v lcd_draw_string@lIndex lIndex `us  1 a 2 49 ]
+[v lcd_draw_string@k k `us  1 a 2 47 ]
+"380
+[v lcd_draw_string@x x `us  1 p 2 33 ]
+[v lcd_draw_string@y y `us  1 p 2 35 ]
+[v lcd_draw_string@pS pS `*.39Cuc  1 p 2 37 ]
+[v lcd_draw_string@fg_color fg_color `us  1 p 2 39 ]
+[v lcd_draw_string@bg_color bg_color `us  1 p 2 41 ]
+"398
+} 0
+"355
+[v _lcd_draw_char lcd_draw_char `(v  1 e 1 0 ]
+{
+"357
+[v lcd_draw_char@i i `uc  1 a 1 32 ]
+[v lcd_draw_char@k k `uc  1 a 1 31 ]
+[v lcd_draw_char@j j `uc  1 a 1 30 ]
+"355
+[v lcd_draw_char@x x `us  1 p 2 11 ]
+[v lcd_draw_char@y y `us  1 p 2 13 ]
+[v lcd_draw_char@fIndex fIndex `us  1 p 2 15 ]
+[v lcd_draw_char@fg_color fg_color `us  1 p 2 17 ]
+[v lcd_draw_char@bg_color bg_color `us  1 p 2 19 ]
+"378
 } 0
 "144
 [v _lcd_set_cursor lcd_set_cursor `(uc  1 e 1 0 ]
@@ -693,10 +944,10 @@ SPI_DEFAULT 0
 [v SPI_ExchangeByte@data data `uc  1 a 1 2 ]
 "98
 } 0
-"28 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"39 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [v _function_relay function_relay `(v  1 e 1 0 ]
 {
-"33
+"44
 } 0
 "113 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\mcc_generated_files/adc.c
 [v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
@@ -707,10 +958,10 @@ SPI_DEFAULT 0
 [v ADC_GetConversion@channel channel `E12385  1 a 1 6 ]
 "132
 } 0
-"35 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"46 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [v _function_pwm function_pwm `(v  1 e 1 0 ]
 {
-"38
+"49
 } 0
 "10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -740,17 +991,17 @@ SPI_DEFAULT 0
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1695 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1880 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1700 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S1703 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1695 1 fAsBytes 4 0 `S1700 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1703  1 a 4 35 ]
+[s S1885 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1888 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1880 1 fAsBytes 4 0 `S1885 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1888  1 a 4 35 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 29 ]
-[s S1771 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1956 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1774 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1771 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1774  1 a 2 39 ]
+[u S1959 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1956 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1959  1 a 2 39 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 34 ]
 "11
@@ -865,10 +1116,10 @@ SPI_DEFAULT 0
 {
 "145
 } 0
-"19 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"21 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [v _IOCB4_InterruptCall IOCB4_InterruptCall `(v  1 e 1 0 ]
 {
-"21
+"32
 } 0
 "32 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\mcc_generated_files/ext_int.c
 [v _INT0_ISR INT0_ISR `(v  1 e 1 0 ]
@@ -885,10 +1136,10 @@ SPI_DEFAULT 0
 {
 "57
 } 0
-"22 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
+"33 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\main.c
 [v _INT0_InterruptCall INT0_InterruptCall `(v  1 e 1 0 ]
 {
-"26
+"37
 } 0
 "139 C:\Users\Blitzar\Ambiente de Trabalho\University\Auto.Eng\20.21\SEEV\Lab-Vehicle-Electrical-and-Electronic-Systems\Aula_4\Aula_4.X\mcc_generated_files/adc.c
 [v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
