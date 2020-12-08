@@ -20965,7 +20965,7 @@ void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color,
 
 int codigo_digit, botao=0;
 float tensao_in, temp, pot_val, ntc_val, temp_ntc;
-char string_temp[100], string_pot[100], string_ntc[100], string_ntc_low[100], string_ntc_high[100];
+char string_temp[100], string_pot[100], string_ntc[100];
 
 
 
@@ -20974,7 +20974,7 @@ char string_temp[100], string_pot[100], string_ntc[100], string_ntc_low[100], st
 void IOCB4_InterruptCall(void){
 
     if(!PORTBbits.RB4){
-
+        do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
         if(botao!=3){
             botao++;
         }
@@ -21029,22 +21029,8 @@ void main(void)
             tensao_in=codigo_digit*0.000805664063;
             ntc_val=((-1440*tensao_in)-12853.770491803)/(tensao_in-8.9262295081968);
             temp_ntc=(-ntc_val+4425.5)/(85.3);
-            snprintf(string_ntc,sizeof(string_ntc),"NTC=%.f C            ",temp_ntc);
+            snprintf(string_ntc,sizeof(string_ntc),"NTC=%fºC            ",temp_ntc);
             lcd_draw_string(100,100,string_ntc,0xFFFF,0x0000);
-                if (temp_ntc >= 35){
-                do { LATAbits.LATA6 = 1; } while(0);
-            }
-                else{
-                do { LATAbits.LATA6 = 0; } while(0);
-            }
-                if (temp_ntc < 20){
-                    snprintf(string_ntc_low,sizeof(string_ntc_low),"0FF           ");
-                    lcd_draw_string(100,80,string_ntc_low,0xFFFF,0x0000);
-            }
-                if (temp_ntc > 30){
-                    snprintf(string_ntc_high,sizeof(string_ntc_high),"1FF           ");
-                    lcd_draw_string(100,80,string_ntc_high,0xFFFF,0x0000);
-            }
         }
     }
 }
