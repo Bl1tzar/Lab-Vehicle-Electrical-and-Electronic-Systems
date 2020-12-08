@@ -21048,6 +21048,7 @@ int read_from_usart(int length) {
 void main(void) {
     int dummy;
 
+
     SYSTEM_Initialize();
     SPI_Open(SPI_DEFAULT);
     lcd_init();
@@ -21065,7 +21066,7 @@ void main(void) {
 
 
     (INTCONbits.GIE = 1);
-# 73 "main.c"
+# 74 "main.c"
     lcd_draw_string(60, 220, "EAU          SEEV         AULA_5", 0xFFFF, 0x0000);
     TMR0_WriteTimer(0x00);
 

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Sat Dec 05 15:27:13 2020
+                                                                                               Tue Dec 08 15:34:31 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	18F46K80
@@ -3698,21 +3698,21 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3679  0035B6                     _main:
   3680                           	opt callstack 8
   3681  0035B6                     
-  3682                           ;main.c: 45:     int dummy;;main.c: 47:     SYSTEM_Initialize();
+  3682                           ;main.c: 45:     int dummy;;main.c: 48:     SYSTEM_Initialize();
   3683  0035B6  ECAE  F033         	call	_SYSTEM_Initialize	;wreg free
   3684  0035BA                     
-  3685                           ;main.c: 48:     SPI_Open(SPI_DEFAULT);
+  3685                           ;main.c: 49:     SPI_Open(SPI_DEFAULT);
   3686  0035BA  0E00               	movlw	0
   3687  0035BC  ECA2  F02D         	call	_SPI_Open
   3688  0035C0                     
-  3689                           ;main.c: 49:     lcd_init();
+  3689                           ;main.c: 50:     lcd_init();
   3690  0035C0  ECE5  F012         	call	_lcd_init	;wreg free
   3691  0035C4  5081               	movf	129,w,c	;volatile
   3692  0035C6                     
-  3693                           ;main.c: 53:     INTCONbits.RBIF = 0;
+  3693                           ;main.c: 54:     INTCONbits.RBIF = 0;
   3694  0035C6  90F2               	bcf	242,0,c	;volatile
   3695  0035C8                     
-  3696                           ;main.c: 56:     IOCB4_SetInterruptHandler(INTERRUPT_S1_CALLBACK);
+  3696                           ;main.c: 57:     IOCB4_SetInterruptHandler(INTERRUPT_S1_CALLBACK);
   3697  0035C8  0E38               	movlw	low _INTERRUPT_S1_CALLBACK
   3698  0035CA  0100               	movlb	0	; () banked
   3699  0035CC  6F8D               	movwf	IOCB4_SetInterruptHandler@InterruptHandler& (0+255),b
@@ -3720,10 +3720,10 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3701  0035D0  6F8E               	movwf	(IOCB4_SetInterruptHandler@InterruptHandler+1)& (0+255),b
   3702  0035D2  EC4F  F034         	call	_IOCB4_SetInterruptHandler	;wreg free
   3703  0035D6                     
-  3704                           ;main.c: 63:     (INTCONbits.GIE = 1);
+  3704                           ;main.c: 64:     (INTCONbits.GIE = 1);
   3705  0035D6  8EF2               	bsf	242,7,c	;volatile
   3706  0035D8                     
-  3707                           ;main.c: 73:     lcd_draw_string(60, 220, "EAU          SEEV         AULA_5", 0xFFFF, 0x
+  3707                           ;main.c: 74:     lcd_draw_string(60, 220, "EAU          SEEV         AULA_5", 0xFFFF, 0x
       +                          0000);
   3708  0035D8  0E00               	movlw	0
   3709  0035DA  0101               	movlb	1	; () banked
@@ -3747,7 +3747,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3727  0035FE  6F08               	movwf	lcd_draw_string@bg_color& (0+255),b
   3728  003600  EC56  F027         	call	_lcd_draw_string	;wreg free
   3729  003604                     
-  3730                           ;main.c: 74:     TMR0_WriteTimer(0x00);
+  3730                           ;main.c: 75:     TMR0_WriteTimer(0x00);
   3731  003604  0E00               	movlw	0
   3732  003606  0100               	movlb	0	; () banked
   3733  003608  6F8E               	movwf	(TMR0_WriteTimer@timerVal+1)& (0+255),b
@@ -3756,13 +3756,13 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3736  00360E  EC49  F034         	call	_TMR0_WriteTimer	;wreg free
   3737  003612                     l9097:
   3738                           
-  3739                           ;main.c: 78:         adc_value = ADC_GetConversion(POT_PIN);
+  3739                           ;main.c: 79:         adc_value = ADC_GetConversion(POT_PIN);
   3740  003612  0E00               	movlw	0
   3741  003614  EC60  F031         	call	_ADC_GetConversion
   3742  003618  C08D  F176         	movff	?_ADC_GetConversion,_adc_value
   3743  00361C  C08E  F177         	movff	?_ADC_GetConversion+1,_adc_value+1
   3744  003620                     
-  3745                           ;main.c: 79:         adc_perc = (long int) adc_value * 100 / 4095;
+  3745                           ;main.c: 80:         adc_perc = (long int) adc_value * 100 / 4095;
   3746  003620  C176  F08D         	movff	_adc_value,___lmul@multiplier
   3747  003624  C177  F08E         	movff	_adc_value+1,___lmul@multiplier+1
   3748  003628  0100               	movlb	0	; () banked
@@ -3799,7 +3799,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3779  003676  C09B  F0B7         	movff	?___aldiv+2,_adc_perc+2
   3780  00367A  C09C  F0B8         	movff	?___aldiv+3,_adc_perc+3
   3781  00367E                     
-  3782                           ;main.c: 80:         snprintf(string, sizeof (string), "POT: %3d %%", adc_perc);
+  3782                           ;main.c: 81:         snprintf(string, sizeof (string), "POT: %3d %%", adc_perc);
   3783  00367E  0E98               	movlw	low _string
   3784  003680  0101               	movlb	1	; () banked
   3785  003682  6F5F               	movwf	snprintf@s& (0+255),b
@@ -3819,7 +3819,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3799  0036A4  C0B8  F168         	movff	_adc_perc+3,?_snprintf+9
   3800  0036A8  ECDC  F032         	call	_snprintf	;wreg free
   3801  0036AC                     
-  3802                           ;main.c: 81:         lcd_draw_string(100, 100, string, 0xFFFF, 0x0000);
+  3802                           ;main.c: 82:         lcd_draw_string(100, 100, string, 0xFFFF, 0x0000);
   3803  0036AC  0E00               	movlw	0
   3804  0036AE  0101               	movlb	1	; () banked
   3805  0036B0  6F01               	movwf	(lcd_draw_string@x+1)& (0+255),b
@@ -3842,7 +3842,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3822  0036D2  6F08               	movwf	lcd_draw_string@bg_color& (0+255),b
   3823  0036D4  EC56  F027         	call	_lcd_draw_string	;wreg free
   3824  0036D8                     
-  3825                           ;main.c: 84:         if (adc_perc >= turn_on_value) {
+  3825                           ;main.c: 85:         if (adc_perc >= turn_on_value) {
   3826  0036D8  C1B8  F16D         	movff	_turn_on_value,??_main
   3827  0036DC  C1B9  F16E         	movff	_turn_on_value+1,??_main+1
   3828  0036E0  0E00               	movlw	0
@@ -3881,7 +3881,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3861  003720                     l9107:
   3862                           
   3863                           ; BSR set to: 1
-  3864                           ;main.c: 87:         if (adc_perc <= turn_off_value) {
+  3864                           ;main.c: 88:         if (adc_perc <= turn_off_value) {
   3865  003720  C1B6  F16D         	movff	_turn_off_value,??_main
   3866  003724  C1B7  F16E         	movff	_turn_off_value+1,??_main+1
   3867  003728  0E00               	movlw	0
@@ -3921,7 +3921,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3901  00376A                     l9109:
   3902                           
   3903                           ; BSR set to: 1
-  3904                           ;main.c: 92:         if (TMR0_ReadTimer() > 23500) {
+  3904                           ;main.c: 93:         if (TMR0_ReadTimer() > 23500) {
   3905  00376A  ECBF  F033         	call	_TMR0_ReadTimer	;wreg free
   3906  00376E  0ECD               	movlw	205
   3907  003770  0100               	movlb	0	; () banked
@@ -3936,7 +3936,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3916  003786                     u11780:
   3917  003786                     
   3918                           ; BSR set to: 0
-  3919                           ;main.c: 94:             printf("Configuration MODE \n\r");
+  3919                           ;main.c: 95:             printf("Configuration MODE \n\r");
   3920  003786  0E75               	movlw	low STR_4
   3921  003788  0101               	movlb	1	; () banked
   3922  00378A  6F49               	movwf	printf@fmt& (0+255),b
@@ -3944,7 +3944,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3924  00378E  6F4A               	movwf	(printf@fmt+1)& (0+255),b
   3925  003790  EC60  F033         	call	_printf	;wreg free
   3926                           
-  3927                           ;main.c: 95:             printf("\n\rACTUAL TURN VALUES  ON: %d OFF: %d\n\r", turn_on_va
+  3927                           ;main.c: 96:             printf("\n\rACTUAL TURN VALUES  ON: %d OFF: %d\n\r", turn_on_va
       +                          lue, turn_off_value);
   3928  003794  0E2D               	movlw	low STR_5
   3929  003796  0101               	movlb	1	; () banked
@@ -3957,7 +3957,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3936  0037AA  C1B7  F14E         	movff	_turn_off_value+1,?_printf+5
   3937  0037AE  EC60  F033         	call	_printf	;wreg free
   3938                           
-  3939                           ;main.c: 97:             printf("\n\rTurn ON Value: \n\r");
+  3939                           ;main.c: 98:             printf("\n\rTurn ON Value: \n\r");
   3940  0037B2  0EA0               	movlw	low STR_6
   3941  0037B4  0101               	movlb	1	; () banked
   3942  0037B6  6F49               	movwf	printf@fmt& (0+255),b
@@ -3965,7 +3965,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3944  0037BA  6F4A               	movwf	(printf@fmt+1)& (0+255),b
   3945  0037BC  EC60  F033         	call	_printf	;wreg free
   3946                           
-  3947                           ;main.c: 98:             turn_on_value = read_from_usart(2);
+  3947                           ;main.c: 99:             turn_on_value = read_from_usart(2);
   3948  0037C0  0E00               	movlw	0
   3949  0037C2  0100               	movlb	0	; () banked
   3950  0037C4  6FA4               	movwf	(read_from_usart@length+1)& (0+255),b
@@ -3975,7 +3975,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3954  0037CE  C0A3  F1B8         	movff	?_read_from_usart,_turn_on_value
   3955  0037D2  C0A4  F1B9         	movff	?_read_from_usart+1,_turn_on_value+1
   3956                           
-  3957                           ;main.c: 99:             printf("\n\rTurn OFF Value: \n\r");
+  3957                           ;main.c: 100:             printf("\n\rTurn OFF Value: \n\r");
   3958  0037D6  0E8B               	movlw	low STR_7
   3959  0037D8  0101               	movlb	1	; () banked
   3960  0037DA  6F49               	movwf	printf@fmt& (0+255),b
@@ -3983,7 +3983,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3962  0037DE  6F4A               	movwf	(printf@fmt+1)& (0+255),b
   3963  0037E0  EC60  F033         	call	_printf	;wreg free
   3964                           
-  3965                           ;main.c: 100:             turn_off_value = read_from_usart(2);
+  3965                           ;main.c: 101:             turn_off_value = read_from_usart(2);
   3966  0037E4  0E00               	movlw	0
   3967  0037E6  0100               	movlb	0	; () banked
   3968  0037E8  6FA4               	movwf	(read_from_usart@length+1)& (0+255),b
@@ -3993,7 +3993,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3972  0037F2  C0A3  F1B6         	movff	?_read_from_usart,_turn_off_value
   3973  0037F6  C0A4  F1B7         	movff	?_read_from_usart+1,_turn_off_value+1
   3974                           
-  3975                           ;main.c: 102:             printf("\n\n\rTURN VALUES SAVED   ON: %d OFF: %d\n\r", turn_on
+  3975                           ;main.c: 103:             printf("\n\n\rTURN VALUES SAVED   ON: %d OFF: %d\n\r", turn_on
       +                          _value, turn_off_value);
   3976  0037FA  0E05               	movlw	low STR_8
   3977  0037FC  0101               	movlb	1	; () banked
@@ -24031,7 +24031,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Sat Dec 05 15:27:13 2020
+Symbol Table                                                                                   Tue Dec 08 15:34:31 2020
 
                                 _SPI_Initialize 6860                                     _SSPSTATbits 000FC7  
                                             l30 6882                                              l51 6870  
