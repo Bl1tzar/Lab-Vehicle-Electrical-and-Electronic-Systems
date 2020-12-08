@@ -11,7 +11,7 @@ char string[30] = "";
 void INTERRUPT_S1_CALLBACK(void) {
     if (INT_S1_PORT == 0) {
         printf("\f\rPOT: %3d \r", adc_perc);
-
+        
         TMR0_WriteTimer(0x00);
         TMR0_StartTimer();
     }
