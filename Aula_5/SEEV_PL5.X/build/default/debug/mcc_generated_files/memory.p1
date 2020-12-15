@@ -1,78 +1,20 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"30080 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30080:     struct {
-[s S1141 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1141 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"30090
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30090:     struct {
-[s S1142 :3 `uc 1 :1 `uc 1 ]
-[n S1142 . . CCP2_PA2 ]
-"30079
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30079: typedef union {
-[u S1140 `S1141 1 `S1142 1 ]
-[n S1140 . . . ]
-"30095
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30095: extern volatile PORTBbits_t PORTBbits __attribute__((address(0xF81)));
-[v _PORTBbits `VS1140 ~T0 @X0 0 e@3969 ]
-"111 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"236 ./mcc_generated_files/tmr0.h
-[; ;./mcc_generated_files/tmr0.h: 236: void TMR0_WriteTimer(uint16_t timerVal);
-[v _TMR0_WriteTimer `(v ~T0 @X0 0 ef1`us ]
-"129
-[; ;./mcc_generated_files/tmr0.h: 129: void TMR0_StartTimer(void);
-[v _TMR0_StartTimer `(v ~T0 @X0 0 ef ]
-"161
-[; ;./mcc_generated_files/tmr0.h: 161: void TMR0_StopTimer(void);
-[v _TMR0_StopTimer `(v ~T0 @X0 0 ef ]
-"31691 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31691:     struct {
-[s S1204 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1204 . TMR1IF TMR2IF TMR1GIF SSPIF TX1IF RC1IF ADIF PSPIF ]
-"31701
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31701:     struct {
-[s S1205 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1205 . . TXIF RCIF ]
-"31690
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31690: typedef union {
-[u S1203 `S1204 1 `S1205 1 ]
-[n S1203 . . . ]
-"31707
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 31707: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
-[v _PIR1bits `VS1203 ~T0 @X0 0 e@3998 ]
-"207 ./mcc_generated_files/eusart1.h
-[; ;./mcc_generated_files/eusart1.h: 207: _Bool EUSART1_is_rx_ready(void);
-[v _EUSART1_is_rx_ready `(a ~T0 @X0 0 ef ]
-"322
-[; ;./mcc_generated_files/eusart1.h: 322: uint8_t EUSART1_Read(void);
-[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
-"159
-[; ;./mcc_generated_files/eusart1.h: 159: _Bool EUSART1_is_tx_ready(void);
-[v _EUSART1_is_tx_ready `(a ~T0 @X0 0 ef ]
-"342
-[; ;./mcc_generated_files/eusart1.h: 342: void EUSART1_Write(uint8_t txData);
-[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
-"23 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h: 23: int atoi (const char *);
-[v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
-[p mainexit ]
-"76 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 76: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"53 main.c
-[; ;main.c: 53:     SPI_Open(SPI_DEFAULT);
-[c E12726 0 .. ]
-[n E12726 . SPI_DEFAULT  ]
-"64 ./mcc_generated_files/spi.h
-[; ;./mcc_generated_files/spi.h: 64: _Bool SPI_Open(spi_modes_t spiUniqueConfiguration);
-[v _SPI_Open `(a ~T0 @X0 0 ef1`E12726 ]
-"248 ./lib_ili9341.h
-[; ;./lib_ili9341.h: 248: void lcd_init (void);
-[v _lcd_init `(v ~T0 @X0 0 ef ]
-"30074 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30074: extern volatile unsigned char PORTB __attribute__((address(0xF81)));
-[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
-"37210
+"37547 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37547: extern volatile unsigned char TBLPTRU __attribute__((address(0xFF8)));
+[v _TBLPTRU `Vuc ~T0 @X0 0 e@4088 ]
+"37527
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37527: extern volatile unsigned char TBLPTRH __attribute__((address(0xFF7)));
+[v _TBLPTRH `Vuc ~T0 @X0 0 e@4087 ]
+"37507
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37507: extern volatile unsigned char TBLPTRL __attribute__((address(0xFF6)));
+[v _TBLPTRL `Vuc ~T0 @X0 0 e@4086 ]
+"37478
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37478: extern volatile unsigned char TABLAT __attribute__((address(0xFF5)));
+[v _TABLAT `Vuc ~T0 @X0 0 e@4085 ]
+"193 mcc_generated_files/memory.h
+[; ;mcc_generated_files/memory.h: 193: int8_t FLASH_WriteBlock(uint32_t writeAddr, uint8_t *flashWrBufPtr);
+[v _FLASH_WriteBlock `(c ~T0 @X0 0 ef2`ul`*uc ]
+"37210 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37210:     struct {
 [s S1508 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1508 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
@@ -91,41 +33,50 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37236
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37236: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS1507 ~T0 @X0 0 e@4082 ]
-[v F12358 `(v ~T0 @X0 0 tf ]
-"261 ./mcc_generated_files/pin_manager.h
-[; ;./mcc_generated_files/pin_manager.h: 261: void IOCB4_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _IOCB4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12358 ]
-"357 ./lib_ili9341.h
-[; ;./lib_ili9341.h: 357: void lcd_draw_string (uint16_t x, uint16_t y, const char *pS, uint16_t fg_color, uint16_t bg_color);
-[v _lcd_draw_string `(v ~T0 @X0 0 ef5`us`us`*Cuc`us`us ]
-"95 main.c
-[; ;main.c: 95:         adc_value = ADC_GetConversion(POT_PIN);
-[c E12785 28 29 30 31 0 4 5 6 9 .. ]
-[n E12785 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap POT_PIN LED_D3 IO_RE0 IO_RE1 INT_S1  ]
-"256 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 256: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12785 ]
-"114 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
-[v _snprintf `(i ~T0 @X0 0 e2v`*uc`ui`*Cuc ]
-"30498 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30498:     struct {
-[s S1161 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1161 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
-"30508
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30508:     struct {
-[s S1162 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1162 . LA0 LA1 LA2 LA3 . LA5 LA6 LA7 ]
-"30497
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30497: typedef union {
-[u S1160 `S1161 1 `S1162 1 ]
-[n S1160 . . . ]
-"30519
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 30519: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
-[v _LATAbits `VS1160 ~T0 @X0 0 e@3977 ]
-[v F12914 `(a ~T0 @X0 0 tf ]
-"249 ./mcc_generated_files/memory.h
-[; ;./mcc_generated_files/memory.h: 249: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
-[v _DATAEE_WriteByte `(v ~T0 @X0 0 ef2`us`uc ]
+"218 mcc_generated_files/memory.h
+[; ;mcc_generated_files/memory.h: 218: void FLASH_EraseBlock(uint32_t baseAddr);
+[v _FLASH_EraseBlock `(v ~T0 @X0 0 ef1`ul ]
+"29935 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29935:     struct {
+[s S1135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1135 . RD WR WREN WRERR FREE . CFGS EEPGD ]
+"29945
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29945:     struct {
+[s S1136 :6 `uc 1 :1 `uc 1 ]
+[n S1136 . . EEFS ]
+"29934
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29934: typedef union {
+[u S1134 `S1135 1 `S1136 1 ]
+[n S1134 . . . ]
+"29950
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29950: extern volatile EECON1bits_t EECON1bits __attribute__((address(0xF7F)));
+[v _EECON1bits `VS1134 ~T0 @X0 0 e@3967 ]
+"29909
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29909: extern volatile unsigned char EECON2 __attribute__((address(0xF7E)));
+[v _EECON2 `Vuc ~T0 @X0 0 e@3966 ]
+"29513
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29513: extern volatile unsigned char EEADRH __attribute__((address(0xF75)));
+[v _EEADRH `Vuc ~T0 @X0 0 e@3957 ]
+"29493
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29493: extern volatile unsigned char EEADR __attribute__((address(0xF74)));
+[v _EEADR `Vuc ~T0 @X0 0 e@3956 ]
+"29473
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 29473: extern volatile unsigned char EEDATA __attribute__((address(0xF73)));
+[v _EEDATA `Vuc ~T0 @X0 0 e@3955 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"33929 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 33929:     struct {
+[s S1320 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1320 . CCP3IF CCP4IF CCP5IF . CMP1IF CMP2IF EEIF TMR4IF ]
+"33928
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 33928: typedef union {
+[u S1319 `S1320 1 ]
+[n S1319 . . ]
+"33940
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 33940: extern volatile PIR4bits_t PIR4bits __attribute__((address(0xFB7)));
+[v _PIR4bits `VS1319 ~T0 @X0 0 e@4023 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1518,2083 +1469,455 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37766
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f46k80.h: 37766: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"139 ./lib_ili9341.h
-[; ;./lib_ili9341.h: 139: const unsigned short font[] =
-[v _font `Cus ~T0 @X0 -> 1766 `i e ]
-[i _font
-:U ..
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 27 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 5 `i `us
--> -> 30 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 30 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 1 `i `us
--> -> 16 `i `us
--> -> 29 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 30 `i `us
--> -> 1 `i `us
--> -> 16 `i `us
--> -> 1 `i `us
--> -> 16 `i `us
--> -> 29 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 30 `i `us
--> -> 1 `i `us
--> -> 16 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 28 `i `us
--> -> 8 `i `us
--> -> 34 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 255 `i `us
--> -> 127 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 132 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 15 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 28 `i `us
--> -> 0 `i `us
--> -> 34 `i `us
--> -> 16 `i `us
--> -> 34 `i `us
--> -> 8 `i `us
--> -> 34 `i `us
--> -> 6 `i `us
--> -> 28 `i `us
--> -> 1 `i `us
--> -> 192 `i `us
--> -> 0 `i `us
--> -> 32 `i `us
--> -> 14 `i `us
--> -> 24 `i `us
--> -> 17 `i `us
--> -> 4 `i `us
--> -> 17 `i `us
--> -> 2 `i `us
--> -> 17 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 28 `i `us
--> -> 17 `i `us
--> -> 162 `i `us
--> -> 16 `i `us
--> -> 194 `i `us
--> -> 16 `i `us
--> -> 34 `i `us
--> -> 17 `i `us
--> -> 28 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 18 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 30 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 224 `i `us
--> -> 31 `i `us
--> -> 28 `i `us
--> -> 96 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 192 `i `us
--> -> 248 `i `us
--> -> 63 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 36 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 126 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 36 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 7 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 5 `i `us
--> -> 0 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 56 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 224 `i `us
--> -> 0 `i `us
--> -> 28 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 248 `i `us
--> -> 7 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 248 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 24 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 24 `i `us
--> -> 2 `i `us
--> -> 20 `i `us
--> -> 2 `i `us
--> -> 18 `i `us
--> -> 2 `i `us
--> -> 17 `i `us
--> -> 130 `i `us
--> -> 16 `i `us
--> -> 68 `i `us
--> -> 16 `i `us
--> -> 56 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 8 `i `us
--> -> 12 `i `us
--> -> 4 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 68 `i `us
--> -> 16 `i `us
--> -> 184 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 96 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 112 `i `us
--> -> 8 `i `us
--> -> 46 `i `us
--> -> 16 `i `us
--> -> 34 `i `us
--> -> 16 `i `us
--> -> 34 `i `us
--> -> 16 `i `us
--> -> 34 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 8 `i `us
--> -> 130 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 192 `i `us
--> -> 8 `i `us
--> -> 96 `i `us
--> -> 16 `i `us
--> -> 88 `i `us
--> -> 16 `i `us
--> -> 68 `i `us
--> -> 16 `i `us
--> -> 130 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 12 `i `us
--> -> 2 `i `us
--> -> 3 `i `us
--> -> 194 `i `us
--> -> 0 `i `us
--> -> 50 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 152 `i `us
--> -> 8 `i `us
--> -> 100 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 100 `i `us
--> -> 16 `i `us
--> -> 152 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 56 `i `us
--> -> 0 `i `us
--> -> 68 `i `us
--> -> 16 `i `us
--> -> 130 `i `us
--> -> 8 `i `us
--> -> 130 `i `us
--> -> 4 `i `us
--> -> 130 `i `us
--> -> 3 `i `us
--> -> 132 `i `us
--> -> 0 `i `us
--> -> 120 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 48 `i `us
--> -> 24 `i `us
--> -> 48 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 48 `i `us
--> -> 96 `i `us
--> -> 48 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 2 `i `us
--> -> 32 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 32 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 32 `i `us
--> -> 2 `i `us
--> -> 32 `i `us
--> -> 2 `i `us
--> -> 64 `i `us
--> -> 1 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 130 `i `us
--> -> 1 `i `us
--> -> 66 `i `us
--> -> 2 `i `us
--> -> 34 `i `us
--> -> 26 `i `us
--> -> 34 `i `us
--> -> 26 `i `us
--> -> 156 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 194 `i `us
--> -> 17 `i `us
--> -> 34 `i `us
--> -> 18 `i `us
--> -> 18 `i `us
--> -> 18 `i `us
--> -> 18 `i `us
--> -> 18 `i `us
--> -> 226 `i `us
--> -> 17 `i `us
--> -> 18 `i `us
--> -> 18 `i `us
--> -> 4 `i `us
--> -> 18 `i `us
--> -> 8 `i `us
--> -> 9 `i `us
--> -> 240 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 13 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 128 `i `us
--> -> 1 `i `us
--> -> 96 `i `us
--> -> 1 `i `us
--> -> 28 `i `us
--> -> 1 `i `us
--> -> 2 `i `us
--> -> 1 `i `us
--> -> 28 `i `us
--> -> 1 `i `us
--> -> 96 `i `us
--> -> 1 `i `us
--> -> 128 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 100 `i `us
--> -> 16 `i `us
--> -> 152 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 13 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 130 `i `us
--> -> 16 `i `us
--> -> 132 `i `us
--> -> 16 `i `us
--> -> 132 `i `us
--> -> 8 `i `us
--> -> 136 `i `us
--> -> 4 `i `us
--> -> 128 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 254 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 144 `i `us
--> -> 1 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 4 `i `us
--> -> 12 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 15 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 28 `i `us
--> -> 248 `i `us
--> -> 3 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 56 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 192 `i `us
--> -> 1 `i `us
--> -> 56 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 248 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 28 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 48 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 36 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 3 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 17 `i `us
--> -> 2 `i `us
--> -> 18 `i `us
--> -> 2 `i `us
--> -> 12 `i `us
--> -> 4 `i `us
--> -> 8 `i `us
--> -> 8 `i `us
--> -> 22 `i `us
--> -> 240 `i `us
--> -> 33 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 66 `i `us
--> -> 0 `i `us
--> -> 194 `i `us
--> -> 0 `i `us
--> -> 66 `i `us
--> -> 1 `i `us
--> -> 66 `i `us
--> -> 6 `i `us
--> -> 36 `i `us
--> -> 8 `i `us
--> -> 24 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 24 `i `us
--> -> 8 `i `us
--> -> 36 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 66 `i `us
--> -> 16 `i `us
--> -> 132 `i `us
--> -> 8 `i `us
--> -> 8 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 254 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 28 `i `us
--> -> 0 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 128 `i `us
--> -> 1 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 28 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 15 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 120 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 128 `i `us
--> -> 7 `i `us
--> -> 120 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 120 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 128 `i `us
--> -> 7 `i `us
--> -> 120 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 24 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 48 `i `us
--> -> 3 `i `us
--> -> 192 `i `us
--> -> 0 `i `us
--> -> 48 `i `us
--> -> 3 `i `us
--> -> 8 `i `us
--> -> 4 `i `us
--> -> 6 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 31 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 28 `i `us
--> -> 2 `i `us
--> -> 19 `i `us
--> -> 194 `i `us
--> -> 16 `i `us
--> -> 50 `i `us
--> -> 16 `i `us
--> -> 14 `i `us
--> -> 16 `i `us
--> -> 2 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 255 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 48 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 5 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 254 `i `us
--> -> 255 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 1 `i `us
--> -> 112 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 112 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 5 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 240 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 64 `i `us
--> -> 4 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 32 `i `us
--> -> 9 `i `us
--> -> 16 `i `us
--> -> 17 `i `us
--> -> 16 `i `us
--> -> 17 `i `us
--> -> 16 `i `us
--> -> 17 `i `us
--> -> 16 `i `us
--> -> 17 `i `us
--> -> 32 `i `us
--> -> 9 `i `us
--> -> 192 `i `us
--> -> 5 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 252 `i `us
--> -> 31 `i `us
--> -> 18 `i `us
--> -> 0 `i `us
--> -> 18 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 39 `i `us
--> -> 32 `i `us
--> -> 72 `i `us
--> -> 16 `i `us
--> -> 144 `i `us
--> -> 16 `i `us
--> -> 144 `i `us
--> -> 16 `i `us
--> -> 144 `i `us
--> -> 16 `i `us
--> -> 144 `i `us
--> -> 16 `i `us
--> -> 144 `i `us
--> -> 32 `i `us
--> -> 72 `i `us
--> -> 240 `i `us
--> -> 63 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 246 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 246 `i `us
--> -> 127 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 1 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 64 `i `us
--> -> 4 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 15 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 31 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 31 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 31 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 31 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 255 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 11 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 192 `i `us
--> -> 7 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 240 `i `us
--> -> 255 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 31 `i `us
--> -> 32 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 96 `i `us
--> -> 8 `i `us
--> -> 144 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 17 `i `us
--> -> 16 `i `us
--> -> 17 `i `us
--> -> 32 `i `us
--> -> 14 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 31 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 240 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 240 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 3 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 128 `i `us
--> -> 3 `i `us
--> -> 96 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 14 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 224 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 224 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 224 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 24 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 224 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 64 `i `us
--> -> 4 `i `us
--> -> 128 `i `us
--> -> 3 `i `us
--> -> 128 `i `us
--> -> 3 `i `us
--> -> 64 `i `us
--> -> 4 `i `us
--> -> 32 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 9 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 224 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 131 `i `us
--> -> 0 `i `us
--> -> 124 `i `us
--> -> 0 `i `us
--> -> 12 `i `us
--> -> 0 `i `us
--> -> 3 `i `us
--> -> 224 `i `us
--> -> 0 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 8 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 24 `i `us
--> -> 16 `i `us
--> -> 22 `i `us
--> -> 16 `i `us
--> -> 17 `i `us
--> -> 208 `i `us
--> -> 16 `i `us
--> -> 48 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 16 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 1 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 252 `i `us
--> -> 126 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 7 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 254 `i `us
--> -> 255 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 6 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 128 `i `us
--> -> 252 `i `us
--> -> 126 `i `us
--> -> 128 `i `us
--> -> 2 `i `us
--> -> 0 `i `us
--> -> 1 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 10 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 128 `i `us
--> -> 0 `i `us
--> -> 64 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
--> -> 5 `i `us
--> -> 255 `i `us
--> -> 15 `i `us
--> -> 1 `i `us
--> -> 8 `i `us
--> -> 1 `i `us
--> -> 8 `i `us
--> -> 255 `i `us
--> -> 15 `i `us
--> -> 0 `i `us
--> -> 0 `i `us
-..
-]
-"8 main.c
-[; ;main.c: 8: int adc_value = 0, turn_on_value=90, turn_off_value=80, acess, a, b, rx_data;
-[v _adc_value `i ~T0 @X0 1 e ]
-[i _adc_value
--> 0 `i
-]
-[v _turn_on_value `i ~T0 @X0 1 e ]
-[i _turn_on_value
--> 90 `i
-]
-[v _turn_off_value `i ~T0 @X0 1 e ]
-[i _turn_off_value
--> 80 `i
-]
-[v _acess `i ~T0 @X0 1 e ]
-[v _a `i ~T0 @X0 1 e ]
-[v _b `i ~T0 @X0 1 e ]
-[v _rx_data `i ~T0 @X0 1 e ]
-"9
-[; ;main.c: 9: long int adc_perc = 0;
-[v _adc_perc `l ~T0 @X0 1 e ]
-[i _adc_perc
--> -> 0 `i `l
-]
-"10
-[; ;main.c: 10: char string[30] = "";
-[v _string `uc ~T0 @X0 -> 30 `i e ]
-[i _string
-:U ..
--> 0 `c
-..
-]
-"15
-[; ;main.c: 15: void INTERRUPT_S1_CALLBACK(void) {
-[v _INTERRUPT_S1_CALLBACK `(v ~T0 @X0 1 ef ]
+"59 mcc_generated_files/memory.c
+[; ;mcc_generated_files/memory.c: 59: uint8_t FLASH_ReadByte(uint32_t flashAddr)
+[v _FLASH_ReadByte `(uc ~T0 @X0 1 ef1`ul ]
+"60
+[; ;mcc_generated_files/memory.c: 60: {
 {
-[e :U _INTERRUPT_S1_CALLBACK ]
+[e :U _FLASH_ReadByte ]
+"59
+[; ;mcc_generated_files/memory.c: 59: uint8_t FLASH_ReadByte(uint32_t flashAddr)
+[v _flashAddr `ul ~T0 @X0 1 r1 ]
+"60
+[; ;mcc_generated_files/memory.c: 60: {
 [f ]
-"16
-[; ;main.c: 16:     if (PORTBbits.RB4 == 0) {
-[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 1547  ]
-{
-"17
-[; ;main.c: 17:         printf("\f\rPOT: %3d \r", adc_perc);
-[e ( _printf , (. :s 1C _adc_perc ]
-"19
-[; ;main.c: 19:         TMR0_WriteTimer(0x00);
-[e ( _TMR0_WriteTimer (1 -> -> 0 `i `us ]
-"20
-[; ;main.c: 20:         TMR0_StartTimer();
-[e ( _TMR0_StartTimer ..  ]
-"21
-[; ;main.c: 21:     }
+"61
+[; ;mcc_generated_files/memory.c: 61:     TBLPTRU = (uint8_t)((flashAddr & 0x00FF0000) >> 16);
+[e = _TBLPTRU -> >> & _flashAddr -> -> 16711680 `l `ul -> 16 `i `uc ]
+"62
+[; ;mcc_generated_files/memory.c: 62:     TBLPTRH = (uint8_t)((flashAddr & 0x0000FF00)>> 8);
+[e = _TBLPTRH -> >> & _flashAddr -> -> 65280 `ui `ul -> 8 `i `uc ]
+"63
+[; ;mcc_generated_files/memory.c: 63:     TBLPTRL = (uint8_t)(flashAddr & 0x000000FF);
+[e = _TBLPTRL -> & _flashAddr -> -> -> 255 `i `l `ul `uc ]
+"65
+[; ;mcc_generated_files/memory.c: 65:     __asm("TBLRD");
+[; <" TBLRD ;# ">
+"67
+[; ;mcc_generated_files/memory.c: 67:     return (TABLAT);
+[e ) _TABLAT ]
+[e $UE 1542  ]
+"68
+[; ;mcc_generated_files/memory.c: 68: }
+[e :UE 1542 ]
 }
-[e :U 1547 ]
-"22
-[; ;main.c: 22:     if (PORTBbits.RB4 == 1) {
-[e $ ! == -> . . _PORTBbits 0 4 `i -> 1 `i 1548  ]
+"70
+[; ;mcc_generated_files/memory.c: 70: uint16_t FLASH_ReadWord(uint32_t flashAddr)
+[v _FLASH_ReadWord `(us ~T0 @X0 1 ef1`ul ]
+"71
+[; ;mcc_generated_files/memory.c: 71: {
 {
-"23
-[; ;main.c: 23:         TMR0_StopTimer();
-[e ( _TMR0_StopTimer ..  ]
-"24
-[; ;main.c: 24:     }
-}
-[e :U 1548 ]
-"25
-[; ;main.c: 25: }
-[e :UE 1546 ]
-}
-"27
-[; ;main.c: 27: int read_from_usart(int length) {
-[v _read_from_usart `(i ~T0 @X0 1 ef1`i ]
-{
-[e :U _read_from_usart ]
-[v _length `i ~T0 @X0 1 r1 ]
+[e :U _FLASH_ReadWord ]
+"70
+[; ;mcc_generated_files/memory.c: 70: uint16_t FLASH_ReadWord(uint32_t flashAddr)
+[v _flashAddr `ul ~T0 @X0 1 r1 ]
+"71
+[; ;mcc_generated_files/memory.c: 71: {
 [f ]
-"28
-[; ;main.c: 28:     char data[10];
-[v _data `uc ~T0 @X0 -> 10 `i a ]
-"29
-[; ;main.c: 29:     int value = 0;
-[v _value `i ~T0 @X0 1 a ]
-[e = _value -> 0 `i ]
-"31
-[; ;main.c: 31:     for (int i = 0; i < length; i++) {
+"72
+[; ;mcc_generated_files/memory.c: 72:     return ((((uint16_t)FLASH_ReadByte(flashAddr+1))<<8)|(FLASH_ReadByte(flashAddr)));
+[e ) -> | << -> -> ( _FLASH_ReadByte (1 + _flashAddr -> -> -> 1 `i `l `ul `us `ui -> 8 `i -> ( _FLASH_ReadByte (1 _flashAddr `ui `us ]
+[e $UE 1543  ]
+"73
+[; ;mcc_generated_files/memory.c: 73: }
+[e :UE 1543 ]
+}
+"75
+[; ;mcc_generated_files/memory.c: 75: void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte)
+[v _FLASH_WriteByte `(v ~T0 @X0 1 ef3`ul`*uc`uc ]
+"76
+[; ;mcc_generated_files/memory.c: 76: {
 {
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
+[e :U _FLASH_WriteByte ]
+"75
+[; ;mcc_generated_files/memory.c: 75: void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte)
+[v _flashAddr `ul ~T0 @X0 1 r1 ]
+[v _flashRdBufPtr `*uc ~T0 @X0 1 r2 ]
+[v _byte `uc ~T0 @X0 1 r3 ]
+"76
+[; ;mcc_generated_files/memory.c: 76: {
+[f ]
+"77
+[; ;mcc_generated_files/memory.c: 77:     uint32_t blockStartAddr = (uint32_t)(flashAddr & ((0x10000 -1) ^ (64 -1)));
+[v _blockStartAddr `ul ~T0 @X0 1 a ]
+[e = _blockStartAddr & _flashAddr -> ^ - -> 65536 `l -> -> 1 `i `l -> - -> 64 `i -> 1 `i `l `ul ]
+"78
+[; ;mcc_generated_files/memory.c: 78:     uint8_t offset = (uint8_t)(flashAddr & (64 -1));
+[v _offset `uc ~T0 @X0 1 a ]
+[e = _offset -> & _flashAddr -> -> - -> 64 `i -> 1 `i `l `ul `uc ]
+"79
+[; ;mcc_generated_files/memory.c: 79:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"82
+[; ;mcc_generated_files/memory.c: 82:     for (i=0; i<64; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 64 `i 1545  ]
+[e $U 1546  ]
+[e :U 1545 ]
+"83
+[; ;mcc_generated_files/memory.c: 83:     {
+{
+"84
+[; ;mcc_generated_files/memory.c: 84:         flashRdBufPtr[i] = FLASH_ReadByte((blockStartAddr+i));
+[e = *U + _flashRdBufPtr * -> _i `ux -> -> # *U _flashRdBufPtr `ui `ux ( _FLASH_ReadByte (1 + _blockStartAddr -> _i `ul ]
+"85
+[; ;mcc_generated_files/memory.c: 85:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 64 `i 1545  ]
+[e :U 1546 ]
+}
+"88
+[; ;mcc_generated_files/memory.c: 88:     flashRdBufPtr[offset] = byte;
+[e = *U + _flashRdBufPtr * -> _offset `ux -> -> # *U _flashRdBufPtr `ui `ux _byte ]
+"91
+[; ;mcc_generated_files/memory.c: 91:     FLASH_WriteBlock(blockStartAddr, flashRdBufPtr);
+[e ( _FLASH_WriteBlock (2 , _blockStartAddr _flashRdBufPtr ]
+"92
+[; ;mcc_generated_files/memory.c: 92: }
+[e :UE 1544 ]
+}
+"94
+[; ;mcc_generated_files/memory.c: 94: int8_t FLASH_WriteBlock(uint32_t writeAddr, uint8_t *flashWrBufPtr)
+[v _FLASH_WriteBlock `(c ~T0 @X0 1 ef2`ul`*uc ]
+"95
+[; ;mcc_generated_files/memory.c: 95: {
+{
+[e :U _FLASH_WriteBlock ]
+"94
+[; ;mcc_generated_files/memory.c: 94: int8_t FLASH_WriteBlock(uint32_t writeAddr, uint8_t *flashWrBufPtr)
+[v _writeAddr `ul ~T0 @X0 1 r1 ]
+[v _flashWrBufPtr `*uc ~T0 @X0 1 r2 ]
+"95
+[; ;mcc_generated_files/memory.c: 95: {
+[f ]
+"96
+[; ;mcc_generated_files/memory.c: 96:     uint32_t blockStartAddr = (uint32_t )(writeAddr & ((0x10000 -1) ^ (64 -1)));
+[v _blockStartAddr `ul ~T0 @X0 1 a ]
+[e = _blockStartAddr & _writeAddr -> ^ - -> 65536 `l -> -> 1 `i `l -> - -> 64 `i -> 1 `i `l `ul ]
+"97
+[; ;mcc_generated_files/memory.c: 97:     uint8_t GIEBitValue = INTCONbits.GIE;
+[v _GIEBitValue `uc ~T0 @X0 1 a ]
+[e = _GIEBitValue . . _INTCONbits 1 7 ]
+"98
+[; ;mcc_generated_files/memory.c: 98:     uint8_t i, j, numberOfWriteBlocks;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+[v _numberOfWriteBlocks `uc ~T0 @X0 1 a ]
+"99
+[; ;mcc_generated_files/memory.c: 99:     uint16_t WriteBlkOffset = 0;
+[v _WriteBlkOffset `us ~T0 @X0 1 a ]
+[e = _WriteBlkOffset -> -> 0 `i `us ]
+"102
+[; ;mcc_generated_files/memory.c: 102:     if(writeAddr != blockStartAddr)
+[e $ ! != _writeAddr _blockStartAddr 1549  ]
+"103
+[; ;mcc_generated_files/memory.c: 103:     {
+{
+"104
+[; ;mcc_generated_files/memory.c: 104:         return -1;
+[e ) -> -U -> 1 `i `c ]
+[e $UE 1548  ]
+"105
+[; ;mcc_generated_files/memory.c: 105:     }
+}
+[e :U 1549 ]
+"108
+[; ;mcc_generated_files/memory.c: 108:     numberOfWriteBlocks = 64/64;
+[e = _numberOfWriteBlocks -> / -> 64 `i -> 64 `i `uc ]
+"111
+[; ;mcc_generated_files/memory.c: 111:     FLASH_EraseBlock(writeAddr);
+[e ( _FLASH_EraseBlock (1 _writeAddr ]
+"113
+[; ;mcc_generated_files/memory.c: 113:     for(j=0; j<numberOfWriteBlocks; j++)
+{
+[e = _j -> -> 0 `i `uc ]
 [e $U 1553  ]
 [e :U 1550 ]
+"114
+[; ;mcc_generated_files/memory.c: 114:     {
 {
-"32
-[; ;main.c: 32:         while (!PIR1bits.RC1IF);
-[e $U 1554  ]
-[e :U 1555 ]
+"116
+[; ;mcc_generated_files/memory.c: 116:         WriteBlkOffset = (uint16_t)j * 64;
+[e = _WriteBlkOffset -> * -> -> _j `us `ui -> -> 64 `i `ui `us ]
+"119
+[; ;mcc_generated_files/memory.c: 119:         TBLPTRU = (uint8_t)(((writeAddr + WriteBlkOffset) & 0x00FF0000) >> 16);
+[e = _TBLPTRU -> >> & + _writeAddr -> _WriteBlkOffset `ul -> -> 16711680 `l `ul -> 16 `i `uc ]
+"120
+[; ;mcc_generated_files/memory.c: 120:         TBLPTRH = (uint8_t)(((writeAddr + WriteBlkOffset) & 0x0000FF00) >> 8);
+[e = _TBLPTRH -> >> & + _writeAddr -> _WriteBlkOffset `ul -> -> 65280 `ui `ul -> 8 `i `uc ]
+"121
+[; ;mcc_generated_files/memory.c: 121:         TBLPTRL = (uint8_t)((writeAddr + WriteBlkOffset) & 0x000000FF);
+[e = _TBLPTRL -> & + _writeAddr -> _WriteBlkOffset `ul -> -> -> 255 `i `l `ul `uc ]
+"123
+[; ;mcc_generated_files/memory.c: 123:         for (i=0; i<64; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 64 `i 1554  ]
+[e $U 1555  ]
 [e :U 1554 ]
-[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 1555  ]
-[e :U 1556 ]
-"33
-[; ;main.c: 33:         if (EUSART1_is_rx_ready()) {
-[e $ ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1557  ]
+"124
+[; ;mcc_generated_files/memory.c: 124:         {
 {
-"34
-[; ;main.c: 34:             data[i] = EUSART1_Read();
-[e = *U + &U _data * -> -> _i `ui `ux -> -> # *U &U _data `ui `ux -> ( _EUSART1_Read ..  `uc ]
-"35
-[; ;main.c: 35:             if (EUSART1_is_tx_ready()) {
-[e $ ! != -> ( _EUSART1_is_tx_ready ..  `i -> 0 `i 1558  ]
+"125
+[; ;mcc_generated_files/memory.c: 125:             TABLAT = flashWrBufPtr[WriteBlkOffset+i];
+[e = _TABLAT *U + _flashWrBufPtr * -> + -> _WriteBlkOffset `ui -> _i `ui `ux -> -> # *U _flashWrBufPtr `ui `ux ]
+"127
+[; ;mcc_generated_files/memory.c: 127:             if (i == (64 -1))
+[e $ ! == -> _i `i - -> 64 `i -> 1 `i 1557  ]
+"128
+[; ;mcc_generated_files/memory.c: 128:             {
 {
-"36
-[; ;main.c: 36:                 EUSART1_Write(data[i]);
-[e ( _EUSART1_Write (1 -> *U + &U _data * -> -> _i `ui `ux -> -> # *U &U _data `ui `ux `uc ]
-"37
-[; ;main.c: 37:                 TMR0_WriteTimer(0x00);
-[e ( _TMR0_WriteTimer (1 -> -> 0 `i `us ]
-"38
-[; ;main.c: 38:             }
+"129
+[; ;mcc_generated_files/memory.c: 129:                 __asm("TBLWT");
+[; <" TBLWT ;# ">
+"130
+[; ;mcc_generated_files/memory.c: 130:             }
+}
+[e $U 1558  ]
+"131
+[; ;mcc_generated_files/memory.c: 131:             else
+[e :U 1557 ]
+"132
+[; ;mcc_generated_files/memory.c: 132:             {
+{
+"133
+[; ;mcc_generated_files/memory.c: 133:                 __asm("TBLWTPOSTINC");
+[; <" TBLWTPOSTINC ;# ">
+"134
+[; ;mcc_generated_files/memory.c: 134:             }
 }
 [e :U 1558 ]
-"39
-[; ;main.c: 39:         }
+"135
+[; ;mcc_generated_files/memory.c: 135:         }
 }
-[e :U 1557 ]
-"40
-[; ;main.c: 40:     }
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 64 `i 1554  ]
+[e :U 1555 ]
 }
-[e ++ _i -> 1 `i ]
+"137
+[; ;mcc_generated_files/memory.c: 137:         EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"138
+[; ;mcc_generated_files/memory.c: 138:         INTCONbits.GIE = 0;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"139
+[; ;mcc_generated_files/memory.c: 139:         EECON2 = 0x55;
+[e = _EECON2 -> -> 85 `i `uc ]
+"140
+[; ;mcc_generated_files/memory.c: 140:         EECON2 = 0xAA;
+[e = _EECON2 -> -> 170 `i `uc ]
+"141
+[; ;mcc_generated_files/memory.c: 141:         EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+"143
+[; ;mcc_generated_files/memory.c: 143:         EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
+"144
+[; ;mcc_generated_files/memory.c: 144:         INTCONbits.GIE = GIEBitValue;
+[e = . . _INTCONbits 1 7 _GIEBitValue ]
+"145
+[; ;mcc_generated_files/memory.c: 145:     }
+}
+[e ++ _j -> -> 1 `i `uc ]
 [e :U 1553 ]
-[e $ < _i _length 1550  ]
+[e $ < -> _j `i -> _numberOfWriteBlocks `i 1550  ]
 [e :U 1551 ]
 }
-"41
-[; ;main.c: 41:     value = atoi(data);
-[e = _value ( _atoi (1 -> &U _data `*Cuc ]
-"42
-[; ;main.c: 42:     return value;
-[e ) _value ]
-[e $UE 1549  ]
-"43
-[; ;main.c: 43: }
-[e :UE 1549 ]
+"147
+[; ;mcc_generated_files/memory.c: 147:     return 0;
+[e ) -> -> 0 `i `c ]
+[e $UE 1548  ]
+"148
+[; ;mcc_generated_files/memory.c: 148: }
+[e :UE 1548 ]
 }
-[v $root$_main `(v ~T0 @X0 0 e ]
-"48
-[; ;main.c: 48: void main(void) {
-[v _main `(v ~T0 @X0 1 ef ]
+"150
+[; ;mcc_generated_files/memory.c: 150: void FLASH_EraseBlock(uint32_t baseAddr)
+[v _FLASH_EraseBlock `(v ~T0 @X0 1 ef1`ul ]
+"151
+[; ;mcc_generated_files/memory.c: 151: {
 {
-[e :U _main ]
+[e :U _FLASH_EraseBlock ]
+"150
+[; ;mcc_generated_files/memory.c: 150: void FLASH_EraseBlock(uint32_t baseAddr)
+[v _baseAddr `ul ~T0 @X0 1 r1 ]
+"151
+[; ;mcc_generated_files/memory.c: 151: {
 [f ]
-"49
-[; ;main.c: 49:     int dummy;
-[v _dummy `i ~T0 @X0 1 a ]
-"52
-[; ;main.c: 52:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"53
-[; ;main.c: 53:     SPI_Open(SPI_DEFAULT);
-[e ( _SPI_Open (1 . `E12726 0 ]
-"54
-[; ;main.c: 54:     lcd_init();
-[e ( _lcd_init ..  ]
-"57
-[; ;main.c: 57:     dummy=PORTB;
-[e = _dummy -> _PORTB `i ]
-"58
-[; ;main.c: 58:     INTCONbits.RBIF = 0;
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-"61
-[; ;main.c: 61:     IOCB4_SetInterruptHandler(INTERRUPT_S1_CALLBACK);
-[e ( _IOCB4_SetInterruptHandler (1 &U _INTERRUPT_S1_CALLBACK ]
-"68
-[; ;main.c: 68:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"78
-[; ;main.c: 78:     lcd_draw_string(60, 220, "EAU          SEEV         AULA_5", 0xFFFF, 0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 60 `i `us -> -> 220 `i `us :s 2C -> -> 65535 `ui `us -> -> 0 `i `us ]
-"79
-[; ;main.c: 79:     TMR0_WriteTimer(0x00);
-[e ( _TMR0_WriteTimer (1 -> -> 0 `i `us ]
-"93
-[; ;main.c: 93:     while (1) {
-[e :U 1561 ]
-{
-"95
-[; ;main.c: 95:         adc_value = ADC_GetConversion(POT_PIN);
-[e = _adc_value -> ( _ADC_GetConversion (1 . `E12785 4 `i ]
-"96
-[; ;main.c: 96:         adc_perc = (long int) adc_value * 100 / 4095;
-[e = _adc_perc / * -> _adc_value `l -> -> 100 `i `l -> -> 4095 `i `l ]
-"97
-[; ;main.c: 97:         snprintf(string, sizeof (string), "POT: %3d %%", adc_perc);
-[e ( _snprintf (2 , (. , , &U _string -> # _string `ui :s 3C _adc_perc ]
-"98
-[; ;main.c: 98:         lcd_draw_string(100, 100, string, 0xFFFF, 0x0000);
-[e ( _lcd_draw_string (4 , , , , -> -> 100 `i `us -> -> 100 `i `us -> &U _string `*Cuc -> -> 65535 `ui `us -> -> 0 `i `us ]
-"101
-[; ;main.c: 101:         if (adc_perc >= turn_on_value) {
-[e $ ! >= _adc_perc -> _turn_on_value `l 1563  ]
-{
-"102
-[; ;main.c: 102:             do { LATAbits.LATA5 = 1; } while(0);
-[e :U 1566 ]
-{
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
-}
-[e :U 1565 ]
-"103
-[; ;main.c: 103:         }
-}
-[e :U 1563 ]
-"104
-[; ;main.c: 104:         if (adc_perc <= turn_off_value) {
-[e $ ! <= _adc_perc -> _turn_off_value `l 1567  ]
-{
-"105
-[; ;main.c: 105:             do { LATAbits.LATA5 = 0; } while(0);
-[e :U 1570 ]
-{
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 1569 ]
-"106
-[; ;main.c: 106:         }
-}
-[e :U 1567 ]
-"109
-[; ;main.c: 109:         if (EUSART1_is_rx_ready) {
-[e $ ! != &U _EUSART1_is_rx_ready -> -> 0 `i `*F12914 1571  ]
-{
-"110
-[; ;main.c: 110:             rx_data=EUSART1_Read();
-[e = _rx_data -> ( _EUSART1_Read ..  `i ]
-"111
-[; ;main.c: 111:             if (rx_data==32){
-[e $ ! == _rx_data -> 32 `i 1572  ]
-{
-"113
-[; ;main.c: 113:                 printf("Configuration MODE \n\r");
-[e ( _printf :s 4C ]
-"114
-[; ;main.c: 114:                 printf("\n\rACTUAL TURN VALUES  ON: %d OFF: %d\n\r", turn_on_value, turn_off_value);
-[e ( _printf , , (. :s 5C _turn_on_value _turn_off_value ]
-"116
-[; ;main.c: 116:                 do{
-[e :U 1575 ]
-{
-"117
-[; ;main.c: 117:                     printf("\n\rTurn ON Value: \n\r");
-[e ( _printf :s 6C ]
-"118
-[; ;main.c: 118:                     turn_on_value = read_from_usart(2);
-[e = _turn_on_value ( _read_from_usart (1 -> 2 `i ]
-"119
-[; ;main.c: 119:                     a=turn_on_value;
-[e = _a _turn_on_value ]
-"120
-[; ;main.c: 120:                     printf("\n\rTurn OFF Value: \n\r");
-[e ( _printf :s 7C ]
-"121
-[; ;main.c: 121:                     turn_off_value = read_from_usart(2);
-[e = _turn_off_value ( _read_from_usart (1 -> 2 `i ]
-"122
-[; ;main.c: 122:                     b=turn_off_value;
-[e = _b _turn_off_value ]
-"123
-[; ;main.c: 123:                 }while (a<=b);
-}
-[e $ <= _a _b 1575  ]
-[e :U 1574 ]
-"125
-[; ;main.c: 125:                 DATAEE_WriteByte(0x00,turn_on_value);
-[e ( _DATAEE_WriteByte (2 , -> -> 0 `i `us -> _turn_on_value `uc ]
-"126
-[; ;main.c: 126:                 DATAEE_WriteByte(0x01,turn_off_value);
-[e ( _DATAEE_WriteByte (2 , -> -> 1 `i `us -> _turn_off_value `uc ]
-"128
-[; ;main.c: 128:                 printf("\n\n\rTURN VALUES SAVED   ON: %d OFF: %d\n\r", turn_on_value, turn_off_value);
-[e ( _printf , , (. :s 8C _turn_on_value _turn_off_value ]
-"129
-[; ;main.c: 129:             }
-}
-[e :U 1572 ]
-"130
-[; ;main.c: 130:         }
-}
-[e :U 1571 ]
-"131
-[; ;main.c: 131:     }
-}
-[e :U 1560 ]
-[e $U 1561  ]
-[e :U 1562 ]
-"132
-[; ;main.c: 132: }
+"152
+[; ;mcc_generated_files/memory.c: 152:     uint8_t GIEBitValue = INTCONbits.GIE;
+[v _GIEBitValue `uc ~T0 @X0 1 a ]
+[e = _GIEBitValue . . _INTCONbits 1 7 ]
+"154
+[; ;mcc_generated_files/memory.c: 154:     TBLPTRU = (uint8_t)((baseAddr & 0x00FF0000) >> 16);
+[e = _TBLPTRU -> >> & _baseAddr -> -> 16711680 `l `ul -> 16 `i `uc ]
+"155
+[; ;mcc_generated_files/memory.c: 155:     TBLPTRH = (uint8_t)((baseAddr & 0x0000FF00)>> 8);
+[e = _TBLPTRH -> >> & _baseAddr -> -> 65280 `ui `ul -> 8 `i `uc ]
+"156
+[; ;mcc_generated_files/memory.c: 156:     TBLPTRL = (uint8_t)(baseAddr & 0x000000FF);
+[e = _TBLPTRL -> & _baseAddr -> -> -> 255 `i `l `ul `uc ]
+"158
+[; ;mcc_generated_files/memory.c: 158:     EECON1bits.EEPGD = 1;
+[e = . . _EECON1bits 0 7 -> -> 1 `i `uc ]
+"159
+[; ;mcc_generated_files/memory.c: 159:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+"160
+[; ;mcc_generated_files/memory.c: 160:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"161
+[; ;mcc_generated_files/memory.c: 161:     EECON1bits.FREE = 1;
+[e = . . _EECON1bits 0 4 -> -> 1 `i `uc ]
+"162
+[; ;mcc_generated_files/memory.c: 162:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"163
+[; ;mcc_generated_files/memory.c: 163:     EECON2 = 0x55;
+[e = _EECON2 -> -> 85 `i `uc ]
+"164
+[; ;mcc_generated_files/memory.c: 164:     EECON2 = 0xAA;
+[e = _EECON2 -> -> 170 `i `uc ]
+"165
+[; ;mcc_generated_files/memory.c: 165:     EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+"166
+[; ;mcc_generated_files/memory.c: 166:     INTCONbits.GIE = GIEBitValue;
+[e = . . _INTCONbits 1 7 _GIEBitValue ]
+"167
+[; ;mcc_generated_files/memory.c: 167: }
 [e :UE 1559 ]
 }
-[p f _printf 8421504 ]
-[p f _snprintf 9470080 ]
-[a 2C 69 65 85 32 32 32 32 32 32 32 32 32 32 83 69 69 86 32 32 32 32 32 32 32 32 32 65 85 76 65 95 53 0 ]
-[a 3C 80 79 84 58 32 37 51 100 32 37 37 0 ]
-[a 1C 12 13 80 79 84 58 32 37 51 100 32 13 0 ]
-[a 5C 10 13 65 67 84 85 65 76 32 84 85 82 78 32 86 65 76 85 69 83 32 32 79 78 58 32 37 100 32 79 70 70 58 32 37 100 10 13 0 ]
-[a 8C 10 10 13 84 85 82 78 32 86 65 76 85 69 83 32 83 65 86 69 68 32 32 32 79 78 58 32 37 100 32 79 70 70 58 32 37 100 10 13 0 ]
-[a 4C 67 111 110 102 105 103 117 114 97 116 105 111 110 32 77 79 68 69 32 10 13 0 ]
-[a 6C 10 13 84 117 114 110 32 79 78 32 86 97 108 117 101 58 32 10 13 0 ]
-[a 7C 10 13 84 117 114 110 32 79 70 70 32 86 97 108 117 101 58 32 10 13 0 ]
+"173
+[; ;mcc_generated_files/memory.c: 173: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData)
+[v _DATAEE_WriteByte `(v ~T0 @X0 1 ef2`us`uc ]
+"174
+[; ;mcc_generated_files/memory.c: 174: {
+{
+[e :U _DATAEE_WriteByte ]
+"173
+[; ;mcc_generated_files/memory.c: 173: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData)
+[v _bAdd `us ~T0 @X0 1 r1 ]
+[v _bData `uc ~T0 @X0 1 r2 ]
+"174
+[; ;mcc_generated_files/memory.c: 174: {
+[f ]
+"175
+[; ;mcc_generated_files/memory.c: 175:     uint8_t GIEBitValue = INTCONbits.GIE;
+[v _GIEBitValue `uc ~T0 @X0 1 a ]
+[e = _GIEBitValue . . _INTCONbits 1 7 ]
+"177
+[; ;mcc_generated_files/memory.c: 177:     EEADRH = ((bAdd >> 8) & 0x03);
+[e = _EEADRH -> & >> -> _bAdd `ui -> 8 `i -> -> 3 `i `ui `uc ]
+"178
+[; ;mcc_generated_files/memory.c: 178:     EEADR = (bAdd & 0xFF);
+[e = _EEADR -> & -> _bAdd `ui -> -> 255 `i `ui `uc ]
+"179
+[; ;mcc_generated_files/memory.c: 179:     EEDATA = bData;
+[e = _EEDATA _bData ]
+"180
+[; ;mcc_generated_files/memory.c: 180:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
+"181
+[; ;mcc_generated_files/memory.c: 181:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+"182
+[; ;mcc_generated_files/memory.c: 182:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"183
+[; ;mcc_generated_files/memory.c: 183:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"184
+[; ;mcc_generated_files/memory.c: 184:     EECON2 = 0x55;
+[e = _EECON2 -> -> 85 `i `uc ]
+"185
+[; ;mcc_generated_files/memory.c: 185:     EECON2 = 0xAA;
+[e = _EECON2 -> -> 170 `i `uc ]
+"186
+[; ;mcc_generated_files/memory.c: 186:     EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+"188
+[; ;mcc_generated_files/memory.c: 188:     while (EECON1bits.WR)
+[e $U 1561  ]
+[e :U 1562 ]
+"189
+[; ;mcc_generated_files/memory.c: 189:     {
+{
+"190
+[; ;mcc_generated_files/memory.c: 190:     }
+}
+[e :U 1561 ]
+"188
+[; ;mcc_generated_files/memory.c: 188:     while (EECON1bits.WR)
+[e $ != -> . . _EECON1bits 0 1 `i -> 0 `i 1562  ]
+[e :U 1563 ]
+"192
+[; ;mcc_generated_files/memory.c: 192:     EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
+"193
+[; ;mcc_generated_files/memory.c: 193:     INTCONbits.GIE = GIEBitValue;
+[e = . . _INTCONbits 1 7 _GIEBitValue ]
+"194
+[; ;mcc_generated_files/memory.c: 194: }
+[e :UE 1560 ]
+}
+"196
+[; ;mcc_generated_files/memory.c: 196: uint8_t DATAEE_ReadByte(uint16_t bAdd)
+[v _DATAEE_ReadByte `(uc ~T0 @X0 1 ef1`us ]
+"197
+[; ;mcc_generated_files/memory.c: 197: {
+{
+[e :U _DATAEE_ReadByte ]
+"196
+[; ;mcc_generated_files/memory.c: 196: uint8_t DATAEE_ReadByte(uint16_t bAdd)
+[v _bAdd `us ~T0 @X0 1 r1 ]
+"197
+[; ;mcc_generated_files/memory.c: 197: {
+[f ]
+"198
+[; ;mcc_generated_files/memory.c: 198:     EEADRH = ((bAdd >> 8) & 0x03);
+[e = _EEADRH -> & >> -> _bAdd `ui -> 8 `i -> -> 3 `i `ui `uc ]
+"199
+[; ;mcc_generated_files/memory.c: 199:     EEADR = (bAdd & 0xFF);
+[e = _EEADR -> & -> _bAdd `ui -> -> 255 `i `ui `uc ]
+"200
+[; ;mcc_generated_files/memory.c: 200:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+"201
+[; ;mcc_generated_files/memory.c: 201:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
+"202
+[; ;mcc_generated_files/memory.c: 202:     EECON1bits.RD = 1;
+[e = . . _EECON1bits 0 0 -> -> 1 `i `uc ]
+"203
+[; ;mcc_generated_files/memory.c: 203:     __nop();
+[e ( ___nop ..  ]
+"204
+[; ;mcc_generated_files/memory.c: 204:     __nop();
+[e ( ___nop ..  ]
+"206
+[; ;mcc_generated_files/memory.c: 206:     return (EEDATA);
+[e ) _EEDATA ]
+[e $UE 1564  ]
+"207
+[; ;mcc_generated_files/memory.c: 207: }
+[e :UE 1564 ]
+}
+"209
+[; ;mcc_generated_files/memory.c: 209: void MEMORY_Tasks( void )
+[v _MEMORY_Tasks `(v ~T0 @X0 1 ef ]
+"210
+[; ;mcc_generated_files/memory.c: 210: {
+{
+[e :U _MEMORY_Tasks ]
+[f ]
+"212
+[; ;mcc_generated_files/memory.c: 212:     PIR4bits.EEIF = 0;
+[e = . . _PIR4bits 0 6 -> -> 0 `i `uc ]
+"213
+[; ;mcc_generated_files/memory.c: 213: }
+[e :UE 1565 ]
+}

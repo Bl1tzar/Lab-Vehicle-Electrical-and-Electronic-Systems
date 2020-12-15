@@ -1,7 +1,11 @@
 #include "mcc_generated_files/mcc.h"
 #include "lib_ili9341.h"
 
-int adc_value = 0, turn_on_value = 90, turn_off_value = 80;
+#define loc_ON 0x00 //Localizacao do valor ON na memoria
+#define loc_OFF 0x01 //Localizacao do valor OFF na memoria
+#define loc_ACESS 0x02 //Localizacao do valor se e a primeira vez que se tem acesso ou nao
+
+int adc_value = 0, turn_on_value=90, turn_off_value=80, acess, a, b, rx_data;
 long int adc_perc = 0;
 char string[30] = "";
 
@@ -59,7 +63,7 @@ void main(void) {
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
-
+    
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
 
@@ -73,7 +77,19 @@ void main(void) {
     //INTERRUPT_PeripheralInterruptDisable();
     lcd_draw_string(60, 220, "EAU          SEEV         AULA_5", WHITE, BLACK);
     TMR0_WriteTimer(0x00);
-
+    
+    //acess=DATAEE_ReadByte(loc_ACESS);
+    if (DATAEE_ReadByte(loc_ACESS)!=0xFF){
+        turn_on_value=DATAEE_ReadByte(loc_ON);
+        turn_off_value=DATAEE_ReadByte(loc_OFF);
+    }
+//    else{
+//        acess=1;
+//        DATAEE_WriteByte(loc_ACESS,acess);
+//        turn_on_value=90;
+//        turn_off_value=80;
+//    }
+    
     while (1) {
         // Read and print POT value
         adc_value = ADC_GetConversion(POT_PIN);
@@ -90,17 +106,27 @@ void main(void) {
         }
 
         // Configuration Menu
-        if (TMR0_ReadTimer() > 23500) {
-            // Read turn ON and turn OFF value from keyboard
-            printf("Configuration MODE \n\r");
-            printf("\n\rACTUAL TURN VALUES  ON: %d OFF: %d\n\r", turn_on_value, turn_off_value);
+        if (EUSART1_is_rx_ready) {
+            rx_data=EUSART1_Read();
+            if (rx_data==32){
+                // Read turn ON and turn OFF value from keyboard
+                printf("Configuration MODE \n\r");
+                printf("\n\rACTUAL TURN VALUES  ON: %d OFF: %d\n\r", turn_on_value, turn_off_value);
 
-            printf("\n\rTurn ON Value: \n\r");
-            turn_on_value = read_from_usart(2);
-            printf("\n\rTurn OFF Value: \n\r");
-            turn_off_value = read_from_usart(2);
+                do{
+                    printf("\n\rTurn ON Value: \n\r");
+                    turn_on_value = read_from_usart(2);
+                    a=turn_on_value;
+                    printf("\n\rTurn OFF Value: \n\r");
+                    turn_off_value = read_from_usart(2);
+                    b=turn_off_value;
+                }while (a<=b);
 
-            printf("\n\n\rTURN VALUES SAVED   ON: %d OFF: %d\n\r", turn_on_value, turn_off_value);
+                DATAEE_WriteByte(loc_ON,turn_on_value);
+                DATAEE_WriteByte(loc_OFF,turn_off_value);
+
+                printf("\n\n\rTURN VALUES SAVED   ON: %d OFF: %d\n\r", turn_on_value, turn_off_value);
+            }
         }
     }
 }
