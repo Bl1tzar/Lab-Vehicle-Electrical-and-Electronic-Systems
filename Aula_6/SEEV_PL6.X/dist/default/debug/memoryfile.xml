@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\SEEV_PL6.X.debug.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>25459</used>
+      <free>40077</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3649</length>
+      <used>435</used>
+      <free>3214</free>
+    </memory>
+  </executable>
+</project>
